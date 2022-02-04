@@ -54,8 +54,8 @@ enum PokerPlusExitRoom: HTTPAPI {
         
         // TODO: - この間にLoadStateされると、ひとり欠けているので、エラーを追加して対応する
         // 今はアクセスできません...とか
-        let announce = PokerPlusAPIModel.Announce(
-            announce_type: PokerPlusAPIModel.AnnounceType.playerExit.rawValue,
+        let announce = PokerPlusAnnounce(
+            announce_type: PokerPlusAnnounceId.playerExit.rawValue,
             masked_state: nil,
             players: nil,
             trigger_seat: keycard.seat,
@@ -90,7 +90,7 @@ enum PokerPlusExitRoom: HTTPAPI {
             // 新しいキーカード
             let newKeycard = KeycardRealm(
                 _id: UUID().uuidString,
-                gameID: GameID.pokerPlus.rawValue,
+                gameID: GameId.pokerPlus.rawValue,
                 userID: botUserID,
                 userType: UserType.bot.rawValue,
                 stateID: keycard.state_id,
@@ -125,8 +125,8 @@ enum PokerPlusExitRoom: HTTPAPI {
                 .first(where: {$0.userId == newKeycard.user_id})?
                 .startBet(at: PokerPlusSeat(rawValue: newKeycard.seat)!, in: newState)
             
-            let enterAnnounce = PokerPlusAPIModel.Announce(
-                announce_type: PokerPlusAPIModel.AnnounceType.playerEnter.rawValue,
+            let enterAnnounce = PokerPlusAnnounce(
+                announce_type: PokerPlusAnnounceId.playerEnter.rawValue,
                 masked_state: nil,
                 players: nil,
                 trigger_seat: oldSide.seat.rawValue,

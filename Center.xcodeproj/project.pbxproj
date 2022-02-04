@@ -22,12 +22,12 @@
 		4A14BC0F271BC0760056BA3E /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14BC0E271BC0760056BA3E /* Reel.swift */; };
 		4A2B810C267468DA0013537F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2B810B267468DA0013537F /* Realm */; };
 		4A2B810E267468DA0013537F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2B810D267468DA0013537F /* RealmSwift */; };
-		4A2F4E0A267C3DEA00A7BA6C /* PokerPlusAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E09267C3DEA00A7BA6C /* PokerPlusAPIModels.swift */; };
+		4A2F4E0A267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E09267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift */; };
 		4A2F4E0E267C508300A7BA6C /* PokerPlusSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E0D267C508300A7BA6C /* PokerPlusSpeaker.swift */; };
 		4A2F4E0F267C508500A7BA6C /* PokerPlusSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E0D267C508300A7BA6C /* PokerPlusSpeaker.swift */; };
 		4A2F4E25267DB2CB00A7BA6C /* PokerPlusAPIModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E24267DB2CB00A7BA6C /* PokerPlusAPIModelBuilder.swift */; };
 		4A3B9CC4266FAC01005F1749 /* CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B815262BF40B0052FF14 /* CenterTests.swift */; };
-		4A3EFB00274900F10027488A /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFAFF274900F10027488A /* MachineID.swift */; };
+		4A3EFB00274900F10027488A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFAFF274900F10027488A /* MachineId.swift */; };
 		4A3EFB0227490E7F0027488A /* SlotFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFB0127490E7F0027488A /* SlotFree.swift */; };
 		4A3EFB0427490E810027488A /* SlotDevelopers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFB0327490E810027488A /* SlotDevelopers.swift */; };
 		4A3EFB0627490E820027488A /* SlotV1M0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFB0527490E820027488A /* SlotV1M0.swift */; };
@@ -48,8 +48,7 @@
 		4A914E7C278A834700E93522 /* KeycardRealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7B278A834700E93522 /* KeycardRealmRepository.swift */; };
 		4A914E7D278A89DF00E93522 /* PokerPlusMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7A278A7BE000E93522 /* PokerPlusMatcher.swift */; };
 		4A914E82278A92C600E93522 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E81278A92C600E93522 /* ErrorModel.swift */; };
-		4A914E83278A942200E93522 /* SlotsAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7F278A921800E93522 /* SlotsAPIModels.swift */; };
-		4A914E84278A942500E93522 /* UsersAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E80278A925700E93522 /* UsersAPIModels.swift */; };
+		4A914E83278A942200E93522 /* SlotReelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7F278A921800E93522 /* SlotReelAnimation.swift */; };
 		4A914E87278A962400E93522 /* PokerPlusMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7A278A7BE000E93522 /* PokerPlusMatcher.swift */; };
 		4A914E88278A962D00E93522 /* PokerPlusAPIModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E24267DB2CB00A7BA6C /* PokerPlusAPIModelBuilder.swift */; };
 		4A914E8C278A9E2500E93522 /* PokerPlusStateRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E8B278A9E2500E93522 /* PokerPlusStateRepositoryImpl.swift */; };
@@ -82,22 +81,21 @@
 		4A9F466627AC427700FA8B40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A15927A51C65002EA45C /* User.swift */; };
 		4A9F467927AC427E00FA8B40 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14BC0E271BC0760056BA3E /* Reel.swift */; };
 		4A9F467A27AC427E00FA8B40 /* UserRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B82D262C51080052FF14 /* UserRealm.swift */; };
-		4A9F467B27AC427E00FA8B40 /* PokerPlusAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E09267C3DEA00A7BA6C /* PokerPlusAPIModels.swift */; };
-		4A9F467C27AC427E00FA8B40 /* SymbolID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAAB2712313000EBB78A /* SymbolID.swift */; };
-		4A9F467D27AC427E00FA8B40 /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFAFF274900F10027488A /* MachineID.swift */; };
+		4A9F467B27AC427E00FA8B40 /* PokerPlusShowdownAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F4E09267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift */; };
+		4A9F467C27AC427E00FA8B40 /* SymbolId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAAB2712313000EBB78A /* SymbolId.swift */; };
+		4A9F467D27AC427E00FA8B40 /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3EFAFF274900F10027488A /* MachineId.swift */; };
 		4A9F467E27AC427E00FA8B40 /* PokerPlusStateRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E8E278AA62500E93522 /* PokerPlusStateRealm.swift */; };
 		4A9F467F27AC427E00FA8B40 /* KeycardRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E78278A765900E93522 /* KeycardRealm.swift */; };
-		4A9F468027AC427E00FA8B40 /* DrinkID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA9271230CF00EBB78A /* DrinkID.swift */; };
+		4A9F468027AC427E00FA8B40 /* DrinkId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA9271230CF00EBB78A /* DrinkId.swift */; };
 		4A9F468127AC427E00FA8B40 /* SymbolPocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A15B27A51D20002EA45C /* SymbolPocket.swift */; };
-		4A9F468227AC427E00FA8B40 /* UsersAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E80278A925700E93522 /* UsersAPIModels.swift */; };
 		4A9F468327AC427E00FA8B40 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E81278A92C600E93522 /* ErrorModel.swift */; };
 		4A9F468427AC427E00FA8B40 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914EDD278C978900E93522 /* Player.swift */; };
 		4A9F468527AC427E00FA8B40 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13B9C127942F99006024B0 /* UserType.swift */; };
-		4A9F468627AC427E00FA8B40 /* SuitID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16A27A6341F002EA45C /* SuitID.swift */; };
-		4A9F468727AC427E00FA8B40 /* GameID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16527A53F00002EA45C /* GameID.swift */; };
+		4A9F468627AC427E00FA8B40 /* SuitId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16A27A6341F002EA45C /* SuitId.swift */; };
+		4A9F468727AC427E00FA8B40 /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16527A53F00002EA45C /* GameId.swift */; };
 		4A9F468827AC427E00FA8B40 /* Keycard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16127A53D4D002EA45C /* Keycard.swift */; };
-		4A9F468927AC427E00FA8B40 /* NumberID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16C27A6343F002EA45C /* NumberID.swift */; };
-		4A9F468A27AC427E00FA8B40 /* SlotsAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7F278A921800E93522 /* SlotsAPIModels.swift */; };
+		4A9F468927AC427E00FA8B40 /* NumberId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16C27A6343F002EA45C /* NumberId.swift */; };
+		4A9F468A27AC427E00FA8B40 /* SlotReelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E7F278A921800E93522 /* SlotReelAnimation.swift */; };
 		4A9F468B27AC427E00FA8B40 /* BotUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13B9C32794396A006024B0 /* BotUser.swift */; };
 		4A9F468D27AC428800FA8B40 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4461E12689FE0C00A4D063 /* IntExtension.swift */; };
 		4A9F468E27AC428800FA8B40 /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA570C52643C20A002F63A6 /* JSONSerializable.swift */; };
@@ -115,6 +113,15 @@
 		4A9F469A27AC429500FA8B40 /* UsersLoadUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA32712234D00EBB78A /* UsersLoadUser.swift */; };
 		4A9F469B27AC429500FA8B40 /* PokerPlusPullBetComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D7B726E1ABA6000CFB1C /* PokerPlusPullBetComplete.swift */; };
 		4A9F469C27AC429600FA8B40 /* PokerPlusPullPutComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D7B926E1AC14000CFB1C /* PokerPlusPullPutComplete.swift */; };
+		4A9F469F27ADA54800FA8B40 /* SlotTriadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F469E27ADA54600FA8B40 /* SlotTriadAnimation.swift */; };
+		4A9F46A027ADA54900FA8B40 /* SlotTriadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F469E27ADA54600FA8B40 /* SlotTriadAnimation.swift */; };
+		4A9F46B227ADB73300FA8B40 /* ReelId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46B127ADB73300FA8B40 /* ReelId.swift */; };
+		4A9F46B327ADB83000FA8B40 /* PokerPlusScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AC27ADABD600FA8B40 /* PokerPlusScore.swift */; };
+		4A9F46B427ADB83000FA8B40 /* PokerPlusScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AC27ADABD600FA8B40 /* PokerPlusScore.swift */; };
+		4A9F46B527ADB83200FA8B40 /* PokerPlusAnnounceId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AB27ADABD400FA8B40 /* PokerPlusAnnounceId.swift */; };
+		4A9F46B627ADB83300FA8B40 /* PokerPlusAnnounceId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AB27ADABD400FA8B40 /* PokerPlusAnnounceId.swift */; };
+		4A9F46B727ADB83500FA8B40 /* PokerPlusAnnounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AA27ADABD300FA8B40 /* PokerPlusAnnounce.swift */; };
+		4A9F46B827ADB83600FA8B40 /* PokerPlusAnnounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AA27ADABD300FA8B40 /* PokerPlusAnnounce.swift */; };
 		4AA1A6D126749BEF005B9603 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1A6D026749BEF005B9603 /* Center.swift */; };
 		4AA1A6D226749C3C005B9603 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1A6D026749BEF005B9603 /* Center.swift */; };
 		4AB022D827097CB200A7EC68 /* PokerPlusExitRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB022D727097CB200A7EC68 /* PokerPlusExitRoom.swift */; };
@@ -138,8 +145,8 @@
 		4AD0FAA2271174AA00EBB78A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA1271174AA00EBB78A /* ServiceError.swift */; };
 		4AD0FAA42712234D00EBB78A /* UsersLoadUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA32712234D00EBB78A /* UsersLoadUser.swift */; };
 		4AD0FAA82712276900EBB78A /* PokerPlusPullPutAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA72712275B00EBB78A /* PokerPlusPullPutAction.swift */; };
-		4AD0FAAA271230CF00EBB78A /* DrinkID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA9271230CF00EBB78A /* DrinkID.swift */; };
-		4AD0FAAC2712313000EBB78A /* SymbolID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAAB2712313000EBB78A /* SymbolID.swift */; };
+		4AD0FAAA271230CF00EBB78A /* DrinkId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAA9271230CF00EBB78A /* DrinkId.swift */; };
+		4AD0FAAC2712313000EBB78A /* SymbolId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAAB2712313000EBB78A /* SymbolId.swift */; };
 		4AD0FAAE271305D600EBB78A /* SlotsSpinSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0FAAD271305D600EBB78A /* SlotsSpinSlot.swift */; };
 		4ADBEEC826A3675000DF9CD4 /* PokerPlusShowdownAnimationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADBEEC726A3674F00DF9CD4 /* PokerPlusShowdownAnimationBuilder.swift */; };
 		4ADBEECA26A3683B00DF9CD4 /* PokerPlusScoreListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADBEEC926A3683B00DF9CD4 /* PokerPlusScoreListBuilder.swift */; };
@@ -152,9 +159,9 @@
 		4AE3A15E27A52E69002EA45C /* UserSymbolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A15D27A52E69002EA45C /* UserSymbolController.swift */; };
 		4AE3A16027A53CF7002EA45C /* KeycardConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A15F27A53CF7002EA45C /* KeycardConverter.swift */; };
 		4AE3A16227A53DAB002EA45C /* Keycard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16127A53D4D002EA45C /* Keycard.swift */; };
-		4AE3A16627A53F00002EA45C /* GameID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16527A53F00002EA45C /* GameID.swift */; };
-		4AE3A16B27A6341F002EA45C /* SuitID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16A27A6341F002EA45C /* SuitID.swift */; };
-		4AE3A16D27A6343F002EA45C /* NumberID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16C27A6343F002EA45C /* NumberID.swift */; };
+		4AE3A16627A53F00002EA45C /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16527A53F00002EA45C /* GameId.swift */; };
+		4AE3A16B27A6341F002EA45C /* SuitId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16A27A6341F002EA45C /* SuitId.swift */; };
+		4AE3A16D27A6343F002EA45C /* NumberId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16C27A6343F002EA45C /* NumberId.swift */; };
 		4AF2D7B826E1ABA6000CFB1C /* PokerPlusPullBetComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D7B726E1ABA6000CFB1C /* PokerPlusPullBetComplete.swift */; };
 		4AF2D7C626E1DFE2000CFB1C /* UsersCreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2D7C526E1DFE2000CFB1C /* UsersCreateUser.swift */; };
 /* End PBXBuildFile section */
@@ -198,10 +205,10 @@
 		4A14BC01271AD55B0056BA3E /* PrizeOdds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeOdds.swift; sourceTree = "<group>"; };
 		4A14BC0C271BBCCF0056BA3E /* SlotClassic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotClassic.swift; sourceTree = "<group>"; };
 		4A14BC0E271BC0760056BA3E /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
-		4A2F4E09267C3DEA00A7BA6C /* PokerPlusAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusAPIModels.swift; sourceTree = "<group>"; };
+		4A2F4E09267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusShowdownAnimation.swift; sourceTree = "<group>"; };
 		4A2F4E0D267C508300A7BA6C /* PokerPlusSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusSpeaker.swift; sourceTree = "<group>"; };
 		4A2F4E24267DB2CB00A7BA6C /* PokerPlusAPIModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusAPIModelBuilder.swift; sourceTree = "<group>"; };
-		4A3EFAFF274900F10027488A /* MachineID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineID.swift; sourceTree = "<group>"; };
+		4A3EFAFF274900F10027488A /* MachineId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineId.swift; sourceTree = "<group>"; };
 		4A3EFB0127490E7F0027488A /* SlotFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotFree.swift; sourceTree = "<group>"; };
 		4A3EFB0327490E810027488A /* SlotDevelopers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotDevelopers.swift; sourceTree = "<group>"; };
 		4A3EFB0527490E820027488A /* SlotV1M0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotV1M0.swift; sourceTree = "<group>"; };
@@ -219,12 +226,16 @@
 		4A914E78278A765900E93522 /* KeycardRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardRealm.swift; sourceTree = "<group>"; };
 		4A914E7A278A7BE000E93522 /* PokerPlusMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusMatcher.swift; sourceTree = "<group>"; };
 		4A914E7B278A834700E93522 /* KeycardRealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardRealmRepository.swift; sourceTree = "<group>"; };
-		4A914E7F278A921800E93522 /* SlotsAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsAPIModels.swift; sourceTree = "<group>"; };
-		4A914E80278A925700E93522 /* UsersAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPIModels.swift; sourceTree = "<group>"; };
+		4A914E7F278A921800E93522 /* SlotReelAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotReelAnimation.swift; sourceTree = "<group>"; };
 		4A914E81278A92C600E93522 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		4A914E8B278A9E2500E93522 /* PokerPlusStateRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusStateRepositoryImpl.swift; sourceTree = "<group>"; };
 		4A914E8E278AA62500E93522 /* PokerPlusStateRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusStateRealm.swift; sourceTree = "<group>"; };
 		4A914EDD278C978900E93522 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4A9F469E27ADA54600FA8B40 /* SlotTriadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotTriadAnimation.swift; sourceTree = "<group>"; };
+		4A9F46AA27ADABD300FA8B40 /* PokerPlusAnnounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusAnnounce.swift; sourceTree = "<group>"; };
+		4A9F46AB27ADABD400FA8B40 /* PokerPlusAnnounceId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusAnnounceId.swift; sourceTree = "<group>"; };
+		4A9F46AC27ADABD600FA8B40 /* PokerPlusScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusScore.swift; sourceTree = "<group>"; };
+		4A9F46B127ADB73300FA8B40 /* ReelId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelId.swift; sourceTree = "<group>"; };
 		4AA1A6D026749BEF005B9603 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		4AB022D727097CB200A7EC68 /* PokerPlusExitRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusExitRoom.swift; sourceTree = "<group>"; };
 		4AB8270E2684130E00CE7360 /* PokerPlusEnterRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusEnterRoom.swift; sourceTree = "<group>"; };
@@ -243,8 +254,8 @@
 		4AD0FAA1271174AA00EBB78A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		4AD0FAA32712234D00EBB78A /* UsersLoadUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersLoadUser.swift; sourceTree = "<group>"; };
 		4AD0FAA72712275B00EBB78A /* PokerPlusPullPutAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusPullPutAction.swift; sourceTree = "<group>"; };
-		4AD0FAA9271230CF00EBB78A /* DrinkID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkID.swift; sourceTree = "<group>"; };
-		4AD0FAAB2712313000EBB78A /* SymbolID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolID.swift; sourceTree = "<group>"; };
+		4AD0FAA9271230CF00EBB78A /* DrinkId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkId.swift; sourceTree = "<group>"; };
+		4AD0FAAB2712313000EBB78A /* SymbolId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolId.swift; sourceTree = "<group>"; };
 		4AD0FAAD271305D600EBB78A /* SlotsSpinSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsSpinSlot.swift; sourceTree = "<group>"; };
 		4ADBEEC726A3674F00DF9CD4 /* PokerPlusShowdownAnimationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusShowdownAnimationBuilder.swift; sourceTree = "<group>"; };
 		4ADBEEC926A3683B00DF9CD4 /* PokerPlusScoreListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusScoreListBuilder.swift; sourceTree = "<group>"; };
@@ -253,9 +264,9 @@
 		4AE3A15D27A52E69002EA45C /* UserSymbolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSymbolController.swift; sourceTree = "<group>"; };
 		4AE3A15F27A53CF7002EA45C /* KeycardConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardConverter.swift; sourceTree = "<group>"; };
 		4AE3A16127A53D4D002EA45C /* Keycard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keycard.swift; sourceTree = "<group>"; };
-		4AE3A16527A53F00002EA45C /* GameID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameID.swift; sourceTree = "<group>"; };
-		4AE3A16A27A6341F002EA45C /* SuitID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuitID.swift; sourceTree = "<group>"; };
-		4AE3A16C27A6343F002EA45C /* NumberID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberID.swift; sourceTree = "<group>"; };
+		4AE3A16527A53F00002EA45C /* GameId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameId.swift; sourceTree = "<group>"; };
+		4AE3A16A27A6341F002EA45C /* SuitId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuitId.swift; sourceTree = "<group>"; };
+		4AE3A16C27A6343F002EA45C /* NumberId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberId.swift; sourceTree = "<group>"; };
 		4AF2D7B726E1ABA6000CFB1C /* PokerPlusPullBetComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusPullBetComplete.swift; sourceTree = "<group>"; };
 		4AF2D7B926E1AC14000CFB1C /* PokerPlusPullPutComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusPullPutComplete.swift; sourceTree = "<group>"; };
 		4AF2D7C526E1DFE2000CFB1C /* UsersCreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCreateUser.swift; sourceTree = "<group>"; };
@@ -466,21 +477,25 @@
 				3E23B82D262C51080052FF14 /* UserRealm.swift */,
 				4A914E78278A765900E93522 /* KeycardRealm.swift */,
 				4AE3A16127A53D4D002EA45C /* Keycard.swift */,
-				4A2F4E09267C3DEA00A7BA6C /* PokerPlusAPIModels.swift */,
-				4A914E7F278A921800E93522 /* SlotsAPIModels.swift */,
-				4A914E80278A925700E93522 /* UsersAPIModels.swift */,
-				4AD0FAA9271230CF00EBB78A /* DrinkID.swift */,
-				4AD0FAAB2712313000EBB78A /* SymbolID.swift */,
+				4A2F4E09267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift */,
+				4A9F46AC27ADABD600FA8B40 /* PokerPlusScore.swift */,
+				4A9F46AB27ADABD400FA8B40 /* PokerPlusAnnounceId.swift */,
+				4A9F46AA27ADABD300FA8B40 /* PokerPlusAnnounce.swift */,
+				4A914E7F278A921800E93522 /* SlotReelAnimation.swift */,
+				4A9F469E27ADA54600FA8B40 /* SlotTriadAnimation.swift */,
+				4AD0FAA9271230CF00EBB78A /* DrinkId.swift */,
+				4AD0FAAB2712313000EBB78A /* SymbolId.swift */,
 				4A14BC0E271BC0760056BA3E /* Reel.swift */,
-				4A3EFAFF274900F10027488A /* MachineID.swift */,
+				4A3EFAFF274900F10027488A /* MachineId.swift */,
+				4A9F46B127ADB73300FA8B40 /* ReelId.swift */,
 				4A914E81278A92C600E93522 /* ErrorModel.swift */,
 				4A914E8E278AA62500E93522 /* PokerPlusStateRealm.swift */,
 				4A914EDD278C978900E93522 /* Player.swift */,
 				4A13B9C127942F99006024B0 /* UserType.swift */,
 				4A13B9C32794396A006024B0 /* BotUser.swift */,
-				4AE3A16527A53F00002EA45C /* GameID.swift */,
-				4AE3A16A27A6341F002EA45C /* SuitID.swift */,
-				4AE3A16C27A6343F002EA45C /* NumberID.swift */,
+				4AE3A16527A53F00002EA45C /* GameId.swift */,
+				4AE3A16A27A6341F002EA45C /* SuitId.swift */,
+				4AE3A16C27A6343F002EA45C /* NumberId.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -581,7 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9F467D27AC427E00FA8B40 /* MachineID.swift in Sources */,
+				4A9F467D27AC427E00FA8B40 /* MachineId.swift in Sources */,
 				4A9F469227AC428800FA8B40 /* AsciiTable.swift in Sources */,
 				4A9F469527AC429500FA8B40 /* PokerPlusExitRoom.swift in Sources */,
 				4A9F465E27AC426100FA8B40 /* ServiceError.swift in Sources */,
@@ -594,15 +609,16 @@
 				4AB827192684130E00CE7360 /* PokerPlusEnterRoom.swift in Sources */,
 				4A9F466427AC426F00FA8B40 /* SlotClassic.swift in Sources */,
 				4ADBEEED26AA945800DF9CD4 /* Router.swift in Sources */,
-				4A9F468227AC427E00FA8B40 /* UsersAPIModels.swift in Sources */,
 				4A9F465027AC422A00FA8B40 /* KeycardConverter.swift in Sources */,
-				4A9F468627AC427E00FA8B40 /* SuitID.swift in Sources */,
+				4A9F468627AC427E00FA8B40 /* SuitId.swift in Sources */,
 				4A9F468E27AC428800FA8B40 /* JSONSerializable.swift in Sources */,
 				4A9F469727AC429500FA8B40 /* PokerPlusPullPutComplete.swift in Sources */,
 				4A9F467F27AC427E00FA8B40 /* KeycardRealm.swift in Sources */,
-				4A9F467C27AC427E00FA8B40 /* SymbolID.swift in Sources */,
+				4A9F467C27AC427E00FA8B40 /* SymbolId.swift in Sources */,
+				4A9F46B827ADB83600FA8B40 /* PokerPlusAnnounce.swift in Sources */,
 				4A914E742789BCCC00E93522 /* PokerPlusServer.swift in Sources */,
 				4A9F467927AC427E00FA8B40 /* Reel.swift in Sources */,
+				4A9F46B627ADB83300FA8B40 /* PokerPlusAnnounceId.swift in Sources */,
 				4A9F469327AC428800FA8B40 /* StringExtension.swift in Sources */,
 				4A9F468127AC427E00FA8B40 /* SymbolPocket.swift in Sources */,
 				4A9F465427AC423600FA8B40 /* UserSymbolController.swift in Sources */,
@@ -610,15 +626,16 @@
 				4ADBEEF526AA948400DF9CD4 /* PokerPlusScoreListBuilder.swift in Sources */,
 				4A9F468B27AC427E00FA8B40 /* BotUser.swift in Sources */,
 				4A9F466327AC426D00FA8B40 /* SlotV1M0.swift in Sources */,
+				4A9F46B427ADB83000FA8B40 /* PokerPlusScore.swift in Sources */,
 				4A9F466027AC426700FA8B40 /* SlotMachine.swift in Sources */,
 				4A9F468527AC427E00FA8B40 /* UserType.swift in Sources */,
 				4A9F468F27AC428800FA8B40 /* ArrayExtension.swift in Sources */,
 				4A9F468827AC427E00FA8B40 /* Keycard.swift in Sources */,
-				4A9F468A27AC427E00FA8B40 /* SlotsAPIModels.swift in Sources */,
+				4A9F468A27AC427E00FA8B40 /* SlotReelAnimation.swift in Sources */,
 				4A9F466627AC427700FA8B40 /* User.swift in Sources */,
 				4A8EF9AA2690BE2200D19929 /* UsersUpdateUser.swift in Sources */,
-				4A9F468927AC427E00FA8B40 /* NumberID.swift in Sources */,
-				4A9F468027AC427E00FA8B40 /* DrinkID.swift in Sources */,
+				4A9F468927AC427E00FA8B40 /* NumberId.swift in Sources */,
+				4A9F468027AC427E00FA8B40 /* DrinkId.swift in Sources */,
 				4A9F465127AC422E00FA8B40 /* DBServerState.swift in Sources */,
 				4A9F469927AC429500FA8B40 /* SlotsSpinSlot.swift in Sources */,
 				4A9F465D27AC425D00FA8B40 /* PokerPlusServerState.swift in Sources */,
@@ -641,11 +658,12 @@
 				4A9F469B27AC429500FA8B40 /* PokerPlusPullBetComplete.swift in Sources */,
 				4A914E87278A962400E93522 /* PokerPlusMatcher.swift in Sources */,
 				4A9F469027AC428800FA8B40 /* IdentifiableExtension.swift in Sources */,
-				4A9F467B27AC427E00FA8B40 /* PokerPlusAPIModels.swift in Sources */,
+				4A9F467B27AC427E00FA8B40 /* PokerPlusShowdownAnimation.swift in Sources */,
 				4A9F465A27AC424400FA8B40 /* PokerPlusLogger.swift in Sources */,
 				4A9F466527AC427400FA8B40 /* SlotServer.swift in Sources */,
+				4A9F46A027ADA54900FA8B40 /* SlotTriadAnimation.swift in Sources */,
 				4A9F465F27AC426300FA8B40 /* BotUserList.swift in Sources */,
-				4A9F468727AC427E00FA8B40 /* GameID.swift in Sources */,
+				4A9F468727AC427E00FA8B40 /* GameId.swift in Sources */,
 				4A9F468D27AC428800FA8B40 /* IntExtension.swift in Sources */,
 				4A914E88278A962D00E93522 /* PokerPlusAPIModelBuilder.swift in Sources */,
 				4AB8271B2684130E00CE7360 /* PokerPlusBetAction.swift in Sources */,
@@ -664,32 +682,35 @@
 			files = (
 				4A777B9527251A7500581CCF /* UserConverter.swift in Sources */,
 				4AF2D7B826E1ABA6000CFB1C /* PokerPlusPullBetComplete.swift in Sources */,
-				4AE3A16D27A6343F002EA45C /* NumberID.swift in Sources */,
+				4AE3A16D27A6343F002EA45C /* NumberId.swift in Sources */,
 				4AB827212684139E00CE7360 /* HTTP.swift in Sources */,
-				4AE3A16627A53F00002EA45C /* GameID.swift in Sources */,
+				4AE3A16627A53F00002EA45C /* GameId.swift in Sources */,
 				4A2F4E0E267C508300A7BA6C /* PokerPlusSpeaker.swift in Sources */,
 				4A14BC0D271BBCCF0056BA3E /* SlotClassic.swift in Sources */,
 				4A4461E22689FE0C00A4D063 /* IntExtension.swift in Sources */,
 				4AB8272D26842EE600CE7360 /* IdentifiableExtension.swift in Sources */,
 				4A914E82278A92C600E93522 /* ErrorModel.swift in Sources */,
 				4AB827182684130E00CE7360 /* PokerPlusEnterRoom.swift in Sources */,
-				4A2F4E0A267C3DEA00A7BA6C /* PokerPlusAPIModels.swift in Sources */,
+				4A2F4E0A267C3DEA00A7BA6C /* PokerPlusShowdownAnimation.swift in Sources */,
 				4AE3A15E27A52E69002EA45C /* UserSymbolController.swift in Sources */,
 				4A914E8F278AA62500E93522 /* PokerPlusStateRealm.swift in Sources */,
 				4AF2D7C626E1DFE2000CFB1C /* UsersCreateUser.swift in Sources */,
 				3EA570C62643C20A002F63A6 /* JSONSerializable.swift in Sources */,
 				4A914E772789E88E00E93522 /* PokerPlusBot.swift in Sources */,
-				4A914E84278A942500E93522 /* UsersAPIModels.swift in Sources */,
 				4A8EF9A92690BE2200D19929 /* UsersUpdateUser.swift in Sources */,
-				4A914E83278A942200E93522 /* SlotsAPIModels.swift in Sources */,
+				4A914E83278A942200E93522 /* SlotReelAnimation.swift in Sources */,
+				4A9F46B727ADB83500FA8B40 /* PokerPlusAnnounce.swift in Sources */,
 				4A914E732789BCCB00E93522 /* PokerPlusServer.swift in Sources */,
 				4ACD43C127926F3D0046CEB5 /* UserServer.swift in Sources */,
+				4A9F46B527ADB83200FA8B40 /* PokerPlusAnnounceId.swift in Sources */,
 				4A14BC0F271BC0760056BA3E /* Reel.swift in Sources */,
+				4A9F46B227ADB73300FA8B40 /* ReelId.swift in Sources */,
 				4AB8271A2684130E00CE7360 /* PokerPlusBetAction.swift in Sources */,
-				4A3EFB00274900F10027488A /* MachineID.swift in Sources */,
+				4A3EFB00274900F10027488A /* MachineId.swift in Sources */,
 				4A914E79278A765900E93522 /* KeycardRealm.swift in Sources */,
 				4A9F469C27AC429600FA8B40 /* PokerPlusPullPutComplete.swift in Sources */,
-				4AE3A16B27A6341F002EA45C /* SuitID.swift in Sources */,
+				4AE3A16B27A6341F002EA45C /* SuitId.swift in Sources */,
+				4A9F46B327ADB83000FA8B40 /* PokerPlusScore.swift in Sources */,
 				4A914E6527892DF100E93522 /* PokerPlusState.swift in Sources */,
 				4A06011626E10BCA008EFEFB /* UserRepository.swift in Sources */,
 				4AD0FAA42712234D00EBB78A /* UsersLoadUser.swift in Sources */,
@@ -708,8 +729,9 @@
 				4A2F4E25267DB2CB00A7BA6C /* PokerPlusAPIModelBuilder.swift in Sources */,
 				4A3EFB0227490E7F0027488A /* SlotFree.swift in Sources */,
 				4AD0FAA82712276900EBB78A /* PokerPlusPullPutAction.swift in Sources */,
+				4A9F469F27ADA54800FA8B40 /* SlotTriadAnimation.swift in Sources */,
 				4ACD43C32792AD550046CEB5 /* SlotServer.swift in Sources */,
-				4AD0FAAC2712313000EBB78A /* SymbolID.swift in Sources */,
+				4AD0FAAC2712313000EBB78A /* SymbolId.swift in Sources */,
 				4ACD43BB279269400046CEB5 /* PokerPlusServerState.swift in Sources */,
 				4AA1A6D126749BEF005B9603 /* Center.swift in Sources */,
 				4AE3A15A27A51C65002EA45C /* User.swift in Sources */,
@@ -727,7 +749,7 @@
 				4A13B9C227942F99006024B0 /* UserType.swift in Sources */,
 				4A3EFB0427490E810027488A /* SlotDevelopers.swift in Sources */,
 				3EA570B226425F6C002F63A6 /* DBServer.swift in Sources */,
-				4AD0FAAA271230CF00EBB78A /* DrinkID.swift in Sources */,
+				4AD0FAAA271230CF00EBB78A /* DrinkId.swift in Sources */,
 				4AB022D827097CB200A7EC68 /* PokerPlusExitRoom.swift in Sources */,
 				4AB8272A26842EDD00CE7360 /* StringExtension.swift in Sources */,
 				4AB8271C2684130E00CE7360 /* PokerPlusLoadRoom.swift in Sources */,

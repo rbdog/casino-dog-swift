@@ -2,13 +2,13 @@
 //
 //
 
-enum MenuItemID {
+enum MenuItemId {
     case developerMessage
     case lisense
     case termsOfService
     case debug
     
-    static func availableList() -> [MenuItemID] {
+    static func availableList() -> [MenuItemId] {
         return [
             .developerMessage,
             .lisense,

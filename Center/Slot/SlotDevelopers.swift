@@ -6,6 +6,7 @@ struct SlotDevelopersMachine: SlotMachine {
     
     let _reels: [Reel] = [
         Reel(
+            id: .developerL,
             symbols: [
                 .plClag,
                 .plCPlusPlus,
@@ -23,6 +24,7 @@ struct SlotDevelopersMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .developerC,
             symbols: [
                 .plTypeScript,
                 .plSwift,
@@ -40,6 +42,7 @@ struct SlotDevelopersMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .developerR,
             symbols: [
                 .plSwift,
                 .plPython,
@@ -60,67 +63,67 @@ struct SlotDevelopersMachine: SlotMachine {
     
     let _oddsTableRows: [PrizeOdds.Table.Row] = [
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plSwift.rawValue),
+            prizeID: String(SymbolId.plSwift.rawValue),
             odds: 1.0,
             description: "Swift言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plPython.rawValue),
+            prizeID: String(SymbolId.plPython.rawValue),
             odds: 1.0,
             description: "Python言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plTypeScript.rawValue),
+            prizeID: String(SymbolId.plTypeScript.rawValue),
             odds: 1.0,
             description: "TypeScript言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plKotlin.rawValue),
+            prizeID: String(SymbolId.plKotlin.rawValue),
             odds: 1.0,
             description: "Kotlin言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plDart.rawValue),
+            prizeID: String(SymbolId.plDart.rawValue),
             odds: 1.0,
             description: "Dart言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plJavaScript.rawValue),
+            prizeID: String(SymbolId.plJavaScript.rawValue),
             odds: 1.0,
             description: "JavaScript言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plCPlusPlus.rawValue),
+            prizeID: String(SymbolId.plCPlusPlus.rawValue),
             odds: 1.0,
             description: "C++言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plGolang.rawValue),
+            prizeID: String(SymbolId.plGolang.rawValue),
             odds: 1.0,
             description: "Go言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plClag.rawValue),
+            prizeID: String(SymbolId.plClag.rawValue),
             odds: 1.0,
             description: "C言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plJava.rawValue),
+            prizeID: String(SymbolId.plJava.rawValue),
             odds: 1.0,
             description: "Java言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plCSharp.rawValue),
+            prizeID: String(SymbolId.plCSharp.rawValue),
             odds: 1.0,
             description: "C#言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plRuby.rawValue),
+            prizeID: String(SymbolId.plRuby.rawValue),
             odds: 1.0,
             description: "Ruby言語"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.plPHP.rawValue),
+            prizeID: String(SymbolId.plPHP.rawValue),
             odds: 1.0,
             description: "PHP言語"
         ),
@@ -147,7 +150,7 @@ struct SlotDevelopersMachine: SlotMachine {
         return _oddsTableRows
     }
     
-    func onTriad(symbolId: SymbolID, playingUserId: String) {
+    func onTriad(symbolId: SymbolId, playingUserId: String) {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)
@@ -159,7 +162,7 @@ struct SlotDevelopersMachine: SlotMachine {
         }
     }
     
-    func triadDescription(symbolId: SymbolID, playingUserId: String) -> String {
+    func triadDescription(symbolId: SymbolId, playingUserId: String) -> String {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)

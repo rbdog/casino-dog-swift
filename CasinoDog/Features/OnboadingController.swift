@@ -52,7 +52,7 @@ struct OnboardingController {
         return random == 0
     }
 
-    func drink(`for` face: DiceFace) -> Drink {
+    func drink(`for` face: DiceFace) -> DrinkId {
         switch face {
         case .zero: return .champagne
         case .one: return .beer
@@ -64,7 +64,7 @@ struct OnboardingController {
         }
     }
     
-    func onGetDrink(diceFace: DiceFace, drink: Drink) {
+    func onGetDrink(diceFace: DiceFace, drink: DrinkId) {
         
         DispatchQueue.main.async {
             appState.onboarding.drink = drink

@@ -10,12 +10,12 @@ struct PokerPlusAPIModelBuilder {
         let hasPuttingPlayer = state.sides.contains(where: {$0.playerStep == .put})
         
         let maskedSides = state.sides.map { side -> PokerPlusSide in
-            var handCards: [CardID] = []
+            var handCards: [CardId] = []
             if side.seat == seat {
                 // 自分の席なら手札を公開
                 handCards = side.handCardIds
             }
-            var putCard: CardID? = nil
+            var putCard: CardId? = nil
             if let card = side.putCardId {
                 // プットカードがある時
                 if hasPuttingPlayer {

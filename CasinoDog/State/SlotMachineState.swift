@@ -6,12 +6,12 @@ import SwiftUI
 
 final class SlotMachineState: ObservableObject, JSONSerializable {
     
-    let machineID: MachineID
+    let machineID: MachineId
     let reels: [ReelState]
     var squreSize: CGFloat!
     @Published var canStart: Bool = true
     @Published var sliderValue: CGFloat
-    @Published var triadEffect: SlotsAPIModel.TriadEffect?
+    @Published var triadAnimation: SlotTriadAnimation?
     
     // カスタムエンコード
     enum CodingKeys: String, CodingKey {
@@ -20,16 +20,16 @@ final class SlotMachineState: ObservableObject, JSONSerializable {
         case squreSize
         case canStart
         case sliderValue
-        case triadEffect
+        case triadAnimation
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        machineID = try container.decode(MachineID.self, forKey: .machineID)
+        machineID = try container.decode(MachineId.self, forKey: .machineID)
         reels = try container.decode([ReelState].self, forKey: .reels)
         squreSize = try container.decode(CGFloat.self, forKey: .squreSize)
         canStart = try container.decode(Bool.self, forKey: .canStart)
         sliderValue = try container.decode(CGFloat.self, forKey: .sliderValue)
-        triadEffect = try container.decode(SlotsAPIModel.TriadEffect?.self, forKey: .triadEffect)
+        triadAnimation = try container.decode(SlotTriadAnimation?.self, forKey: .triadAnimation)
     }
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
@@ -38,22 +38,27 @@ final class SlotMachineState: ObservableObject, JSONSerializable {
         try container.encode(squreSize, forKey: .squreSize)
         try container.encode(canStart, forKey: .canStart)
         try container.encode(sliderValue, forKey: .sliderValue)
-        try container.encode(triadEffect, forKey: .triadEffect)
+        try container.encode(triadAnimation, forKey: .triadAnimation)
     }
     
-    init(machineID: MachineID,
+    init(machineID: MachineId,
          sliderValue: CGFloat = 0,
-         triadEffect: SlotsAPIModel.TriadEffect? = nil) {
+         triadAnimation: SlotTriadAnimation? = nil) {
         let machine = MachineList().machines.first(where: {$0.id == machineID})!
         self.machineID = machineID
-        self.reels = machine.reels.map{ReelState(symbols: $0.symbols)}
+        let reels = machine.reels.map{ reelId -> Reel in
+            return MachineList().reels.first(where: { $0.id == reelId })!
+        }
+        self.reels = reels.map { reel -> ReelState in
+            ReelState(symbols: reel.symbols)
+        }
         self.sliderValue = sliderValue
-        self.triadEffect = triadEffect
+        self.triadAnimation = triadAnimation
     }
 }
 
 final class ReelState: ObservableObject, JSONSerializable {
-    let symbols: [Symbol]
+    let symbols: [SymbolId]
     @Published var offset: CGFloat = 0
     var index: Int = 0
     var stopIndex: [Int] = []
@@ -67,7 +72,7 @@ final class ReelState: ObservableObject, JSONSerializable {
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        symbols = try container.decode([Symbol].self, forKey: .symbols)
+        symbols = try container.decode([SymbolId].self, forKey: .symbols)
         offset = try container.decode(CGFloat.self, forKey: .offset)
         index = try container.decode(Int.self, forKey: .index)
         stopIndex = try container.decode([Int].self, forKey: .stopIndex)
@@ -80,7 +85,7 @@ final class ReelState: ObservableObject, JSONSerializable {
         try container.encode(stopIndex, forKey: .stopIndex)
     }
     
-    init(symbols: [Symbol],
+    init(symbols: [SymbolId],
          offset: CGFloat = 0,
          index: Int = 0,
          stopIndex: [Int] = []) {

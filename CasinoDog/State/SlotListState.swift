@@ -6,7 +6,7 @@ import SwiftUI
 
 final class SlotListState: ObservableObject, JSONSerializable {
     
-    @Published var machineIDList: [MachineID]
+    @Published var machineIDList: [MachineId]
     
     // カスタムエンコード
     enum CodingKeys: String, CodingKey {
@@ -14,18 +14,18 @@ final class SlotListState: ObservableObject, JSONSerializable {
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        machineIDList = try container.decode([MachineID].self, forKey: .machineIDList)
+        machineIDList = try container.decode([MachineId].self, forKey: .machineIDList)
     }
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(machineIDList, forKey: .machineIDList)
     }
     
-    init(machineIDList: [MachineID] = [
+    init(machineIDList: [MachineId] = [
         .classic,
         .free,
         .developers,
-        .v1m0
+        .v1
     ]) {
         self.machineIDList = machineIDList
     }

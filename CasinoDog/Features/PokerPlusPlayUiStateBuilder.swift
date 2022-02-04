@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct PokerPlusStateConverter {
+struct PokerPlusPlayUiStateBuilder {
     
     // プロパティ単位で変更の通知がいかないので、State丸ごとのセットは初期化時のみ有効
     func playUiState(from systemState: PokerPlusSystemState) -> PokerPlusPlayUiState {

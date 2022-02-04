@@ -9,8 +9,8 @@ protocol SlotMachine {
     func spinChip() -> Int
     func reels() -> [Reel]
     func oddsTableRows() -> [PrizeOdds.Table.Row]
-    func onTriad(symbolId: SymbolID, playingUserId: String)
-    func triadDescription(symbolId: SymbolID, playingUserId: String) -> String
+    func onTriad(symbolId: SymbolId, playingUserId: String)
+    func triadDescription(symbolId: SymbolId, playingUserId: String) -> String
 }
 
 extension SlotMachine {

@@ -20,21 +20,21 @@
 		4A69A7962764A2D800F41779 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7952764A2D800F41779 /* WebView.swift */; };
 		4A69A7972764A34900F41779 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7952764A2D800F41779 /* WebView.swift */; };
 		4A69A7982764A34900F41779 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7952764A2D800F41779 /* WebView.swift */; };
-		4A69A79E2764AFDC00F41779 /* StaticAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* StaticAPIModel.swift */; };
-		4A69A79F2764AFFB00F41779 /* StaticAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* StaticAPIModel.swift */; };
-		4A69A7A02764AFFB00F41779 /* StaticAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* StaticAPIModel.swift */; };
+		4A69A79E2764AFDC00F41779 /* SplashConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* SplashConfigResponse.swift */; };
+		4A69A79F2764AFFB00F41779 /* SplashConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* SplashConfigResponse.swift */; };
+		4A69A7A02764AFFB00F41779 /* SplashConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A79D2764AFDC00F41779 /* SplashConfigResponse.swift */; };
 		4A69A7A22764B32700F41779 /* BadNetworkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A12764B32700F41779 /* BadNetworkModal.swift */; };
 		4A69A7A72764BA9F00F41779 /* RelaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A62764BA9F00F41779 /* RelaunchView.swift */; };
 		4A69A7A82764BEB200F41779 /* OldVersionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A52764B9D700F41779 /* OldVersionModal.swift */; };
 		4A69A7C72766146E00F41779 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7C62766146E00F41779 /* ColorTheme.swift */; };
 		4A69A7C8276615B300F41779 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7C62766146E00F41779 /* ColorTheme.swift */; };
 		4A69A7C9276615B400F41779 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7C62766146E00F41779 /* ColorTheme.swift */; };
-		4A7EA51B276455E4008EF53A /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineID.swift */; };
-		4A7EA51C276455E4008EF53A /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineID.swift */; };
-		4A7EA51D276455E4008EF53A /* MachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineID.swift */; };
-		4A7EA527276455E5008EF53A /* MenuItemID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemID.swift */; };
-		4A7EA528276455E5008EF53A /* MenuItemID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemID.swift */; };
-		4A7EA529276455E5008EF53A /* MenuItemID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemID.swift */; };
+		4A7EA51B276455E4008EF53A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineId.swift */; };
+		4A7EA51C276455E4008EF53A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineId.swift */; };
+		4A7EA51D276455E4008EF53A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineId.swift */; };
+		4A7EA527276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
+		4A7EA528276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
+		4A7EA529276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
 		4A7EA52A276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
 		4A7EA52B276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
 		4A7EA52C276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
@@ -44,22 +44,21 @@
 		4A7EA533276455E5008EF53A /* EditUserMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50A276455E4008EF53A /* EditUserMode.swift */; };
 		4A7EA534276455E5008EF53A /* EditUserMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50A276455E4008EF53A /* EditUserMode.swift */; };
 		4A7EA535276455E5008EF53A /* EditUserMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50A276455E4008EF53A /* EditUserMode.swift */; };
-		4A7EA536276455E5008EF53A /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* Drink.swift */; };
-		4A7EA537276455E5008EF53A /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* Drink.swift */; };
-		4A7EA538276455E5008EF53A /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* Drink.swift */; };
+		4A7EA536276455E5008EF53A /* DrinkId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* DrinkId.swift */; };
+		4A7EA537276455E5008EF53A /* DrinkId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* DrinkId.swift */; };
+		4A7EA538276455E5008EF53A /* DrinkId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50B276455E4008EF53A /* DrinkId.swift */; };
 		4A7EA539276455E5008EF53A /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50C276455E4008EF53A /* ImageName.swift */; };
-		4A7EA53C276455E5008EF53A /* GameID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameID.swift */; };
-		4A7EA53D276455E5008EF53A /* GameID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameID.swift */; };
-		4A7EA53E276455E5008EF53A /* GameID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameID.swift */; };
+		4A7EA53C276455E5008EF53A /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameId.swift */; };
+		4A7EA53D276455E5008EF53A /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameId.swift */; };
+		4A7EA53E276455E5008EF53A /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50D276455E4008EF53A /* GameId.swift */; };
 		4A7EA542276455E5008EF53A /* DiceFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50F276455E4008EF53A /* DiceFace.swift */; };
 		4A7EA543276455E5008EF53A /* DiceFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50F276455E4008EF53A /* DiceFace.swift */; };
 		4A7EA544276455E5008EF53A /* DiceFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA50F276455E4008EF53A /* DiceFace.swift */; };
-		4A7EA551276455E5008EF53A /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* Symbol.swift */; };
-		4A7EA552276455E5008EF53A /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* Symbol.swift */; };
-		4A7EA553276455E5008EF53A /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* Symbol.swift */; };
-		4A914E91278B39C800E93522 /* PokerPlusAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E90278B39C800E93522 /* PokerPlusAPIModels.swift */; };
-		4A914E95278B39DA00E93522 /* SlotsAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E94278B39DA00E93522 /* SlotsAPIModels.swift */; };
-		4A914E97278B39DF00E93522 /* UsersAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E96278B39DF00E93522 /* UsersAPIModels.swift */; };
+		4A7EA551276455E5008EF53A /* SymbolId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* SymbolId.swift */; };
+		4A7EA552276455E5008EF53A /* SymbolId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* SymbolId.swift */; };
+		4A7EA553276455E5008EF53A /* SymbolId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA514276455E4008EF53A /* SymbolId.swift */; };
+		4A914E91278B39C800E93522 /* PokerPlusAnnounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E90278B39C800E93522 /* PokerPlusAnnounce.swift */; };
+		4A914E95278B39DA00E93522 /* SlotReelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E94278B39DA00E93522 /* SlotReelAnimation.swift */; };
 		4A914E99278B3A2D00E93522 /* UsersUpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E98278B3A2D00E93522 /* UsersUpdateUser.swift */; };
 		4A914E9B278B3A3300E93522 /* PokerPlusPutAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E9A278B3A3300E93522 /* PokerPlusPutAction.swift */; };
 		4A914E9D278B3A3A00E93522 /* PokerPlusBetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A914E9C278B3A3A00E93522 /* PokerPlusBetAction.swift */; };
@@ -376,7 +375,13 @@
 		4A9F464A27AC048600FA8B40 /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F464927AC048600FA8B40 /* Flavor.swift */; };
 		4A9F464C27AC055C00FA8B40 /* FlavorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F464B27AC055C00FA8B40 /* FlavorConfig.swift */; };
 		4A9F464D27AC40F700FA8B40 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C12832764503A003ED139 /* Board.swift */; };
-		4ACD43C72792C1370046CEB5 /* PokerPlusStateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD43C62792C1370046CEB5 /* PokerPlusStateConverter.swift */; };
+		4A9F46A127ADA55C00FA8B40 /* SlotTriadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F469D27ADA52800FA8B40 /* SlotTriadAnimation.swift */; };
+		4A9F46A527ADAB8100FA8B40 /* PokerPlusShowdownAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46A427ADAB7E00FA8B40 /* PokerPlusShowdownAnimation.swift */; };
+		4A9F46A727ADABA600FA8B40 /* PokerPlusScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46A627ADAB9000FA8B40 /* PokerPlusScore.swift */; };
+		4A9F46A927ADABB000FA8B40 /* PokerPlusAnnounceId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46A827ADABAD00FA8B40 /* PokerPlusAnnounceId.swift */; };
+		4A9F46AE27ADAF5E00FA8B40 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AD27ADAF5E00FA8B40 /* Reel.swift */; };
+		4A9F46B027ADB59D00FA8B40 /* ReelId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F46AF27ADB4AA00FA8B40 /* ReelId.swift */; };
+		4ACD43C72792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD43C62792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift */; };
 		4AE3A16427A53DB8002EA45C /* Keycard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16327A53DB8002EA45C /* Keycard.swift */; };
 		4AE3A16827A54193002EA45C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16727A54193002EA45C /* User.swift */; };
 		4AE3A16F27A63FD3002EA45C /* WindowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16E27A63FD3002EA45C /* WindowState.swift */; };
@@ -420,25 +425,24 @@
 		4A62E44F279D56EB00D826C9 /* PokerPlusConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusConnection.swift; sourceTree = "<group>"; };
 		4A69A79127649A1500F41779 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4A69A7952764A2D800F41779 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		4A69A79D2764AFDC00F41779 /* StaticAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticAPIModel.swift; sourceTree = "<group>"; };
+		4A69A79D2764AFDC00F41779 /* SplashConfigResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConfigResponse.swift; sourceTree = "<group>"; };
 		4A69A7A12764B32700F41779 /* BadNetworkModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadNetworkModal.swift; sourceTree = "<group>"; };
 		4A69A7A52764B9D700F41779 /* OldVersionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldVersionModal.swift; sourceTree = "<group>"; };
 		4A69A7A62764BA9F00F41779 /* RelaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaunchView.swift; sourceTree = "<group>"; };
 		4A69A7AB2764C08C00F41779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4A69A7C62766146E00F41779 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
-		4A7EA502276455E4008EF53A /* MachineID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineID.swift; sourceTree = "<group>"; };
-		4A7EA506276455E4008EF53A /* MenuItemID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemID.swift; sourceTree = "<group>"; };
+		4A7EA502276455E4008EF53A /* MachineId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineId.swift; sourceTree = "<group>"; };
+		4A7EA506276455E4008EF53A /* MenuItemId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemId.swift; sourceTree = "<group>"; };
 		4A7EA507276455E4008EF53A /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		4A7EA508276455E4008EF53A /* Splash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		4A7EA50A276455E4008EF53A /* EditUserMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserMode.swift; sourceTree = "<group>"; };
-		4A7EA50B276455E4008EF53A /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		4A7EA50B276455E4008EF53A /* DrinkId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkId.swift; sourceTree = "<group>"; };
 		4A7EA50C276455E4008EF53A /* ImageName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
-		4A7EA50D276455E4008EF53A /* GameID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameID.swift; sourceTree = "<group>"; };
+		4A7EA50D276455E4008EF53A /* GameId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameId.swift; sourceTree = "<group>"; };
 		4A7EA50F276455E4008EF53A /* DiceFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceFace.swift; sourceTree = "<group>"; };
-		4A7EA514276455E4008EF53A /* Symbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
-		4A914E90278B39C800E93522 /* PokerPlusAPIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusAPIModels.swift; sourceTree = "<group>"; };
-		4A914E94278B39DA00E93522 /* SlotsAPIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotsAPIModels.swift; sourceTree = "<group>"; };
-		4A914E96278B39DF00E93522 /* UsersAPIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersAPIModels.swift; sourceTree = "<group>"; };
+		4A7EA514276455E4008EF53A /* SymbolId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolId.swift; sourceTree = "<group>"; };
+		4A914E90278B39C800E93522 /* PokerPlusAnnounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusAnnounce.swift; sourceTree = "<group>"; };
+		4A914E94278B39DA00E93522 /* SlotReelAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotReelAnimation.swift; sourceTree = "<group>"; };
 		4A914E98278B3A2D00E93522 /* UsersUpdateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersUpdateUser.swift; sourceTree = "<group>"; };
 		4A914E9A278B3A3300E93522 /* PokerPlusPutAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusPutAction.swift; sourceTree = "<group>"; };
 		4A914E9C278B3A3A00E93522 /* PokerPlusBetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusBetAction.swift; sourceTree = "<group>"; };
@@ -558,9 +562,15 @@
 		4A9F464727ABE2AF00FA8B40 /* LoadingTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTask.swift; sourceTree = "<group>"; };
 		4A9F464927AC048600FA8B40 /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		4A9F464B27AC055C00FA8B40 /* FlavorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorConfig.swift; sourceTree = "<group>"; };
-		4ACD43C62792C1370046CEB5 /* PokerPlusStateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusStateConverter.swift; sourceTree = "<group>"; };
+		4A9F469D27ADA52800FA8B40 /* SlotTriadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotTriadAnimation.swift; sourceTree = "<group>"; };
+		4A9F46A427ADAB7E00FA8B40 /* PokerPlusShowdownAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusShowdownAnimation.swift; sourceTree = "<group>"; };
+		4A9F46A627ADAB9000FA8B40 /* PokerPlusScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusScore.swift; sourceTree = "<group>"; };
+		4A9F46A827ADABAD00FA8B40 /* PokerPlusAnnounceId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusAnnounceId.swift; sourceTree = "<group>"; };
+		4A9F46AD27ADAF5E00FA8B40 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		4A9F46AF27ADB4AA00FA8B40 /* ReelId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelId.swift; sourceTree = "<group>"; };
+		4ACD43C62792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusPlayUiStateBuilder.swift; sourceTree = "<group>"; };
 		4AE3A16327A53DB8002EA45C /* Keycard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keycard.swift; sourceTree = "<group>"; };
-		4AE3A16727A54193002EA45C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../State/User.swift; sourceTree = "<group>"; };
+		4AE3A16727A54193002EA45C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4AE3A16E27A63FD3002EA45C /* WindowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowState.swift; sourceTree = "<group>"; };
 		4AE3A17027A6404F002EA45C /* PageId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageId.swift; sourceTree = "<group>"; };
 		4AE3A17227A64233002EA45C /* BasePageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageBuilder.swift; sourceTree = "<group>"; };
@@ -706,7 +716,7 @@
 				4A9C115627644FD8003ED139 /* PockerPlusPutController.swift */,
 				4A9C115427644FD8003ED139 /* PockerPlusShowdownController.swift */,
 				4A9C115A27644FD8003ED139 /* PockerPlusDockController.swift */,
-				4ACD43C62792C1370046CEB5 /* PokerPlusStateConverter.swift */,
+				4ACD43C62792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift */,
 				4A9C114D27644FD8003ED139 /* OnboadingController.swift */,
 				4A9C114E27644FD8003ED139 /* SpinSlotController.swift */,
 				4A9C115827644FD8003ED139 /* SpinReelController.swift */,
@@ -754,24 +764,28 @@
 				4AE3A16327A53DB8002EA45C /* Keycard.swift */,
 				4A914ED0278B3E0900E93522 /* ErrorModel.swift */,
 				4A914ECC278B3C2800E93522 /* PokerPlusState.swift */,
-				4A914E96278B39DF00E93522 /* UsersAPIModels.swift */,
-				4A914E94278B39DA00E93522 /* SlotsAPIModels.swift */,
-				4A914E90278B39C800E93522 /* PokerPlusAPIModels.swift */,
-				4A7EA50D276455E4008EF53A /* GameID.swift */,
+				4A914E94278B39DA00E93522 /* SlotReelAnimation.swift */,
+				4A9F46A827ADABAD00FA8B40 /* PokerPlusAnnounceId.swift */,
+				4A9F469D27ADA52800FA8B40 /* SlotTriadAnimation.swift */,
+				4A914E90278B39C800E93522 /* PokerPlusAnnounce.swift */,
+				4A9F46A627ADAB9000FA8B40 /* PokerPlusScore.swift */,
+				4A9F46A427ADAB7E00FA8B40 /* PokerPlusShowdownAnimation.swift */,
+				4A7EA50D276455E4008EF53A /* GameId.swift */,
 				4A9C11C527645018003ED139 /* SymbolPocket.swift */,
-				4A69A79D2764AFDC00F41779 /* StaticAPIModel.swift */,
 				4A914EDB278C975F00E93522 /* Player.swift */,
 				4AE3A17027A6404F002EA45C /* PageId.swift */,
 				4AE3A17627A64A72002EA45C /* ModalId.swift */,
 				4A3E7E0327A6CD4100CA18C9 /* Machine.swift */,
 				4A9F464727ABE2AF00FA8B40 /* LoadingTask.swift */,
-				4A7EA502276455E4008EF53A /* MachineID.swift */,
-				4A7EA506276455E4008EF53A /* MenuItemID.swift */,
+				4A7EA502276455E4008EF53A /* MachineId.swift */,
+				4A7EA506276455E4008EF53A /* MenuItemId.swift */,
 				4A7EA507276455E4008EF53A /* Effect.swift */,
 				4A7EA50A276455E4008EF53A /* EditUserMode.swift */,
-				4A7EA50B276455E4008EF53A /* Drink.swift */,
+				4A7EA50B276455E4008EF53A /* DrinkId.swift */,
 				4A7EA50F276455E4008EF53A /* DiceFace.swift */,
-				4A7EA514276455E4008EF53A /* Symbol.swift */,
+				4A7EA514276455E4008EF53A /* SymbolId.swift */,
+				4A9F46AF27ADB4AA00FA8B40 /* ReelId.swift */,
+				4A9F46AD27ADAF5E00FA8B40 /* Reel.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -810,6 +824,7 @@
 		4A9C11FB2764502C003ED139 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4A69A79D2764AFDC00F41779 /* SplashConfigResponse.swift */,
 				4A914EC8278B3BD400E93522 /* UsersLoadUser.swift */,
 				4A914EA8278B3B0F00E93522 /* UsersCreateUser.swift */,
 				4A914E98278B3A2D00E93522 /* UsersUpdateUser.swift */,
@@ -1170,6 +1185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9C117927644FD8003ED139 /* StorageManager.swift in Sources */,
+				4A9F46A527ADAB8100FA8B40 /* PokerPlusShowdownAnimation.swift in Sources */,
 				4A9C12D52764503A003ED139 /* PlayerView.swift in Sources */,
 				4A9C117C27644FD8003ED139 /* PockerPlusPutController.swift in Sources */,
 				4A9C13112764503A003ED139 /* RollDiceView.swift in Sources */,
@@ -1191,7 +1207,7 @@
 				4A9C12B12764503A003ED139 /* LisenceView.swift in Sources */,
 				4A914E9D278B3A3A00E93522 /* PokerPlusBetAction.swift in Sources */,
 				4A9F464827ABE2AF00FA8B40 /* LoadingTask.swift in Sources */,
-				4A7EA53C276455E5008EF53A /* GameID.swift in Sources */,
+				4A7EA53C276455E5008EF53A /* GameId.swift in Sources */,
 				4A9C119927644FE0003ED139 /* AppState.swift in Sources */,
 				4AE3A17727A64A72002EA45C /* ModalId.swift in Sources */,
 				4A9C12F92764503A003ED139 /* MenuList.swift in Sources */,
@@ -1200,6 +1216,7 @@
 				4A914EDC278C975F00E93522 /* Player.swift in Sources */,
 				4A9C116427644FD8003ED139 /* SpinSlotController.swift in Sources */,
 				4AE3A17127A6404F002EA45C /* PageId.swift in Sources */,
+				4A9F46A727ADABA600FA8B40 /* PokerPlusScore.swift in Sources */,
 				4AE3A18827A65636002EA45C /* BaseModalBuilder.swift in Sources */,
 				4AE3A17327A64233002EA45C /* BasePageBuilder.swift in Sources */,
 				4A9C11AB27644FE0003ED139 /* RoutingState.swift in Sources */,
@@ -1212,12 +1229,11 @@
 				4A9C12C32764503A003ED139 /* Header.swift in Sources */,
 				4A9C13172764503A003ED139 /* ReceiveDrinkView.swift in Sources */,
 				4A914ED1278B3E0900E93522 /* ErrorModel.swift in Sources */,
-				4A914E91278B39C800E93522 /* PokerPlusAPIModels.swift in Sources */,
+				4A914E91278B39C800E93522 /* PokerPlusAnnounce.swift in Sources */,
 				4A9C11B727644FE0003ED139 /* OnboardingState.swift in Sources */,
 				4A9C12F32764503A003ED139 /* SymbolCollectionView.swift in Sources */,
 				4A9C12BA2764503A003ED139 /* PokerPlusPlayView.swift in Sources */,
 				4A9C116127644FD8003ED139 /* OnboadingController.swift in Sources */,
-				4A914E97278B39DF00E93522 /* UsersAPIModels.swift in Sources */,
 				4A69A7962764A2D800F41779 /* WebView.swift in Sources */,
 				4A62E445279BC2C700D826C9 /* ClockView.swift in Sources */,
 				4A9C11B127644FE0003ED139 /* SlotListState.swift in Sources */,
@@ -1225,6 +1241,7 @@
 				4A7EA52A276455E5008EF53A /* Effect.swift in Sources */,
 				4A9C13082764503A003ED139 /* TriadEffectView.swift in Sources */,
 				4A9C116D27644FD8003ED139 /* PockerPlusBetController.swift in Sources */,
+				4A9F46AE27ADAF5E00FA8B40 /* Reel.swift in Sources */,
 				4A914EC9278B3BD400E93522 /* UsersLoadUser.swift in Sources */,
 				4A9C12B72764503A003ED139 /* Board.swift in Sources */,
 				4A9C11DA27645021003ED139 /* UIColorExtension.swift in Sources */,
@@ -1249,6 +1266,7 @@
 				4A9C125627645033003ED139 /* Spotlight.swift in Sources */,
 				4A914ED8278BD7A900E93522 /* PokerPlusPlayUiState.swift in Sources */,
 				4A9C118527644FD8003ED139 /* PockerPlusShaffleController.swift in Sources */,
+				4A9F46A927ADABB000FA8B40 /* PokerPlusAnnounceId.swift in Sources */,
 				4A9C118827644FD8003ED139 /* PockerPlusDockController.swift in Sources */,
 				4A9C125327645033003ED139 /* CornerRounded.swift in Sources */,
 				4A9C118227644FD8003ED139 /* SpinReelController.swift in Sources */,
@@ -1271,14 +1289,15 @@
 				4A7EA533276455E5008EF53A /* EditUserMode.swift in Sources */,
 				4A9C12E72764503A003ED139 /* SlotListView.swift in Sources */,
 				4A914E9F278B3A4300E93522 /* SlotsSpinSlot.swift in Sources */,
+				4A9F46B027ADB59D00FA8B40 /* ReelId.swift in Sources */,
 				4A914EBD278B3B7C00E93522 /* PokerPlusPullPutAction.swift in Sources */,
 				4A9C117627644FD8003ED139 /* PockerPlusShowdownController.swift in Sources */,
 				4A62E44A279BDCF500D826C9 /* MatchingState.swift in Sources */,
 				4A9C124427645033003ED139 /* AnimationReader.swift in Sources */,
-				4A7EA527276455E5008EF53A /* MenuItemID.swift in Sources */,
+				4A7EA527276455E5008EF53A /* MenuItemId.swift in Sources */,
 				4A9C12F02764503A003ED139 /* EditNicknameView.swift in Sources */,
 				4AE3A17527A645AF002EA45C /* Router.swift in Sources */,
-				4A69A79E2764AFDC00F41779 /* StaticAPIModel.swift in Sources */,
+				4A69A79E2764AFDC00F41779 /* SplashConfigResponse.swift in Sources */,
 				4A9C12DE2764503A003ED139 /* ScoreListView.swift in Sources */,
 				4A9C126B27645033003ED139 /* HomeTabBar.swift in Sources */,
 				4A914EC1278B3B8000E93522 /* PokerPlusPullBetComplete.swift in Sources */,
@@ -1292,10 +1311,10 @@
 				4A69A79227649A1500F41779 /* HomeView.swift in Sources */,
 				4A9C126227645033003ED139 /* LoadingView.swift in Sources */,
 				4AE3A17E27A64E5B002EA45C /* Builder.swift in Sources */,
-				4A914E95278B39DA00E93522 /* SlotsAPIModels.swift in Sources */,
+				4A914E95278B39DA00E93522 /* SlotReelAnimation.swift in Sources */,
 				4A9C11E927645021003ED139 /* JSONSerializable.swift in Sources */,
 				4A914EAB278B3B1800E93522 /* PokerPlusEnterRoom.swift in Sources */,
-				4ACD43C72792C1370046CEB5 /* PokerPlusStateConverter.swift in Sources */,
+				4ACD43C72792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift in Sources */,
 				4A9C12C62764503A003ED139 /* PutBox.swift in Sources */,
 				4A9C117027644FD8003ED139 /* EditUserController.swift in Sources */,
 				4A9C11F527645021003ED139 /* DateExtension.swift in Sources */,
@@ -1305,19 +1324,20 @@
 				4A9C11E627645021003ED139 /* HTTP.swift in Sources */,
 				4A9C12072764502C003ED139 /* CenterClient.swift in Sources */,
 				4A9C12ED2764503A003ED139 /* ProfileView.swift in Sources */,
-				4A7EA51B276455E4008EF53A /* MachineID.swift in Sources */,
+				4A7EA51B276455E4008EF53A /* MachineId.swift in Sources */,
 				4A62E448279BCC2A00D826C9 /* MatchingView.swift in Sources */,
 				4AE3A16827A54193002EA45C /* User.swift in Sources */,
 				4A9C12FC2764503A003ED139 /* DeveloperMessageView.swift in Sources */,
 				4A9C130E2764503A003ED139 /* TermsOfServiceView.swift in Sources */,
 				4A7EA52D276455E5008EF53A /* Splash.swift in Sources */,
+				4A9F46A127ADA55C00FA8B40 /* SlotTriadAnimation.swift in Sources */,
 				4A7EA539276455E5008EF53A /* ImageName.swift in Sources */,
 				4A914EA9278B3B0F00E93522 /* UsersCreateUser.swift in Sources */,
 				4A9C12C02764503A003ED139 /* ScoreItem.swift in Sources */,
 				4A9C13142764503A003ED139 /* OnboardingView.swift in Sources */,
 				4A9C111E27644D8D003ED139 /* CasinoDogApp.swift in Sources */,
-				4A7EA551276455E5008EF53A /* Symbol.swift in Sources */,
-				4A7EA536276455E5008EF53A /* Drink.swift in Sources */,
+				4A7EA551276455E5008EF53A /* SymbolId.swift in Sources */,
+				4A7EA536276455E5008EF53A /* DrinkId.swift in Sources */,
 				4A9C125C27645033003ED139 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1337,7 +1357,7 @@
 				4A9C116827644FD8003ED139 /* SelectGameController.swift in Sources */,
 				4A9C124B27645033003ED139 /* BlinkEffect.swift in Sources */,
 				4A914EC2278B3B8000E93522 /* PokerPlusPullBetComplete.swift in Sources */,
-				4A7EA528276455E5008EF53A /* MenuItemID.swift in Sources */,
+				4A7EA528276455E5008EF53A /* MenuItemId.swift in Sources */,
 				4A9C11DE27645021003ED139 /* ArrayExtension.swift in Sources */,
 				4A9C12D62764503A003ED139 /* PlayerView.swift in Sources */,
 				4A9C12DF2764503A003ED139 /* ScoreListView.swift in Sources */,
@@ -1352,7 +1372,7 @@
 				4A914EAF278B3B2000E93522 /* PokerPlusExitRoom.swift in Sources */,
 				4A914EB6278B3B7100E93522 /* PokerPlusLoadRoom.swift in Sources */,
 				4A9C126027645033003ED139 /* CheckerBoard.swift in Sources */,
-				4A7EA552276455E5008EF53A /* Symbol.swift in Sources */,
+				4A7EA552276455E5008EF53A /* SymbolId.swift in Sources */,
 				4A9C11A327644FE0003ED139 /* HomeState.swift in Sources */,
 				4A9C13002764503A003ED139 /* SlotView.swift in Sources */,
 				4A914EBA278B3B7700E93522 /* PokerPlusPullPutComplete.swift in Sources */,
@@ -1360,7 +1380,7 @@
 				4A914EB2278B3B2500E93522 /* UsersCreateUser.swift in Sources */,
 				4A9C12F42764503A003ED139 /* SymbolCollectionView.swift in Sources */,
 				4A9C126327645033003ED139 /* LoadingView.swift in Sources */,
-				4A7EA53D276455E5008EF53A /* GameID.swift in Sources */,
+				4A7EA53D276455E5008EF53A /* GameId.swift in Sources */,
 				4A69A7972764A34900F41779 /* WebView.swift in Sources */,
 				4A914EA4278B3AE400E93522 /* PokerPlusPutAction.swift in Sources */,
 				4A9C130F2764503A003ED139 /* TermsOfServiceView.swift in Sources */,
@@ -1405,7 +1425,7 @@
 				4A9C12FA2764503A003ED139 /* MenuList.swift in Sources */,
 				4A9C12E82764503A003ED139 /* SlotListView.swift in Sources */,
 				4A914EB0278B3B2200E93522 /* PokerPlusEnterRoom.swift in Sources */,
-				4A69A79F2764AFFB00F41779 /* StaticAPIModel.swift in Sources */,
+				4A69A79F2764AFFB00F41779 /* SplashConfigResponse.swift in Sources */,
 				4A9C12E22764503A003ED139 /* BetBox.swift in Sources */,
 				4A914EBE278B3B7C00E93522 /* PokerPlusPullPutAction.swift in Sources */,
 				4AE3A17C27A64CB5002EA45C /* BadNetworkModal.swift in Sources */,
@@ -1434,11 +1454,11 @@
 				4A9C11E127645021003ED139 /* IntExtension.swift in Sources */,
 				4A9C126927645033003ED139 /* PageWindow.swift in Sources */,
 				4A9C115C27644FD8003ED139 /* ImageProvider.swift in Sources */,
-				4A7EA537276455E5008EF53A /* Drink.swift in Sources */,
+				4A7EA537276455E5008EF53A /* DrinkId.swift in Sources */,
 				4A9C127227645033003ED139 /* SymbolView.swift in Sources */,
 				4A9C11ED27645021003ED139 /* StringExtension.swift in Sources */,
 				4A9C131B2764503A003ED139 /* DebugView.swift in Sources */,
-				4A7EA51C276455E4008EF53A /* MachineID.swift in Sources */,
+				4A7EA51C276455E4008EF53A /* MachineId.swift in Sources */,
 				4A9C117D27644FD8003ED139 /* PockerPlusPutController.swift in Sources */,
 				4A9C11E427645021003ED139 /* ColorExtension.swift in Sources */,
 			);
@@ -1466,7 +1486,7 @@
 				4A9C127C27645033003ED139 /* ChipCountView.swift in Sources */,
 				4A914EA5278B3AE500E93522 /* PokerPlusPutAction.swift in Sources */,
 				4A9C12B32764503A003ED139 /* LisenceView.swift in Sources */,
-				4A7EA53E276455E5008EF53A /* GameID.swift in Sources */,
+				4A7EA53E276455E5008EF53A /* GameId.swift in Sources */,
 				4A9C119B27644FE0003ED139 /* AppState.swift in Sources */,
 				4A9C12FB2764503A003ED139 /* MenuList.swift in Sources */,
 				4A914EB1278B3B2300E93522 /* PokerPlusEnterRoom.swift in Sources */,
@@ -1529,9 +1549,9 @@
 				4A9C12E92764503A003ED139 /* SlotListView.swift in Sources */,
 				4A9C117827644FD8003ED139 /* PockerPlusShowdownController.swift in Sources */,
 				4A9C124627645033003ED139 /* AnimationReader.swift in Sources */,
-				4A7EA529276455E5008EF53A /* MenuItemID.swift in Sources */,
+				4A7EA529276455E5008EF53A /* MenuItemId.swift in Sources */,
 				4A9C12F22764503A003ED139 /* EditNicknameView.swift in Sources */,
-				4A69A7A02764AFFB00F41779 /* StaticAPIModel.swift in Sources */,
+				4A69A7A02764AFFB00F41779 /* SplashConfigResponse.swift in Sources */,
 				4A9C12E02764503A003ED139 /* ScoreListView.swift in Sources */,
 				4A9C126D27645033003ED139 /* HomeTabBar.swift in Sources */,
 				4A9C11E527645021003ED139 /* ColorExtension.swift in Sources */,
@@ -1552,15 +1572,15 @@
 				4A9C11E827645021003ED139 /* HTTP.swift in Sources */,
 				4A9C12092764502C003ED139 /* CenterClient.swift in Sources */,
 				4A9C12EF2764503A003ED139 /* ProfileView.swift in Sources */,
-				4A7EA51D276455E4008EF53A /* MachineID.swift in Sources */,
+				4A7EA51D276455E4008EF53A /* MachineId.swift in Sources */,
 				4A9C12FE2764503A003ED139 /* DeveloperMessageView.swift in Sources */,
 				4A9C13102764503A003ED139 /* TermsOfServiceView.swift in Sources */,
 				4A7EA52F276455E5008EF53A /* Splash.swift in Sources */,
 				4A9C12C22764503A003ED139 /* ScoreItem.swift in Sources */,
 				4A9C13162764503A003ED139 /* OnboardingView.swift in Sources */,
 				4A9C114227644EDD003ED139 /* CasinoDogTests.swift in Sources */,
-				4A7EA553276455E5008EF53A /* Symbol.swift in Sources */,
-				4A7EA538276455E5008EF53A /* Drink.swift in Sources */,
+				4A7EA553276455E5008EF53A /* SymbolId.swift in Sources */,
+				4A7EA538276455E5008EF53A /* DrinkId.swift in Sources */,
 				4A9C125E27645033003ED139 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

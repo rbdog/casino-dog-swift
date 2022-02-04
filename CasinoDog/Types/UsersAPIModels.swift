@@ -1,7 +1,0 @@
-//
-//
-//
-
-import Foundation
-
-enum UsersAPIModel {}

@@ -18,7 +18,7 @@ protocol PokerPlusObserver {
 
 protocol PokerPlusInterface {
     func betAction(level: PokerPlusBetLevel, seat: PokerPlusSeat, stateId: String)
-    func putAction(card: CardID, seat: PokerPlusSeat, stateId: String)
+    func putAction(card: CardId, seat: PokerPlusSeat, stateId: String)
 }
 
 struct PokerPlusController: PokerPlusInterface {
@@ -51,7 +51,7 @@ struct PokerPlusController: PokerPlusInterface {
         }
     }
     
-    func putAction(card: CardID, seat: PokerPlusSeat, stateId: String) {
+    func putAction(card: CardId, seat: PokerPlusSeat, stateId: String) {
         let state = repository.loadState(id: stateId)
         let rule = PokerPlusRule()
         let logger = PokerPlusLogger()

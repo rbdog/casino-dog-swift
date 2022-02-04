@@ -53,7 +53,7 @@ class PokerPlusEventController {
                     )
                     appState.pokerPlusSystem = pokerPlusSystemState
                     // UIStateの作成
-                    let pokerPlusPlayUiState = PokerPlusStateConverter().playUiState(from: pokerPlusSystemState)
+                    let pokerPlusPlayUiState = PokerPlusPlayUiStateBuilder().playUiState(from: pokerPlusSystemState)
                     appState.pokerPlusPlayUi = pokerPlusPlayUiState
                     
                     Router().setBasePages(stack: [.pokerPlusPlay])
@@ -86,8 +86,8 @@ extension PokerPlusEventController: PokerPlusConnectionObserver {
     }
     
     // Push通知を受け取る
-    func onReceive(announce: PokerPlusAPIModel.Announce) {
-        let type = PokerPlusAPIModel.AnnounceType(rawValue: announce.announce_type)!
+    func onReceive(announce: PokerPlusAnnounce) {
+        let type = PokerPlusAnnounceId(rawValue: announce.announce_type)!
         switch type {
         case .matchComplete:
             PokerPlusMatchingController().onMatchComplete(announce: announce)

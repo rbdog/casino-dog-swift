@@ -6,6 +6,7 @@ struct SlotClassicMachine: SlotMachine {
     
     let _reels: [Reel] = [
         Reel(
+            id: .classicL,
             symbols: [
                 .luckySeven,
                 .cherry,
@@ -18,6 +19,7 @@ struct SlotClassicMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .classicC,
             symbols: [
                 .clover,
                 .luckySeven,
@@ -30,6 +32,7 @@ struct SlotClassicMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .classicR,
             symbols: [
                 .cherry,
                 .bell,
@@ -45,27 +48,27 @@ struct SlotClassicMachine: SlotMachine {
     
     let _oddsTableRows: [PrizeOdds.Table.Row] = [
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.bell.rawValue),
+            prizeID: String(SymbolId.bell.rawValue),
             odds: 5,
             description: "ベル"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.cherry.rawValue),
+            prizeID: String(SymbolId.cherry.rawValue),
             odds: 5,
             description: "チェリー"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.clover.rawValue),
+            prizeID: String(SymbolId.clover.rawValue),
             odds: 3,
             description: "クローバー"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.horseshoe.rawValue),
+            prizeID: String(SymbolId.horseshoe.rawValue),
             odds: 1,
             description: "ホースシュー"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.luckySeven.rawValue),
+            prizeID: String(SymbolId.luckySeven.rawValue),
             odds: 0.5,
             description: "ラッキーセブン"
         ),
@@ -92,7 +95,7 @@ struct SlotClassicMachine: SlotMachine {
         return _oddsTableRows
     }
     
-    func onTriad(symbolId: SymbolID, playingUserId: String) {
+    func onTriad(symbolId: SymbolId, playingUserId: String) {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)
@@ -106,7 +109,7 @@ struct SlotClassicMachine: SlotMachine {
         }
     }
     
-    func triadDescription(symbolId: SymbolID, playingUserId: String) -> String {
+    func triadDescription(symbolId: SymbolId, playingUserId: String) -> String {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)

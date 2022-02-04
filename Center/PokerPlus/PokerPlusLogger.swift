@@ -137,7 +137,7 @@ class PokerPlusLogger {
         }
     }
     
-    func asciiCard(_ card: CardID) -> String {
+    func asciiCard(_ card: CardId) -> String {
         switch card {
         case .back:
             return "??"
@@ -301,7 +301,7 @@ class PokerPlusLogger {
         }
     }
     
-    func asciiHandCards(_ cards: [CardID]) -> String {
+    func asciiHandCards(_ cards: [CardId]) -> String {
         let text = cards.map({asciiCard($0)}).joined(separator: " ")
         return text
     }

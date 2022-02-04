@@ -5,7 +5,7 @@
 import Foundation
 
 // モーダルとしてカウントするViewのID
-enum ModalId: String, JSONSerializable {
-    case badNetwork
-    case oldVersion
+enum ModalId: Int, JSONSerializable {
+    case badNetwork = 1
+    case oldVersion = 2
 }

@@ -34,7 +34,7 @@ class PokerPlusMatchingController {
     }
     
     // マッチング完了
-    func onMatchComplete(announce: PokerPlusAPIModel.Announce) {
+    func onMatchComplete(announce: PokerPlusAnnounce) {
         // プレイヤーをUIへ表示
         appState.matching.message = "ゲームを開始します"
         appState.matching.players = announce.players!
@@ -51,7 +51,7 @@ class PokerPlusMatchingController {
             )
             appState.pokerPlusSystem = pokerPlusSystemState
             // UIStateの作成
-            let pokerPlusPlayUiState = PokerPlusStateConverter().playUiState(from: pokerPlusSystemState)
+            let pokerPlusPlayUiState = PokerPlusPlayUiStateBuilder().playUiState(from: pokerPlusSystemState)
             appState.pokerPlusPlayUi = pokerPlusPlayUiState
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {

@@ -29,7 +29,7 @@ struct PokerPlusPlayer {
         return newState
     }
     
-    func put(card: CardID, state: PokerPlusState) -> PokerPlusState {
+    func put(card: CardId, state: PokerPlusState) -> PokerPlusState {
         guard let oldSide = state.sides.first(where: {$0.seat == seat}) else {
             return state
         }

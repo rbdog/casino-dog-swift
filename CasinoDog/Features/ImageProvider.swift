@@ -13,19 +13,19 @@ struct ImageProvider {
         case sfsymbol(systemName: String)
     }
     
-    let uri: String
+    let url: String
     let location: SourceLocation
     
-    init(uri: String) {
-        self.uri = uri
-        let components = uri.components(separatedBy: "://")
+    init(url: String) {
+        self.url = url
+        let components = url.components(separatedBy: "://")
         let scheme = components.first
         let sourcePath = components.last
         switch scheme {
         case "assets":
             self.location = .assets(name: sourcePath!)
         case "http", "https":
-            self.location = .network(url: sourcePath!)
+            self.location = .network(url: url)
         case "sfsymbol":
             self.location = .sfsymbol(systemName: sourcePath!)
         default:

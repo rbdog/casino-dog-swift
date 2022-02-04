@@ -87,7 +87,7 @@ class PokerPlusMatcher {
             // ユーザーが1人の場合は 3 番目におく
             let keycard = KeycardRealm(
                 _id: UUID().uuidString,
-                gameID: GameID.pokerPlus.rawValue,
+                gameID: GameId.pokerPlus.rawValue,
                 userID: payedUsers.first!.id,
                 userType: UserType.human.rawValue,
                 stateID: state.id,
@@ -103,7 +103,7 @@ class PokerPlusMatcher {
                 let payedUser = payedUsers[i]
                 let keycard = KeycardRealm(
                     _id: UUID().uuidString,
-                    gameID: GameID.pokerPlus.rawValue,
+                    gameID: GameId.pokerPlus.rawValue,
                     userID: payedUser.id,
                     userType: UserType.human.rawValue,
                     stateID: state.id,
@@ -119,7 +119,7 @@ class PokerPlusMatcher {
                 let payedUser = payedUsers[i]
                 let keycard = KeycardRealm(
                     _id: UUID().uuidString,
-                    gameID: GameID.pokerPlus.rawValue,
+                    gameID: GameId.pokerPlus.rawValue,
                     userID: payedUser.id,
                     userType: UserType.human.rawValue,
                     stateID: state.id,
@@ -146,11 +146,11 @@ class PokerPlusMatcher {
         // アナウンス
         for keycardRealm in keycards {
             // マッチング完了
-            let type = PokerPlusAPIModel.AnnounceType.matchComplete.rawValue
+            let type = PokerPlusAnnounceId.matchComplete.rawValue
             let state = PokerPlusStateRepositoryImpl().loadState(id: keycardRealm.state_id)
             let players = PokerPlusAPIModelBuilder.players(in: state)
             let keycard = KeycardConverter().keycard(keycardRealm: keycardRealm)
-            let announce = PokerPlusAPIModel.Announce(
+            let announce = PokerPlusAnnounce(
                 announce_type: type,
                 masked_state: state,
                 players: players,
@@ -205,7 +205,7 @@ class PokerPlusMatcher {
                 botUsers = botUsers.dropFirst()
                 let keycard = KeycardRealm(
                     _id: UUID().uuidString,
-                    gameID: GameID.pokerPlus.rawValue,
+                    gameID: GameId.pokerPlus.rawValue,
                     userID: user.userId,
                     userType: UserType.bot.rawValue,
                     stateID: stateId,

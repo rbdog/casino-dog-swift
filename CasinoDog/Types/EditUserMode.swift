@@ -2,8 +2,8 @@
 //
 //
 
-enum EditUserMode: String, JSONSerializable {
-    case noEditting = "NoEditing"
-    case edittingNickname = "EdittingNickname"
-    case edittingIcon = "EdittingIcon"
+enum EditUserMode: Int, JSONSerializable {
+    case noEditting = 0
+    case edittingNickname = 1
+    case edittingIcon = 2
 }

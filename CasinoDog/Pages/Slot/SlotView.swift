@@ -72,7 +72,7 @@ struct SlotView: View {
                 RadialGradient(gradient: Gradient(colors: [.plusBlue, .black]), center: .center, startRadius: 2, endRadius: 650)
             )
             
-            if machine.triadEffect != nil {
+            if machine.triadAnimation != nil {
                 TriadEffectView()
                     .edgesIgnoringSafeArea(.all)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)

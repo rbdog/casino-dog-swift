@@ -9,7 +9,7 @@ struct ScoreItem: View {
     var body: some View {
         VStack(spacing: 5) {
             HStack {
-                ImageProvider(uri: scoreUiItem.iconUrl).view()
+                ImageProvider(url: scoreUiItem.iconUrl).view()
                     .clipShape(Circle())
                     .frame(width: 30, height: 30)
                 Text(scoreUiItem.nickname)

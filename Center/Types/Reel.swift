@@ -3,5 +3,6 @@
 //
 
 struct Reel {
-    let symbols: [SymbolID]
+    let id: ReelId
+    let symbols: [SymbolId]
 }

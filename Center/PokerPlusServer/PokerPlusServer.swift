@@ -38,7 +38,7 @@ public class PokerPlusServer {
         controller.betAction(level: level, seat: seat, stateId: keycard.state_id)
     }
     
-    func putAction(card: CardID, userId: String, secretId: String) {
+    func putAction(card: CardId, userId: String, secretId: String) {
         let keycard = KeycardRealmRepository().loadKeycard(userId: userId, secretId: secretId)
         let seat = PokerPlusSeat(rawValue: keycard.seat)!
         let controller = PokerPlusController(
@@ -89,8 +89,8 @@ extension PokerPlusServer: PokerPlusObserver {
             let players = PokerPlusAPIModelBuilder.players(in: state)
             let animationList = ShowdownAnimationBuilder().build(from: state)
             let scoreList = PokerPlusScoreListBuilder().build(from: state)
-            let announce = PokerPlusAPIModel.Announce(
-                announce_type: PokerPlusAPIModel.AnnounceType.betStart.rawValue,
+            let announce = PokerPlusAnnounce(
+                announce_type: PokerPlusAnnounceId.betStart.rawValue,
                 masked_state: maskedState,
                 players: players,
                 trigger_seat: nil,
@@ -109,8 +109,8 @@ extension PokerPlusServer: PokerPlusObserver {
             let seat = PokerPlusSeat(rawValue: keycard.seat)!
             let maskedState = PokerPlusAPIModelBuilder.maskedState(state: state, for: seat)
             let players = PokerPlusAPIModelBuilder.players(in: state)
-            let announce = PokerPlusAPIModel.Announce(
-                announce_type: PokerPlusAPIModel.AnnounceType.putStart.rawValue,
+            let announce = PokerPlusAnnounce(
+                announce_type: PokerPlusAnnounceId.putStart.rawValue,
                 masked_state: maskedState,
                 players: players,
                 trigger_seat: nil,
@@ -125,8 +125,8 @@ extension PokerPlusServer: PokerPlusObserver {
     func onPlayerPut(state: PokerPlusState, seat: PokerPlusSeat) {
         let keycards = KeycardRealmRepository().loadKeycards(stateId: state.id)
         let userIds = keycards.map{$0.user_id}
-        let announce = PokerPlusAPIModel.Announce(
-            announce_type: PokerPlusAPIModel.AnnounceType.playerPut.rawValue,
+        let announce = PokerPlusAnnounce(
+            announce_type: PokerPlusAnnounceId.playerPut.rawValue,
             masked_state: nil,
             players: nil,
             trigger_seat: seat.rawValue,
@@ -140,8 +140,8 @@ extension PokerPlusServer: PokerPlusObserver {
     func onPlayerEnter(state: PokerPlusState, seat: PokerPlusSeat) {
         let keycards = KeycardRealmRepository().loadKeycards(stateId: state.id)
         let userIds = keycards.map{$0.user_id}
-        let announce = PokerPlusAPIModel.Announce(
-            announce_type: PokerPlusAPIModel.AnnounceType.playerEnter.rawValue,
+        let announce = PokerPlusAnnounce(
+            announce_type: PokerPlusAnnounceId.playerEnter.rawValue,
             masked_state: nil,
             players: nil,
             trigger_seat: seat.rawValue,
@@ -155,8 +155,8 @@ extension PokerPlusServer: PokerPlusObserver {
     func onPlayerLeave(state: PokerPlusState, seat: PokerPlusSeat) {
         let keycards = KeycardRealmRepository().loadKeycards(stateId: state.id)
         let userIds = keycards.map{$0.user_id}
-        let announce = PokerPlusAPIModel.Announce(
-            announce_type: PokerPlusAPIModel.AnnounceType.playerExit.rawValue,
+        let announce = PokerPlusAnnounce(
+            announce_type: PokerPlusAnnounceId.playerExit.rawValue,
             masked_state: nil,
             players: nil,
             trigger_seat: seat.rawValue,

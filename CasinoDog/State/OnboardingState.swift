@@ -8,7 +8,7 @@ final class OnboardingState: ObservableObject, JSONSerializable {
     @Published var faceImageName: String
     @Published var canRoll: Bool
     @Published var isRollingDice: Bool = false
-    @Published var drink: Drink?
+    @Published var drink: DrinkId?
     @Published var stopDiceFace: DiceFace?
 
     // カスタムエンコード
@@ -24,7 +24,7 @@ final class OnboardingState: ObservableObject, JSONSerializable {
         faceImageName = try container.decode(String.self, forKey: .faceImageName)
         canRoll = try container.decode(Bool.self, forKey: .canRoll)
         isRollingDice = try container.decode(Bool.self, forKey: .isRollingDice)
-        drink = try container.decode(Drink?.self, forKey: .drink)
+        drink = try container.decode(DrinkId?.self, forKey: .drink)
         stopDiceFace = try container.decode(DiceFace?.self, forKey: .stopDiceFace)
     }
     func encode(to encoder: Encoder) throws {
@@ -39,7 +39,7 @@ final class OnboardingState: ObservableObject, JSONSerializable {
     init(faceImageName: String = ImageName.Dice.face1.rawValue,
          canRoll: Bool = true,
          isRollingDice: Bool = false,
-         drink: Drink? = nil,
+         drink: DrinkId? = nil,
          stopDiceFace: DiceFace? = nil) {
         self.faceImageName = faceImageName
         self.canRoll = canRoll

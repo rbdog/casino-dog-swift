@@ -48,8 +48,8 @@ struct MenuListView: View {
                     
                     Spacer()
                     
-                    ForEach(0..<MenuItemID.availableList().count) { index in
-                        MenuItemView(id: MenuItemID.availableList()[index])
+                    ForEach(0..<MenuItemId.availableList().count) { index in
+                        MenuItemView(id: MenuItemId.availableList()[index])
                     }
                     
                     Spacer()

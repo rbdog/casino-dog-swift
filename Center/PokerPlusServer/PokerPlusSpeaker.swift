@@ -20,7 +20,7 @@ public class PokerPlusSpeaker {
         center.pokerPlusServer.state.speakerListeners[userID] = nil
     }
 
-    func speak(to userIDs: [String], announce: PokerPlusAPIModel.Announce) {
+    func speak(to userIDs: [String], announce: PokerPlusAnnounce) {
         for id in userIDs {
             center.pokerPlusServer.state.speakerListeners[id]?.onReceive(announce: announce.jsonData)
         }

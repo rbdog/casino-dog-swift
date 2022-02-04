@@ -2,53 +2,53 @@
 //
 //
 
-enum Symbol: Int, JSONSerializable {
+enum SymbolId: Int, JSONSerializable {
     // Drink
-    case champagne = 10000
-    case beer = 10001
-    case brandy = 10002
-    case cocktail = 10003
-    case liqueur = 10004
-    case spirits = 10005
-    case wine = 10006
+    case champagne = 0
+    case beer = 1
+    case brandy = 2
+    case cocktail = 3
+    case liqueur = 4
+    case spirits = 5
+    case wine = 6
     
     // Classic
-    case bell = 20001
-    case cherry = 20002
-    case clover = 20003
-    case horseshoe = 20004
-    case luckySeven = 20005
+    case bell = 7
+    case cherry = 8
+    case clover = 9
+    case horseshoe = 10
+    case luckySeven = 11
     
     // Free
-    case freeorange = 21001
-    case chip1 = 21002
-    case chip2 = 21003
-    case chip3 = 21004
-    case chip10 = 21005
+    case freeorange = 12
+    case chip1 = 13
+    case chip2 = 14
+    case chip3 = 15
+    case chip10 = 16
     
     // Developer
-    case plClag = 30001
-    case plCPlusPlus = 30002
-    case plCSharp = 30003
-    case plDart = 30004
-    case plGolang = 30005
-    case plJava = 30006
-    case plJavaScript = 30007
-    case plKotlin = 30008
-    case plPHP = 30009
-    case plPython = 30010
-    case plRuby = 30011
-    case plSwift = 30012
-    case plTypeScript = 30013
+    case plClag = 17
+    case plCPlusPlus = 18
+    case plCSharp = 19
+    case plDart = 20
+    case plGolang = 21
+    case plJava = 22
+    case plJavaScript = 23
+    case plKotlin = 24
+    case plPHP = 25
+    case plPython = 26
+    case plRuby = 27
+    case plSwift = 28
+    case plTypeScript = 29
     
     // V1
-    case appIcon = 31001
-    case spade = 31002
-    case heart = 31003
-    case diamond = 31004
-    case club = 31005
-    case open = 31006
-    case v1 = 31007
+    case appIcon = 30
+    case spade = 31
+    case heart = 32
+    case diamond = 33
+    case club = 34
+    case open = 35
+    case v1 = 36
     
     var imageName: ImageName.Symbol {
         switch self {

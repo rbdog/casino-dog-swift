@@ -18,7 +18,7 @@ enum UsersCreateUser: HTTPAPI {
     }
 
     static func run(request: Request) -> Response {
-        let drink: DrinkID? = (request.drink != nil) ? DrinkID(rawValue: request.drink!) : nil
+        let drink: DrinkId? = (request.drink != nil) ? DrinkId(rawValue: request.drink!) : nil
         let newUserID = UUID().uuidString
         let chips = initialChip()
         let pockets = initialPockets(drink: drink)
@@ -44,7 +44,7 @@ enum UsersCreateUser: HTTPAPI {
         return 500
     }
     
-    static func initialPockets(drink: DrinkID?) -> [SymbolPocket] {
+    static func initialPockets(drink: DrinkId?) -> [SymbolPocket] {
         // 初回限定で16ポケットプレゼント
         let pocketCount = 16
         let emptyPocket = SymbolPocket(symbol_id: nil, count: 0)

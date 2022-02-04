@@ -70,7 +70,7 @@ class PokerPlusBot {
         _ = PokerPlusExitRoom.Response(json: resData)
     }
     
-    func requestPut(card: CardID) {
+    func requestPut(card: CardId) {
         let request = PokerPlusPutAction.Request(
             user_id: userId,
             secret_id: secretId,
@@ -83,7 +83,7 @@ class PokerPlusBot {
         _ = PokerPlusPutAction.Response(json: resData)
     }
     
-    func selectPutCard(at seat: PokerPlusSeat, state: PokerPlusState) -> CardID {
+    func selectPutCard(at seat: PokerPlusSeat, state: PokerPlusState) -> CardId {
         let mySide = state.sides.first(where: {$0.seat == seat})!
         let cards = mySide.handCardIds
         let card = cards.randomElement()!
@@ -149,8 +149,8 @@ extension PokerPlusBot: PokerPlusSpeakerLisner {
     }
     
     func onReceive(announce: Data) {
-        let announce = PokerPlusAPIModel.Announce(json: announce)
-        let type = PokerPlusAPIModel.AnnounceType(rawValue: announce.announce_type)!
+        let announce = PokerPlusAnnounce(json: announce)
+        let type = PokerPlusAnnounceId(rawValue: announce.announce_type)!
         switch type {
         case .matchComplete:
             let state = announce.masked_state!

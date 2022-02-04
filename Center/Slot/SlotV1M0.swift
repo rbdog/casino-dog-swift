@@ -2,10 +2,11 @@
 //
 //
 
-struct SlotV1M1Machine: SlotMachine {
+struct SlotV1Machine: SlotMachine {
     
     let _reels: [Reel] = [
         Reel(
+            id: .v1L,
             symbols: [
                 .diamond,
                 .club,
@@ -18,6 +19,7 @@ struct SlotV1M1Machine: SlotMachine {
             ]
         ),
         Reel(
+            id: .v1C,
             symbols: [
                 .diamond,
                 .v1,
@@ -30,6 +32,7 @@ struct SlotV1M1Machine: SlotMachine {
             ]
         ),
         Reel(
+            id: .v1R,
             symbols: [
                 .spade,
                 .v1,
@@ -45,37 +48,37 @@ struct SlotV1M1Machine: SlotMachine {
     
     let _oddsTableRows: [PrizeOdds.Table.Row] = [
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.spade.rawValue),
+            prizeID: String(SymbolId.spade.rawValue),
             odds: 3,
             description: "スペード"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.heart.rawValue),
+            prizeID: String(SymbolId.heart.rawValue),
             odds: 3,
             description: "ハート"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.diamond.rawValue),
+            prizeID: String(SymbolId.diamond.rawValue),
             odds: 3,
             description: "ダイヤ"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.club.rawValue),
+            prizeID: String(SymbolId.club.rawValue),
             odds: 3,
             description: "クラブ"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.v1.rawValue),
+            prizeID: String(SymbolId.v1.rawValue),
             odds: 1,
             description: "v1.0.0"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.open.rawValue),
+            prizeID: String(SymbolId.open.rawValue),
             odds: 1,
             description: "Open"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.appIcon.rawValue),
+            prizeID: String(SymbolId.appIcon.rawValue),
             odds: 0.5,
             description: "アプリアイコン"
         ),
@@ -102,7 +105,7 @@ struct SlotV1M1Machine: SlotMachine {
         return _oddsTableRows
     }
     
-    func onTriad(symbolId: SymbolID, playingUserId: String) {
+    func onTriad(symbolId: SymbolId, playingUserId: String) {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)
@@ -116,7 +119,7 @@ struct SlotV1M1Machine: SlotMachine {
         }
     }
     
-    func triadDescription(symbolId: SymbolID, playingUserId: String) -> String {
+    func triadDescription(symbolId: SymbolId, playingUserId: String) -> String {
         let userRealm = UserRepository().read(whereID: playingUserId)
         let user = UserConverter().user(userRealm: userRealm)
         let hasEmptyPocket = UserSymbolController().userHasEmptyPocket(user: user, newSymbol: symbolId)

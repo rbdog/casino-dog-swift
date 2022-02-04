@@ -6,6 +6,7 @@ struct SlotFreeMachine: SlotMachine {
     
     let _reels: [Reel] = [
         Reel(
+            id: .freeL,
             symbols: [
                 .chip2,
                 .freeorange,
@@ -18,6 +19,7 @@ struct SlotFreeMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .freeC,
             symbols: [
                 .freeorange,
                 .chip10,
@@ -30,6 +32,7 @@ struct SlotFreeMachine: SlotMachine {
             ]
         ),
         Reel(
+            id: .freeR,
             symbols: [
                 .freeorange,
                 .chip2,
@@ -45,22 +48,22 @@ struct SlotFreeMachine: SlotMachine {
     
     let _oddsTableRows: [PrizeOdds.Table.Row] = [
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.chip10.rawValue),
+            prizeID: String(SymbolId.chip10.rawValue),
             odds: 3,
             description: "チップ10枚"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.chip3.rawValue),
+            prizeID: String(SymbolId.chip3.rawValue),
             odds: 10,
             description: "チップ3枚"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.chip2.rawValue),
+            prizeID: String(SymbolId.chip2.rawValue),
             odds: 15,
             description: "チップ2枚"
         ),
         PrizeOdds.Table.Row(
-            prizeID: String(SymbolID.chip1.rawValue),
+            prizeID: String(SymbolId.chip1.rawValue),
             odds: 30,
             description: "チップ1枚"
         ),
@@ -87,7 +90,7 @@ struct SlotFreeMachine: SlotMachine {
         return _oddsTableRows
     }
     
-    func onTriad(symbolId: SymbolID, playingUserId: String) {
+    func onTriad(symbolId: SymbolId, playingUserId: String) {
         var chipDiff = 0
         switch symbolId {
         case .chip1:
@@ -110,7 +113,7 @@ struct SlotFreeMachine: SlotMachine {
         return
     }
     
-    func triadDescription(symbolId: SymbolID, playingUserId: String) -> String {
+    func triadDescription(symbolId: SymbolId, playingUserId: String) -> String {
         var discription = "残念!ハズレ!"
         switch symbolId {
         case .chip1:

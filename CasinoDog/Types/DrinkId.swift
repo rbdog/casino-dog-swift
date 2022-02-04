@@ -2,14 +2,14 @@
 //
 //
 
-enum Drink: Int, JSONSerializable {
-    case champagne = 100
-    case beer = 101
-    case brandy = 102
-    case cocktail = 103
-    case liqueur = 104
-    case spirits = 105
-    case wine = 106
+enum DrinkId: Int, JSONSerializable {
+    case champagne = 0
+    case beer = 1
+    case brandy = 2
+    case cocktail = 3
+    case liqueur = 4
+    case spirits = 5
+    case wine = 6
     
     var imageName: ImageName.Drink {
         switch self {
@@ -23,7 +23,7 @@ enum Drink: Int, JSONSerializable {
         }
     }
     
-    var symbol: Symbol {
+    var symbol: SymbolId {
         switch self {
         case .champagne: return .champagne
         case .beer: return .beer

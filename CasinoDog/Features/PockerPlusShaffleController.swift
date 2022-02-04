@@ -7,7 +7,7 @@ import SwiftUI
 import Center
 
 struct PokerPlusShaffleController {
-    func startShuffle(with announce: PokerPlusAPIModel.Announce) {
+    func startShuffle(with announce: PokerPlusAnnounce) {
         
         let duration: Double = 0.5
         

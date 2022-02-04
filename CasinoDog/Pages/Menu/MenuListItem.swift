@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct MenuItemView: View {
-    let id: MenuItemID
+    let id: MenuItemId
     
     var body: some View {
         Button {

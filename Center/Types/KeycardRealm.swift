@@ -13,7 +13,7 @@ final class KeycardRealm: Object {
     
     /// Game ID
     /// UUID
-    @objc dynamic var game_id: String = ""
+    @objc dynamic var game_id: Int = 0
 
     /// User ID
     /// UUID
@@ -41,7 +41,7 @@ final class KeycardRealm: Object {
 
     convenience required init(
         _id: String,
-        gameID: String,
+        gameID: Int,
         userID: String,
         userType: Int,
         stateID: String,

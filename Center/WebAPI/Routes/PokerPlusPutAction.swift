@@ -19,7 +19,7 @@ enum PokerPlusPutAction: HTTPAPI {
     }
     
     static func run(request: Request) -> Response {
-        guard let card = CardID(rawValue: request.card_id) else {
+        guard let card = CardId(rawValue: request.card_id) else {
             return Response(error: ServiceError.game005.apiModel)
         }
         center.pokerPlusServer.putAction(card: card, userId: request.user_id, secretId: request.secret_id)

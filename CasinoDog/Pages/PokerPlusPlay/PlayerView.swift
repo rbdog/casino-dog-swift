@@ -26,7 +26,7 @@ struct PlayerView: View {
                     .font(.system(size: 16))
                     .foregroundColor(.plusGold)
                 
-                ImageProvider(uri: playUiSide.playerIconUrl).view()
+                ImageProvider(url: playUiSide.playerIconUrl).view()
                     .clipShape(Circle())
                     .overlay(Circle().stroke(borderColor(), lineWidth: 2))
                     .frame(width: proxy.size.width * 0.9, height: proxy.size.width * 0.9)

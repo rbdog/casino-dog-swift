@@ -6,7 +6,7 @@ import SwiftUI
 
 final class MatchingState: ObservableObject, JSONSerializable {
     
-    let gameId: GameID
+    let gameId: GameId
     let seatCount: Int
     @Published var message: String
     @Published var players: [Player]
@@ -20,7 +20,7 @@ final class MatchingState: ObservableObject, JSONSerializable {
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        gameId = try container.decode(GameID.self, forKey: .gameId)
+        gameId = try container.decode(GameId.self, forKey: .gameId)
         seatCount = try container.decode(Int.self, forKey: .seatCount)
         message = try container.decode(String.self, forKey: .message)
         players = try container.decode([Player].self, forKey: .players)
@@ -33,7 +33,7 @@ final class MatchingState: ObservableObject, JSONSerializable {
         try container.encode(players, forKey: .players)
     }
     
-    init(gameId: GameID, seatCount: Int, message: String) {
+    init(gameId: GameId, seatCount: Int, message: String) {
         self.gameId = gameId
         self.seatCount = seatCount
         self.message = message

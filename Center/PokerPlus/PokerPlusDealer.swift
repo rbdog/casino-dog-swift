@@ -6,7 +6,7 @@ struct PokerPlusDealer {
     
     func shuffle(state: PokerPlusState) -> PokerPlusState {
         // Putカードを回収
-        var deck: [CardID] = state.deck
+        var deck: [CardId] = state.deck
         for side in state.sides {
             if let putCard = side.putCardId {
                 deck.append(putCard)
@@ -20,9 +20,9 @@ struct PokerPlusDealer {
             let cardCount = PokerPlusRule().cardCount(of: oldSide.betLevel)
             var newSide =  oldSide
             newSide.playerStep = .put
-            newSide.handCardIds = [CardID](deck.prefix(cardCount))
+            newSide.handCardIds = [CardId](deck.prefix(cardCount))
             newSide.putCardId = nil
-            deck = [CardID](deck.dropFirst(cardCount))
+            deck = [CardId](deck.dropFirst(cardCount))
             sides.append(newSide)
         }
         
@@ -47,7 +47,7 @@ struct PokerPlusDealer {
     
     func returnCards(state: PokerPlusState) -> PokerPlusState {
         // Handカードを回収
-        var deck: [CardID] = state.deck
+        var deck: [CardId] = state.deck
         for side in state.sides {
             deck.append(contentsOf: side.handCardIds)
         }

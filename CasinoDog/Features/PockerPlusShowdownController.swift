@@ -8,8 +8,8 @@ import SwiftUI
 struct PokerPlusShowdownController {
     
     func startShowdown(
-        animationList: [PokerPlusAPIModel.ShowdownAnimation],
-        scoreList: [PokerPlusAPIModel.Score]
+        animationList: [PokerPlusShowdownAnimation],
+        scoreList: [PokerPlusScore]
     ) {
         let delay = 1.0
         
@@ -58,7 +58,7 @@ struct PokerPlusShowdownController {
     }
     
     func showdownEachSeat(
-        animationList: [PokerPlusAPIModel.ShowdownAnimation],
+        animationList: [PokerPlusShowdownAnimation],
         completion: @escaping () -> Void
     ) {
         
@@ -79,7 +79,7 @@ struct PokerPlusShowdownController {
     }
     
     func showdownSeat(
-        animation: PokerPlusAPIModel.ShowdownAnimation,
+        animation: PokerPlusShowdownAnimation,
         completion: @escaping () -> Void
     ) {
         // 裏面にしたカードで差し替え
@@ -158,7 +158,7 @@ struct PokerPlusShowdownController {
         }
     }
     
-    func startJudgeAnimation(myScore: PokerPlusAPIModel.Score, completion: @escaping () -> Void) {
+    func startJudgeAnimation(myScore: PokerPlusScore, completion: @escaping () -> Void) {
         
         let comboName = myScore.combo_name
         let card = CardID(rawValue: myScore.put_card_id)!
@@ -225,9 +225,9 @@ struct PokerPlusShowdownController {
         }
     }
     
-    func showScoreList(scoreList: [PokerPlusAPIModel.Score], completion: @escaping () -> Void) {
+    func showScoreList(scoreList: [PokerPlusScore], completion: @escaping () -> Void) {
         // ボーナスが大きい順に並べる
-        let sorted: [PokerPlusAPIModel.Score] = scoreList.sorted(by: {
+        let sorted: [PokerPlusScore] = scoreList.sorted(by: {
             return $0.bonus_chips > $1.bonus_chips
         })
         

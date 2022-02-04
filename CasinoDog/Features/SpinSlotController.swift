@@ -5,7 +5,7 @@
 import Foundation
 
 struct SpinSlotController {
-    func onSelectMachine(id: MachineID) {
+    func onSelectMachine(id: MachineId) {
         let slotState = SlotMachineState(machineID: id)
         DispatchQueue.main.async {
             appState.slotMachine = slotState
@@ -30,7 +30,7 @@ struct SpinSlotController {
     
     func onTapTriadOK() {
         DispatchQueue.main.async {
-            appState.slotMachine.triadEffect = nil
+            appState.slotMachine.triadAnimation = nil
         }
     }
     
@@ -70,9 +70,9 @@ struct SpinSlotController {
                 if let error = response.error {
                     fatalError(error.code + " " + error.message)
                 }
-                let reelAnimation0 = response.slot_animation.reel_animations[0]
-                let reelAnimation1 = response.slot_animation.reel_animations[1]
-                let reelAnimation2 = response.slot_animation.reel_animations[2]
+                let reelAnimation0 = response.reel_animations[0]
+                let reelAnimation1 = response.reel_animations[1]
+                let reelAnimation2 = response.reel_animations[2]
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     SpinReelController(reelIndex: 0).stop(at: reelAnimation0.stop_index )
@@ -96,10 +96,10 @@ struct SpinSlotController {
                     // AppStateを更新
                     appState.account.loginUser = user
                     
-                    guard let effect = response.slot_animation.triad_effect else {
+                    guard let animation = response.triad_animation else {
                         return
                     }
-                    self.showTriadEffect(model: effect)
+                    self.showTriad(animation: animation)
                     
                     Task {
                         // AppStateを保存
@@ -114,9 +114,9 @@ struct SpinSlotController {
         )
     }
     
-    func showTriadEffect(model: SlotsAPIModel.TriadEffect) {
+    func showTriad(animation: SlotTriadAnimation) {
         DispatchQueue.main.async {
-            appState.slotMachine.triadEffect = model
+            appState.slotMachine.triadAnimation = animation
         }
     }
 }

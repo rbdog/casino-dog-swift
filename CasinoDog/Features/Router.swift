@@ -117,7 +117,7 @@ struct Router {
         }
     }
     
-    func onTapMenuItem(itemID: MenuItemID) {
+    func onTapMenuItem(itemID: MenuItemId) {
         var nextPageID: PageId?
         switch itemID {
         case .developerMessage:

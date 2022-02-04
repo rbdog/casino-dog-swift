@@ -4,11 +4,11 @@
 
 import SwiftUI
 
-enum MachineID: String {
-    case classic = "Classic"
-    case free = "Free"
-    case developers = "Developers"
-    case v1m0 = "V1M0"
+enum MachineId: Int {
+    case classic = 1
+    case free = 2
+    case developers = 3
+    case v1 = 4
     
     func machine() -> SlotMachine {
         switch self {
@@ -18,8 +18,8 @@ enum MachineID: String {
             return SlotFreeMachine()
         case .developers:
             return SlotDevelopersMachine()
-        case .v1m0:
-            return SlotV1M1Machine()
+        case .v1:
+            return SlotV1Machine()
         }
     }
 }

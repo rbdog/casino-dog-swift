@@ -6,20 +6,20 @@ import SwiftUI
 import Center
 
 struct TriadEffectView: View {
-    let triadEffect: SlotsAPIModel.TriadEffect = appState.slotMachine!.triadEffect!
+    let triadAnimation: SlotTriadAnimation = appState.slotMachine!.triadAnimation!
   
     var body: some View {
         VStack {
             Text("GET !")
                 .font(.system(size: 40, weight: .bold, design: .default))
                 .foregroundColor(Color.white)
-            Text(triadEffect.title)
+            Text(triadAnimation.title)
                 .font(.system(size: 20, weight: .regular, design: .default))
                 .foregroundColor(Color.white)
-            ImageProvider(uri: triadEffect.image_url).view()
+            ImageProvider(url: triadAnimation.image_url).view()
                 .frame(width: 150, height: 150)
                 .shine(.gold)
-            Text(triadEffect.description)
+            Text(triadAnimation.description)
                 .font(.system(size: 18, weight: .regular, design: .default))
                 .foregroundColor(Color.white)
             

@@ -10,7 +10,7 @@ struct Keycard: JSONSerializable {
     let id: String
     
     /// Game ID
-    let game_id: String
+    let game_id: Int
 
     /// User ID
     let user_id: String

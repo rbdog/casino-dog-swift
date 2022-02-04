@@ -6,7 +6,7 @@ import SwiftUI
 import Center
 
 protocol PokerPlusConnectionObserver {
-    func onReceive(announce: PokerPlusAPIModel.Announce)
+    func onReceive(announce: PokerPlusAnnounce)
 }
 
 final class PokerPlusConnection {
@@ -41,7 +41,7 @@ extension PokerPlusConnection: PokerPlusSpeakerLisner {
     
     // Push通知を受け取る
     func onReceive(announce: Data) {
-        let announce = PokerPlusAPIModel.Announce(json: announce)
+        let announce = PokerPlusAnnounce(json: announce)
         if let observer = observer {
             observer.onReceive(announce: announce)
         } else {

@@ -5,11 +5,11 @@
 import Foundation
 
 struct PokerPlusScoreListBuilder {
-    func build(from state: PokerPlusState) -> [PokerPlusAPIModel.Score] {
+    func build(from state: PokerPlusState) -> [PokerPlusScore] {
         
         let keycards = KeycardRealmRepository().loadKeycards(stateId: state.id)
         
-        let list = state.sides.map { side -> PokerPlusAPIModel.Score in
+        let list = state.sides.map { side -> PokerPlusScore in
             
             let keycard = keycards.first(where: {$0.seat == side.seat.rawValue})!
 
@@ -29,7 +29,7 @@ struct PokerPlusScoreListBuilder {
             
             let comboName = PokerPlusRule().comboName(of: side.lastCombo)
             
-            let score = PokerPlusAPIModel.Score(
+            let score = PokerPlusScore(
                 user_id: keycard.user_id,
                 old_total_chips: side.chips - bonusChips,
                 bonus_chips: bonusChips,

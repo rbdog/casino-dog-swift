@@ -6,7 +6,7 @@ import Foundation
 
 struct UserSymbolController {
     
-    func userHasEmptyPocket(user: User, newSymbol: SymbolID) -> Bool {
+    func userHasEmptyPocket(user: User, newSymbol: SymbolId) -> Bool {
         let pockets: [SymbolPocket] = user.symbol_pockets
         if let pocketIndex = pockets.firstIndex(where: {$0.symbol_id == newSymbol.rawValue}) {
             // すでに所持していた場合
@@ -29,7 +29,7 @@ struct UserSymbolController {
         }
     }
     
-    func userGetSymbol(user: User, newSymbol: SymbolID) -> User {
+    func userGetSymbol(user: User, newSymbol: SymbolId) -> User {
         var pockets: [SymbolPocket] = user.symbol_pockets
         
         if let pocketIndex = pockets.firstIndex(where: {$0.symbol_id == newSymbol.rawValue}) {

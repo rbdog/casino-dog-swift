@@ -5,9 +5,9 @@
 import Foundation
 
 struct ShowdownAnimationBuilder {
-    func build(from state: PokerPlusState) -> [PokerPlusAPIModel.ShowdownAnimation] {
+    func build(from state: PokerPlusState) -> [PokerPlusShowdownAnimation] {
 
-        let animations = state.sides.map { side -> PokerPlusAPIModel.ShowdownAnimation in
+        let animations = state.sides.map { side -> PokerPlusShowdownAnimation in
             return self.animation(at: side.seat, in: state)
         }
 
@@ -25,7 +25,7 @@ struct ShowdownAnimationBuilder {
         return (old: oldOffset * 90, new: new == nil ? nil : new! * 90)
     }
 
-    func animation(at seat: PokerPlusSeat, in state: PokerPlusState) -> PokerPlusAPIModel.ShowdownAnimation {
+    func animation(at seat: PokerPlusSeat, in state: PokerPlusState) -> PokerPlusShowdownAnimation {
         let maxIndex = state.sides.count - 1
         let myPut = state.sides.first(where: {$0.seat == seat})!.putCardId!
 
@@ -59,7 +59,7 @@ struct ShowdownAnimationBuilder {
         let innerDgrees = self.degrees(oldInnerOffset, newInnerOffset)
         let outerDegrees = self.degrees(oldOuterOffset, newOuterOffset)
 
-        let animation = PokerPlusAPIModel.ShowdownAnimation(
+        let animation = PokerPlusShowdownAnimation(
             seat: seat.rawValue,
             put_card_id: myPut.rawValue,
             old_inner_offset: innerDgrees.old,

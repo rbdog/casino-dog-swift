@@ -26,7 +26,7 @@ struct SymbolCollectionView: View {
                         // ポケット
                         ZStack {
                             if let symbolId = pockets[index].symbol_id {
-                                Image(Symbol(rawValue: symbolId)!.imageName.rawValue)
+                                Image(SymbolId(rawValue: symbolId)!.imageName.rawValue)
                                     .resizable()
                                     .renderingMode(.template)
                                     .shine(.gold)

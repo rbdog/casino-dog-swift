@@ -97,7 +97,7 @@ struct SplashController {
         }
     }
     
-    func getSplashConfig() async -> StaticAPIModel.SplashConfig? {
+    func getSplashConfig() async -> SplashConfigResponse? {
         guard let url = URL(string: flavorConfig().splashConfigUrl) else {
             return nil
         }
@@ -105,7 +105,7 @@ struct SplashController {
         request.httpMethod = "GET"
         do {
             let (data, _) = try await URLSession.shared.data(for: request)
-            let splashConfig = StaticAPIModel.SplashConfig(json: data)
+            let splashConfig = SplashConfigResponse(json: data)
             return splashConfig
         } catch {
             return nil

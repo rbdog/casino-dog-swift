@@ -10,7 +10,7 @@ struct PokerPlusRule {
         return .waitingBet
     }
     
-    static var initialDeck: [CardID] {
+    static var initialDeck: [CardId] {
         return [
             .spade1,
             .spade11,
@@ -141,7 +141,7 @@ struct PokerPlusRule {
         }
     }
     
-    func canPut(card: CardID, at seat: PokerPlusSeat, in state: PokerPlusState) -> Bool {
+    func canPut(card: CardId, at seat: PokerPlusSeat, in state: PokerPlusState) -> Bool {
         guard let side = state.sides.first(where: {$0.seat == seat}) else {
             print("指定されたシートが見つかりません")
             return false
@@ -186,11 +186,11 @@ struct PokerPlusRule {
     }
     
     func combo(
-        innerSuit: SuitID,
-        outerSuit: SuitID,
-        outerNumber: NumberID,
-        cardSuit: SuitID,
-        cardNumber: NumberID,
+        innerSuit: SuitId,
+        outerSuit: SuitId,
+        outerNumber: NumberId,
+        cardSuit: SuitId,
+        cardNumber: NumberId,
         lastCombo: PokerPlusCombo
     ) -> PokerPlusCombo {
         // 判定優先順
@@ -346,8 +346,8 @@ struct PokerPlusRule {
     }
 }
 
-extension CardID {
-    var suit: SuitID {
+extension CardId {
+    var suit: SuitId {
         switch self {
         case .back:
             return .back
@@ -364,7 +364,7 @@ extension CardID {
         }
     }
     
-    var number: NumberID {
+    var number: NumberId {
         switch self {
         case .back:
             return .back
@@ -401,7 +401,7 @@ extension CardID {
 }
 
 extension PokerPlusOuterPartID {
-    var suit: SuitID {
+    var suit: SuitId {
         switch self {
         case .diamond12:
             return .diamond
@@ -413,7 +413,7 @@ extension PokerPlusOuterPartID {
             return .heart
         }
     }
-    var number: NumberID {
+    var number: NumberId {
         switch self {
         case .diamond12:
             return .num12
@@ -428,7 +428,7 @@ extension PokerPlusOuterPartID {
 }
 
 extension PokerPlusInnerPartID {
-    var suit: SuitID {
+    var suit: SuitId {
         switch self {
         case .club:
             return .club
