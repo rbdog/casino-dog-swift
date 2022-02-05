@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct HomeTabBar: View {
-    @StateObject var state: TabWindowState
+    @StateObject var state: TabState
     let builder: HomeTabBuilder
     
     var body: some View {

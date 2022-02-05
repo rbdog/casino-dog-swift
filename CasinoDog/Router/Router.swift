@@ -9,10 +9,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.basePageWindowState.stack = stack
+                    appState.routing.baseNaviState.stack = stack
                 }
             } else {
-                appState.routing.basePageWindowState.stack = stack
+                appState.routing.baseNaviState.stack = stack
             }
         }
     }
@@ -21,10 +21,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.basePageWindowState.stack.append(pageId)
+                    appState.routing.baseNaviState.stack.append(pageId)
                 }
             } else {
-                appState.routing.basePageWindowState.stack.append(pageId)
+                appState.routing.baseNaviState.stack.append(pageId)
             }
         }
     }
@@ -34,10 +34,10 @@ struct Router {
             await MainActor.run {
                 if animated {
                     withAnimation {
-                        _ = appState.routing.basePageWindowState.stack.removeLast()
+                        _ = appState.routing.baseNaviState.stack.removeLast()
                     }
                 } else {
-                    _ = appState.routing.basePageWindowState.stack.removeLast()
+                    _ = appState.routing.baseNaviState.stack.removeLast()
                 }
             }
         }
@@ -47,10 +47,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.baseModalWindowState.queue = queue
+                    appState.routing.baseModalState.queue = queue
                 }
             } else {
-                appState.routing.baseModalWindowState.queue = queue
+                appState.routing.baseModalState.queue = queue
             }
         }
     }
@@ -59,10 +59,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.baseModalWindowState.queue.insert(pageId, at: 0)
+                    appState.routing.baseModalState.queue.insert(pageId, at: 0)
                 }
             } else {
-                appState.routing.baseModalWindowState.queue.insert(pageId, at: 0)
+                appState.routing.baseModalState.queue.insert(pageId, at: 0)
             }
         }
     }
@@ -72,10 +72,10 @@ struct Router {
             await MainActor.run {
                 if animated {
                     withAnimation {
-                        _ = appState.routing.baseModalWindowState.queue.removeLast()
+                        _ = appState.routing.baseModalState.queue.removeLast()
                     }
                 } else {
-                    _ = appState.routing.baseModalWindowState.queue.removeLast()
+                    _ = appState.routing.baseModalState.queue.removeLast()
                 }
             }
         }
@@ -85,10 +85,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.homeTabWindowState.selectedId = pageId
+                    appState.routing.homeTabState.selectedId = pageId
                 }
             } else {
-                appState.routing.homeTabWindowState.selectedId = pageId
+                appState.routing.homeTabState.selectedId = pageId
             }
         }
     }
@@ -123,7 +123,7 @@ struct Router {
         case .developerMessage:
             nextPageID = .developerMessage
         case .lisense:
-            nextPageID = .lisense
+            nextPageID = .license
         case .termsOfService:
             nextPageID = .termsOfService
         case .debug:
@@ -139,10 +139,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.onboadingWindowState.stack = stack
+                    appState.routing.onboadingNaviState.stack = stack
                 }
             } else {
-                appState.routing.onboadingWindowState.stack = stack
+                appState.routing.onboadingNaviState.stack = stack
             }
         }
     }
@@ -151,10 +151,10 @@ struct Router {
         DispatchQueue.main.async {
             if animated {
                 withAnimation {
-                    appState.routing.onboadingWindowState.stack.append(id)
+                    appState.routing.onboadingNaviState.stack.append(id)
                 }
             } else {
-                appState.routing.onboadingWindowState.stack.append(id)
+                appState.routing.onboadingNaviState.stack.append(id)
             }
         }
     }

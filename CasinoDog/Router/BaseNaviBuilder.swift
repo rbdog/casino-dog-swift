@@ -5,7 +5,7 @@
 import Foundation
 import SwiftUI
 
-struct BasePageBuilder: PageBuilder {
+struct BaseNaviBuilder: NaviBuilder {
    
     func emptyView() -> AnyView {
         return AnyView(
@@ -42,8 +42,8 @@ struct BasePageBuilder: PageBuilder {
                 SlotView()
             case .developerMessage:
                 DeveloperMessageView()
-            case .lisense:
-                LisenceView()
+            case .license:
+                LicenseView()
             case .termsOfService:
                 TermsOfServiceView()
             case .debug:

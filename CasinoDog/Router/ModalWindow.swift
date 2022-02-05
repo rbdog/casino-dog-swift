@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ModalWindow<Builder: ModalBuilder>: View {
-    @StateObject var state: ModalWindowState
+    @StateObject var state: ModalState
     let builder: Builder
     
     var body: some View {

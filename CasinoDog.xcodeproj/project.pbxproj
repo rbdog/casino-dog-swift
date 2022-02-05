@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4A3E7E0427A6CD4100CA18C9 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E7E0327A6CD4100CA18C9 /* Machine.swift */; };
 		4A3E7E0627A6CF1B00CA18C9 /* MachineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E7E0527A6CF1B00CA18C9 /* MachineList.swift */; };
+		4A5B46F427AE389400DD1CFC /* TabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F327AE389400DD1CFC /* TabBuilder.swift */; };
+		4A5B46F627AE389600DD1CFC /* ModalBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */; };
+		4A5B46F827AE38E700DD1CFC /* TabState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F727AE38E700DD1CFC /* TabState.swift */; };
+		4A5B46FA27AE38E900DD1CFC /* ModalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F927AE38E900DD1CFC /* ModalState.swift */; };
 		4A62E445279BC2C700D826C9 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62E444279BC2C700D826C9 /* ClockView.swift */; };
 		4A62E448279BCC2A00D826C9 /* MatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62E447279BCAE000D826C9 /* MatchingView.swift */; };
 		4A62E44A279BDCF500D826C9 /* MatchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62E449279BDC8600D826C9 /* MatchingState.swift */; };
@@ -33,8 +37,6 @@
 		4A7EA51C276455E4008EF53A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineId.swift */; };
 		4A7EA51D276455E4008EF53A /* MachineId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA502276455E4008EF53A /* MachineId.swift */; };
 		4A7EA527276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
-		4A7EA528276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
-		4A7EA529276455E5008EF53A /* MenuItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA506276455E4008EF53A /* MenuItemId.swift */; };
 		4A7EA52A276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
 		4A7EA52B276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
 		4A7EA52C276455E5008EF53A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EA507276455E4008EF53A /* Effect.swift */; };
@@ -256,9 +258,7 @@
 		4A9C126527645033003ED139 /* ShineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123B27645033003ED139 /* ShineColor.swift */; };
 		4A9C126627645033003ED139 /* ShineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123B27645033003ED139 /* ShineColor.swift */; };
 		4A9C126727645033003ED139 /* ShineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123B27645033003ED139 /* ShineColor.swift */; };
-		4A9C126827645033003ED139 /* PageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123D27645033003ED139 /* PageWindow.swift */; };
-		4A9C126927645033003ED139 /* PageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123D27645033003ED139 /* PageWindow.swift */; };
-		4A9C126A27645033003ED139 /* PageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123D27645033003ED139 /* PageWindow.swift */; };
+		4A9C126827645033003ED139 /* NaviWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123D27645033003ED139 /* NaviWindow.swift */; };
 		4A9C126B27645033003ED139 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123E27645033003ED139 /* HomeTabBar.swift */; };
 		4A9C126C27645033003ED139 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123E27645033003ED139 /* HomeTabBar.swift */; };
 		4A9C126D27645033003ED139 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C123E27645033003ED139 /* HomeTabBar.swift */; };
@@ -272,9 +272,9 @@
 		4A9C127A27645033003ED139 /* ChipCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C124327645033003ED139 /* ChipCountView.swift */; };
 		4A9C127B27645033003ED139 /* ChipCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C124327645033003ED139 /* ChipCountView.swift */; };
 		4A9C127C27645033003ED139 /* ChipCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C124327645033003ED139 /* ChipCountView.swift */; };
-		4A9C12B12764503A003ED139 /* LisenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LisenceView.swift */; };
-		4A9C12B22764503A003ED139 /* LisenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LisenceView.swift */; };
-		4A9C12B32764503A003ED139 /* LisenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LisenceView.swift */; };
+		4A9C12B12764503A003ED139 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LicenseView.swift */; };
+		4A9C12B22764503A003ED139 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LicenseView.swift */; };
+		4A9C12B32764503A003ED139 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C127F2764503A003ED139 /* LicenseView.swift */; };
 		4A9C12B42764503A003ED139 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C12812764503A003ED139 /* SplashView.swift */; };
 		4A9C12B52764503A003ED139 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C12812764503A003ED139 /* SplashView.swift */; };
 		4A9C12B62764503A003ED139 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C12812764503A003ED139 /* SplashView.swift */; };
@@ -387,18 +387,18 @@
 		4ACD43C72792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD43C62792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift */; };
 		4AE3A16427A53DB8002EA45C /* Keycard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16327A53DB8002EA45C /* Keycard.swift */; };
 		4AE3A16827A54193002EA45C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16727A54193002EA45C /* User.swift */; };
-		4AE3A16F27A63FD3002EA45C /* WindowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16E27A63FD3002EA45C /* WindowState.swift */; };
+		4AE3A16F27A63FD3002EA45C /* NaviState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16E27A63FD3002EA45C /* NaviState.swift */; };
 		4AE3A17127A6404F002EA45C /* PageId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17027A6404F002EA45C /* PageId.swift */; };
-		4AE3A17327A64233002EA45C /* BasePageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17227A64233002EA45C /* BasePageBuilder.swift */; };
+		4AE3A17327A64233002EA45C /* BaseNaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */; };
 		4AE3A17527A645AF002EA45C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17427A645AF002EA45C /* Router.swift */; };
 		4AE3A17727A64A72002EA45C /* ModalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17627A64A72002EA45C /* ModalId.swift */; };
 		4AE3A17C27A64CB5002EA45C /* BadNetworkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A12764B32700F41779 /* BadNetworkModal.swift */; };
 		4AE3A17D27A64CB5002EA45C /* BadNetworkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A12764B32700F41779 /* BadNetworkModal.swift */; };
-		4AE3A17E27A64E5B002EA45C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17A27A64B99002EA45C /* Builder.swift */; };
+		4AE3A17E27A64E5B002EA45C /* NaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */; };
 		4AE3A18127A65074002EA45C /* HomeTabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */; };
 		4AE3A18627A65239002EA45C /* TabWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18527A6522E002EA45C /* TabWindow.swift */; };
 		4AE3A18827A65636002EA45C /* BaseModalBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */; };
-		4AE3A18C27A666D5002EA45C /* OnboardingPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18B27A6663E002EA45C /* OnboardingPageBuilder.swift */; };
+		4AE3A18C27A666D5002EA45C /* OnboardingNaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,6 +421,10 @@
 /* Begin PBXFileReference section */
 		4A3E7E0327A6CD4100CA18C9 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		4A3E7E0527A6CF1B00CA18C9 /* MachineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineList.swift; sourceTree = "<group>"; };
+		4A5B46F327AE389400DD1CFC /* TabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBuilder.swift; sourceTree = "<group>"; };
+		4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBuilder.swift; sourceTree = "<group>"; };
+		4A5B46F727AE38E700DD1CFC /* TabState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabState.swift; sourceTree = "<group>"; };
+		4A5B46F927AE38E900DD1CFC /* ModalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalState.swift; sourceTree = "<group>"; };
 		4A62E444279BC2C700D826C9 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		4A62E447279BCAE000D826C9 /* MatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingView.swift; sourceTree = "<group>"; };
 		4A62E449279BDC8600D826C9 /* MatchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingState.swift; sourceTree = "<group>"; };
@@ -522,13 +526,13 @@
 		4A9C123927645033003ED139 /* CheckerBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerBoard.swift; sourceTree = "<group>"; };
 		4A9C123A27645033003ED139 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4A9C123B27645033003ED139 /* ShineColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShineColor.swift; sourceTree = "<group>"; };
-		4A9C123D27645033003ED139 /* PageWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageWindow.swift; sourceTree = "<group>"; };
+		4A9C123D27645033003ED139 /* NaviWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviWindow.swift; sourceTree = "<group>"; };
 		4A9C123E27645033003ED139 /* HomeTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		4A9C123F27645033003ED139 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4A9C124027645033003ED139 /* SymbolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		4A9C124227645033003ED139 /* ModalWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalWindow.swift; sourceTree = "<group>"; };
 		4A9C124327645033003ED139 /* ChipCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipCountView.swift; sourceTree = "<group>"; };
-		4A9C127F2764503A003ED139 /* LisenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisenceView.swift; sourceTree = "<group>"; };
+		4A9C127F2764503A003ED139 /* LicenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		4A9C12812764503A003ED139 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		4A9C12832764503A003ED139 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		4A9C12842764503A003ED139 /* PokerPlusPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusPlayView.swift; sourceTree = "<group>"; };
@@ -577,16 +581,16 @@
 		4ACD43C62792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPlusPlayUiStateBuilder.swift; sourceTree = "<group>"; };
 		4AE3A16327A53DB8002EA45C /* Keycard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keycard.swift; sourceTree = "<group>"; };
 		4AE3A16727A54193002EA45C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4AE3A16E27A63FD3002EA45C /* WindowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowState.swift; sourceTree = "<group>"; };
+		4AE3A16E27A63FD3002EA45C /* NaviState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviState.swift; sourceTree = "<group>"; };
 		4AE3A17027A6404F002EA45C /* PageId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageId.swift; sourceTree = "<group>"; };
-		4AE3A17227A64233002EA45C /* BasePageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageBuilder.swift; sourceTree = "<group>"; };
+		4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviBuilder.swift; sourceTree = "<group>"; };
 		4AE3A17427A645AF002EA45C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4AE3A17627A64A72002EA45C /* ModalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalId.swift; sourceTree = "<group>"; };
 		4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModalBuilder.swift; sourceTree = "<group>"; };
-		4AE3A17A27A64B99002EA45C /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviBuilder.swift; sourceTree = "<group>"; };
 		4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBuilder.swift; sourceTree = "<group>"; };
 		4AE3A18527A6522E002EA45C /* TabWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabWindow.swift; sourceTree = "<group>"; };
-		4AE3A18B27A6663E002EA45C /* OnboardingPageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageBuilder.swift; sourceTree = "<group>"; };
+		4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNaviBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -669,6 +673,7 @@
 		4A9C111C27644D8D003ED139 /* CasinoDog */ = {
 			isa = PBXGroup;
 			children = (
+				4A9F46BF27AE1D2B00FA8B40 /* Router */,
 				4A69A7AB2764C08C00F41779 /* Info.plist */,
 				4A9C132027645072003ED139 /* Assets */,
 				4A9C118B27644FDF003ED139 /* State */,
@@ -730,11 +735,6 @@
 				4A9C115027644FD8003ED139 /* SplashController.swift */,
 				4A9C115227644FD8003ED139 /* EditUserController.swift */,
 				4A9C115527644FD8003ED139 /* StorageManager.swift */,
-				4AE3A17227A64233002EA45C /* BasePageBuilder.swift */,
-				4AE3A18B27A6663E002EA45C /* OnboardingPageBuilder.swift */,
-				4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */,
-				4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */,
-				4AE3A17427A645AF002EA45C /* Router.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -758,7 +758,6 @@
 				4A9C119627644FDF003ED139 /* OnboardingState.swift */,
 				4A9C119727644FE0003ED139 /* GameListState.swift */,
 				4A9C119827644FE0003ED139 /* SlotMachineState.swift */,
-				4AE3A16E27A63FD3002EA45C /* WindowState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -779,12 +778,9 @@
 				4A7EA50D276455E4008EF53A /* GameId.swift */,
 				4A9C11C527645018003ED139 /* SymbolPocket.swift */,
 				4A914EDB278C975F00E93522 /* Player.swift */,
-				4AE3A17027A6404F002EA45C /* PageId.swift */,
-				4AE3A17627A64A72002EA45C /* ModalId.swift */,
 				4A3E7E0327A6CD4100CA18C9 /* Machine.swift */,
 				4A9F464727ABE2AF00FA8B40 /* LoadingTask.swift */,
 				4A7EA502276455E4008EF53A /* MachineId.swift */,
-				4A7EA506276455E4008EF53A /* MenuItemId.swift */,
 				4A7EA507276455E4008EF53A /* Effect.swift */,
 				4A7EA50A276455E4008EF53A /* EditUserMode.swift */,
 				4A7EA50B276455E4008EF53A /* DrinkId.swift */,
@@ -805,7 +801,6 @@
 				4A9C123727645033003ED139 /* RepeatWhile.swift */,
 				4A9C11D027645021003ED139 /* UIColorExtension.swift */,
 				4A9C123127645033003ED139 /* ScaleButtonStyle.swift */,
-				4AE3A17A27A64B99002EA45C /* Builder.swift */,
 				4A9C11D127645021003ED139 /* ArrayExtension.swift */,
 				4A9C11D227645021003ED139 /* IntExtension.swift */,
 				4A9C11D327645021003ED139 /* ColorExtension.swift */,
@@ -853,9 +848,6 @@
 		4A9C122E27645033003ED139 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4A9C123D27645033003ED139 /* PageWindow.swift */,
-				4A9C124227645033003ED139 /* ModalWindow.swift */,
-				4AE3A18527A6522E002EA45C /* TabWindow.swift */,
 				4A69A7952764A2D800F41779 /* WebView.swift */,
 				4A9C123027645033003ED139 /* AnimationReader.swift */,
 				4A9C123227645033003ED139 /* BlinkEffect.swift */,
@@ -902,7 +894,7 @@
 		4A9C127E2764503A003ED139 /* Lisence */ = {
 			isa = PBXGroup;
 			children = (
-				4A9C127F2764503A003ED139 /* LisenceView.swift */,
+				4A9C127F2764503A003ED139 /* LicenseView.swift */,
 			);
 			path = Lisence;
 			sourceTree = "<group>";
@@ -1025,6 +1017,30 @@
 				4A9C1326276451EF003ED139 /* libCenter.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A9F46BF27AE1D2B00FA8B40 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3A17027A6404F002EA45C /* PageId.swift */,
+				4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */,
+				4AE3A17627A64A72002EA45C /* ModalId.swift */,
+				4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */,
+				4AE3A17427A645AF002EA45C /* Router.swift */,
+				4A7EA506276455E4008EF53A /* MenuItemId.swift */,
+				4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */,
+				4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */,
+				4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */,
+				4A5B46F327AE389400DD1CFC /* TabBuilder.swift */,
+				4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */,
+				4A9C124227645033003ED139 /* ModalWindow.swift */,
+				4A9C123D27645033003ED139 /* NaviWindow.swift */,
+				4AE3A18527A6522E002EA45C /* TabWindow.swift */,
+				4A5B46F727AE38E700DD1CFC /* TabState.swift */,
+				4A5B46F927AE38E900DD1CFC /* ModalState.swift */,
+				4AE3A16E27A63FD3002EA45C /* NaviState.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		4AE3A17B27A64C80002EA45C /* Modals */ = {
@@ -1199,6 +1215,7 @@
 				4A9C117C27644FD8003ED139 /* PockerPlusPutController.swift in Sources */,
 				4A9C13112764503A003ED139 /* RollDiceView.swift in Sources */,
 				4A914ECD278B3C2800E93522 /* PokerPlusState.swift in Sources */,
+				4A5B46F427AE389400DD1CFC /* TabBuilder.swift in Sources */,
 				4A69A7A72764BA9F00F41779 /* RelaunchView.swift in Sources */,
 				4A9C11E027645021003ED139 /* IntExtension.swift in Sources */,
 				4A9C125927645033003ED139 /* RepeatWhile.swift in Sources */,
@@ -1209,11 +1226,11 @@
 				4A69A7A82764BEB200F41779 /* OldVersionModal.swift in Sources */,
 				4A914ED9278BD7AE00E93522 /* PokerPlusSystemState.swift in Sources */,
 				4A9C124A27645033003ED139 /* BlinkEffect.swift in Sources */,
-				4A9C126827645033003ED139 /* PageWindow.swift in Sources */,
+				4A9C126827645033003ED139 /* NaviWindow.swift in Sources */,
 				4A914EB9278B3B7700E93522 /* PokerPlusPullPutComplete.swift in Sources */,
 				4A9C127127645033003ED139 /* SymbolView.swift in Sources */,
 				4A9C127A27645033003ED139 /* ChipCountView.swift in Sources */,
-				4A9C12B12764503A003ED139 /* LisenceView.swift in Sources */,
+				4A9C12B12764503A003ED139 /* LicenseView.swift in Sources */,
 				4A914E9D278B3A3A00E93522 /* PokerPlusBetAction.swift in Sources */,
 				4A9F464827ABE2AF00FA8B40 /* LoadingTask.swift in Sources */,
 				4A7EA53C276455E5008EF53A /* GameId.swift in Sources */,
@@ -1227,7 +1244,7 @@
 				4AE3A17127A6404F002EA45C /* PageId.swift in Sources */,
 				4A9F46A727ADABA600FA8B40 /* PokerPlusScore.swift in Sources */,
 				4AE3A18827A65636002EA45C /* BaseModalBuilder.swift in Sources */,
-				4AE3A17327A64233002EA45C /* BasePageBuilder.swift in Sources */,
+				4AE3A17327A64233002EA45C /* BaseNaviBuilder.swift in Sources */,
 				4A9C11AB27644FE0003ED139 /* RoutingState.swift in Sources */,
 				4A9C125027645033003ED139 /* Flip.swift in Sources */,
 				4A9C12D82764503A003ED139 /* Dock.swift in Sources */,
@@ -1243,6 +1260,7 @@
 				4A9C12F32764503A003ED139 /* SymbolCollectionView.swift in Sources */,
 				4A9C12BA2764503A003ED139 /* PokerPlusPlayView.swift in Sources */,
 				4A9C116127644FD8003ED139 /* OnboadingController.swift in Sources */,
+				4A5B46FA27AE38E900DD1CFC /* ModalState.swift in Sources */,
 				4A69A7962764A2D800F41779 /* WebView.swift in Sources */,
 				4A62E445279BC2C700D826C9 /* ClockView.swift in Sources */,
 				4A9C11B127644FE0003ED139 /* SlotListState.swift in Sources */,
@@ -1259,6 +1277,7 @@
 				4A9C11A827644FE0003ED139 /* EditUserState.swift in Sources */,
 				4A9C12DB2764503A003ED139 /* WheelView.swift in Sources */,
 				4A9F464A27AC048600FA8B40 /* Flavor.swift in Sources */,
+				4A5B46F627AE389600DD1CFC /* ModalBuilder.swift in Sources */,
 				4A9C11A227644FE0003ED139 /* HomeState.swift in Sources */,
 				4A7EA542276455E5008EF53A /* DiceFace.swift in Sources */,
 				4A914EAD278B3B1D00E93522 /* PokerPlusExitRoom.swift in Sources */,
@@ -1293,7 +1312,7 @@
 				4A9C130B2764503A003ED139 /* GameListView.swift in Sources */,
 				4A9C11BD27644FE0003ED139 /* SlotMachineState.swift in Sources */,
 				4A69A7C72766146E00F41779 /* ColorTheme.swift in Sources */,
-				4AE3A16F27A63FD3002EA45C /* WindowState.swift in Sources */,
+				4AE3A16F27A63FD3002EA45C /* NaviState.swift in Sources */,
 				4AE3A18127A65074002EA45C /* HomeTabBuilder.swift in Sources */,
 				4A9C115B27644FD8003ED139 /* ImageProvider.swift in Sources */,
 				4A7EA533276455E5008EF53A /* EditUserMode.swift in Sources */,
@@ -1321,17 +1340,18 @@
 				4A9C12BD2764503A003ED139 /* EffectView.swift in Sources */,
 				4A69A79227649A1500F41779 /* HomeView.swift in Sources */,
 				4A9C126227645033003ED139 /* LoadingView.swift in Sources */,
-				4AE3A17E27A64E5B002EA45C /* Builder.swift in Sources */,
+				4AE3A17E27A64E5B002EA45C /* NaviBuilder.swift in Sources */,
 				4A914E95278B39DA00E93522 /* SlotReelAnimation.swift in Sources */,
 				4A9C11E927645021003ED139 /* JSONSerializable.swift in Sources */,
 				4A9F46BC27ADC82900FA8B40 /* NumberId.swift in Sources */,
 				4A914EAB278B3B1800E93522 /* PokerPlusEnterRoom.swift in Sources */,
 				4ACD43C72792C1370046CEB5 /* PokerPlusPlayUiStateBuilder.swift in Sources */,
+				4A5B46F827AE38E700DD1CFC /* TabState.swift in Sources */,
 				4A9C12C62764503A003ED139 /* PutBox.swift in Sources */,
 				4A9C117027644FD8003ED139 /* EditUserController.swift in Sources */,
 				4A9C11F527645021003ED139 /* DateExtension.swift in Sources */,
 				4A9C116A27644FD8003ED139 /* SplashController.swift in Sources */,
-				4AE3A18C27A666D5002EA45C /* OnboardingPageBuilder.swift in Sources */,
+				4AE3A18C27A666D5002EA45C /* OnboardingNaviBuilder.swift in Sources */,
 				4A9C12F62764503A003ED139 /* MenuListItem.swift in Sources */,
 				4A9C11E627645021003ED139 /* HTTP.swift in Sources */,
 				4A9C12072764502C003ED139 /* CenterClient.swift in Sources */,
@@ -1369,7 +1389,6 @@
 				4A9C116827644FD8003ED139 /* SelectGameController.swift in Sources */,
 				4A9C124B27645033003ED139 /* BlinkEffect.swift in Sources */,
 				4A914EC2278B3B8000E93522 /* PokerPlusPullBetComplete.swift in Sources */,
-				4A7EA528276455E5008EF53A /* MenuItemId.swift in Sources */,
 				4A9C11DE27645021003ED139 /* ArrayExtension.swift in Sources */,
 				4A9C12D62764503A003ED139 /* PlayerView.swift in Sources */,
 				4A9C12DF2764503A003ED139 /* ScoreListView.swift in Sources */,
@@ -1454,7 +1473,7 @@
 				4A9C125A27645033003ED139 /* RepeatWhile.swift in Sources */,
 				4A9C127B27645033003ED139 /* ChipCountView.swift in Sources */,
 				4A9C11E727645021003ED139 /* HTTP.swift in Sources */,
-				4A9C12B22764503A003ED139 /* LisenceView.swift in Sources */,
+				4A9C12B22764503A003ED139 /* LicenseView.swift in Sources */,
 				4A9C125127645033003ED139 /* Flip.swift in Sources */,
 				4A9C124827645033003ED139 /* ScaleButtonStyle.swift in Sources */,
 				4A9C11F027645021003ED139 /* QRCode.swift in Sources */,
@@ -1464,7 +1483,6 @@
 				4A914EA6278B3AE700E93522 /* UsersUpdateUser.swift in Sources */,
 				4A9C12082764502C003ED139 /* CenterClient.swift in Sources */,
 				4A9C11E127645021003ED139 /* IntExtension.swift in Sources */,
-				4A9C126927645033003ED139 /* PageWindow.swift in Sources */,
 				4A9C115C27644FD8003ED139 /* ImageProvider.swift in Sources */,
 				4A7EA537276455E5008EF53A /* DrinkId.swift in Sources */,
 				4A9C127227645033003ED139 /* SymbolView.swift in Sources */,
@@ -1493,11 +1511,10 @@
 				4A9C116027644FD8003ED139 /* PokerPlusEventController.swift in Sources */,
 				4A914EAE278B3B1F00E93522 /* PokerPlusExitRoom.swift in Sources */,
 				4A9C124C27645033003ED139 /* BlinkEffect.swift in Sources */,
-				4A9C126A27645033003ED139 /* PageWindow.swift in Sources */,
 				4A9C127327645033003ED139 /* SymbolView.swift in Sources */,
 				4A9C127C27645033003ED139 /* ChipCountView.swift in Sources */,
 				4A914EA5278B3AE500E93522 /* PokerPlusPutAction.swift in Sources */,
-				4A9C12B32764503A003ED139 /* LisenceView.swift in Sources */,
+				4A9C12B32764503A003ED139 /* LicenseView.swift in Sources */,
 				4A7EA53E276455E5008EF53A /* GameId.swift in Sources */,
 				4A9C119B27644FE0003ED139 /* AppState.swift in Sources */,
 				4A9C12FB2764503A003ED139 /* MenuList.swift in Sources */,
@@ -1561,7 +1578,6 @@
 				4A9C12E92764503A003ED139 /* SlotListView.swift in Sources */,
 				4A9C117827644FD8003ED139 /* PockerPlusShowdownController.swift in Sources */,
 				4A9C124627645033003ED139 /* AnimationReader.swift in Sources */,
-				4A7EA529276455E5008EF53A /* MenuItemId.swift in Sources */,
 				4A9C12F22764503A003ED139 /* EditNicknameView.swift in Sources */,
 				4A69A7A02764AFFB00F41779 /* SplashConfigResponse.swift in Sources */,
 				4A9C12E02764503A003ED139 /* ScoreListView.swift in Sources */,

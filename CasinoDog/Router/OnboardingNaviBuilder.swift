@@ -5,7 +5,7 @@
 import Foundation
 import SwiftUI
 
-struct OnboardingPageBuilder: PageBuilder {
+struct OnboardingNaviBuilder: NaviBuilder {
    
     func emptyView() -> AnyView {
         fatalError("Viewが見つかりません")

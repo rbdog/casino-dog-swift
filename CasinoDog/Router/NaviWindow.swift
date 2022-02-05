@@ -4,8 +4,8 @@
 
 import SwiftUI
 
-struct PageWindow<Builder: PageBuilder>: View {
-    @StateObject var state: PageWindowState
+struct NaviWindow<Builder: NaviBuilder>: View {
+    @StateObject var state: NaviState
     let builder: Builder
     
     var body: some View {

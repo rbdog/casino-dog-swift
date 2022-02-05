@@ -6,11 +6,11 @@ import SwiftUI
 
 struct OnboardingView: View {
     @StateObject var onboarding: OnboardingState = appState.onboarding
-    let builder = OnboardingPageBuilder()
+    let builder = OnboardingNaviBuilder()
     
     var body: some View {
         ZStack {
-            PageWindow(state: appState.routing.onboadingWindowState, builder: builder)
+            NaviWindow(state: appState.routing.onboadingWindowState, builder: builder)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct LisenceView: View {    
+struct LicenseView: View {    
     var body: some View {
         VStack {
             Text("ライセンス・著作権")

@@ -19,7 +19,7 @@ enum PageId: Int, JSONSerializable {
     case pokerPlusScore = 11
     case slot = 12
     case developerMessage = 13
-    case lisense = 14
+    case license = 14
     case termsOfService = 15
     case debug = 16
 }
