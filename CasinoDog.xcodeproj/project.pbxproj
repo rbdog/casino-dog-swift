@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A3E7E0427A6CD4100CA18C9 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E7E0327A6CD4100CA18C9 /* Machine.swift */; };
 		4A3E7E0627A6CF1B00CA18C9 /* MachineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E7E0527A6CF1B00CA18C9 /* MachineList.swift */; };
-		4A5B46F427AE389400DD1CFC /* TabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F327AE389400DD1CFC /* TabBuilder.swift */; };
-		4A5B46F627AE389600DD1CFC /* ModalBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */; };
+		4A5B46F427AE389400DD1CFC /* TabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F327AE389400DD1CFC /* TabBarConfig.swift */; };
 		4A5B46F827AE38E700DD1CFC /* TabState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F727AE38E700DD1CFC /* TabState.swift */; };
 		4A5B46FA27AE38E900DD1CFC /* ModalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B46F927AE38E900DD1CFC /* ModalState.swift */; };
 		4A62E445279BC2C700D826C9 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62E444279BC2C700D826C9 /* ClockView.swift */; };
@@ -389,16 +388,14 @@
 		4AE3A16827A54193002EA45C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16727A54193002EA45C /* User.swift */; };
 		4AE3A16F27A63FD3002EA45C /* NaviState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A16E27A63FD3002EA45C /* NaviState.swift */; };
 		4AE3A17127A6404F002EA45C /* PageId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17027A6404F002EA45C /* PageId.swift */; };
-		4AE3A17327A64233002EA45C /* BaseNaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */; };
+		4AE3A17327A64233002EA45C /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17227A64233002EA45C /* PageContent.swift */; };
 		4AE3A17527A645AF002EA45C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17427A645AF002EA45C /* Router.swift */; };
 		4AE3A17727A64A72002EA45C /* ModalId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17627A64A72002EA45C /* ModalId.swift */; };
 		4AE3A17C27A64CB5002EA45C /* BadNetworkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A12764B32700F41779 /* BadNetworkModal.swift */; };
 		4AE3A17D27A64CB5002EA45C /* BadNetworkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69A7A12764B32700F41779 /* BadNetworkModal.swift */; };
-		4AE3A17E27A64E5B002EA45C /* NaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */; };
-		4AE3A18127A65074002EA45C /* HomeTabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */; };
+		4AE3A18127A65074002EA45C /* HomeTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18027A64E6C002EA45C /* HomeTabBarConfig.swift */; };
 		4AE3A18627A65239002EA45C /* TabWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18527A6522E002EA45C /* TabWindow.swift */; };
-		4AE3A18827A65636002EA45C /* BaseModalBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */; };
-		4AE3A18C27A666D5002EA45C /* OnboardingNaviBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */; };
+		4AE3A18827A65636002EA45C /* ModalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3A17827A64B52002EA45C /* ModalContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,8 +418,7 @@
 /* Begin PBXFileReference section */
 		4A3E7E0327A6CD4100CA18C9 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		4A3E7E0527A6CF1B00CA18C9 /* MachineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineList.swift; sourceTree = "<group>"; };
-		4A5B46F327AE389400DD1CFC /* TabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBuilder.swift; sourceTree = "<group>"; };
-		4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBuilder.swift; sourceTree = "<group>"; };
+		4A5B46F327AE389400DD1CFC /* TabBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfig.swift; sourceTree = "<group>"; };
 		4A5B46F727AE38E700DD1CFC /* TabState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabState.swift; sourceTree = "<group>"; };
 		4A5B46F927AE38E900DD1CFC /* ModalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalState.swift; sourceTree = "<group>"; };
 		4A62E444279BC2C700D826C9 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -583,14 +579,12 @@
 		4AE3A16727A54193002EA45C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4AE3A16E27A63FD3002EA45C /* NaviState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviState.swift; sourceTree = "<group>"; };
 		4AE3A17027A6404F002EA45C /* PageId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageId.swift; sourceTree = "<group>"; };
-		4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviBuilder.swift; sourceTree = "<group>"; };
+		4AE3A17227A64233002EA45C /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
 		4AE3A17427A645AF002EA45C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4AE3A17627A64A72002EA45C /* ModalId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalId.swift; sourceTree = "<group>"; };
-		4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModalBuilder.swift; sourceTree = "<group>"; };
-		4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviBuilder.swift; sourceTree = "<group>"; };
-		4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBuilder.swift; sourceTree = "<group>"; };
+		4AE3A17827A64B52002EA45C /* ModalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContent.swift; sourceTree = "<group>"; };
+		4AE3A18027A64E6C002EA45C /* HomeTabBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarConfig.swift; sourceTree = "<group>"; };
 		4AE3A18527A6522E002EA45C /* TabWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabWindow.swift; sourceTree = "<group>"; };
-		4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNaviBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +624,7 @@
 		4A7EA4FF276455E4008EF53A /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				4AE3A18027A64E6C002EA45C /* HomeTabBarConfig.swift */,
 				4A7EA508276455E4008EF53A /* Splash.swift */,
 				4A7EA50C276455E4008EF53A /* ImageName.swift */,
 				4A69A7C62766146E00F41779 /* ColorTheme.swift */,
@@ -1023,16 +1018,12 @@
 			isa = PBXGroup;
 			children = (
 				4AE3A17027A6404F002EA45C /* PageId.swift */,
-				4AE3A17827A64B52002EA45C /* BaseModalBuilder.swift */,
+				4AE3A17827A64B52002EA45C /* ModalContent.swift */,
 				4AE3A17627A64A72002EA45C /* ModalId.swift */,
-				4AE3A18027A64E6C002EA45C /* HomeTabBuilder.swift */,
 				4AE3A17427A645AF002EA45C /* Router.swift */,
 				4A7EA506276455E4008EF53A /* MenuItemId.swift */,
-				4AE3A18B27A6663E002EA45C /* OnboardingNaviBuilder.swift */,
-				4AE3A17227A64233002EA45C /* BaseNaviBuilder.swift */,
-				4AE3A17A27A64B99002EA45C /* NaviBuilder.swift */,
-				4A5B46F327AE389400DD1CFC /* TabBuilder.swift */,
-				4A5B46F527AE389600DD1CFC /* ModalBuilder.swift */,
+				4AE3A17227A64233002EA45C /* PageContent.swift */,
+				4A5B46F327AE389400DD1CFC /* TabBarConfig.swift */,
 				4A9C124227645033003ED139 /* ModalWindow.swift */,
 				4A9C123D27645033003ED139 /* NaviWindow.swift */,
 				4AE3A18527A6522E002EA45C /* TabWindow.swift */,
@@ -1215,7 +1206,7 @@
 				4A9C117C27644FD8003ED139 /* PockerPlusPutController.swift in Sources */,
 				4A9C13112764503A003ED139 /* RollDiceView.swift in Sources */,
 				4A914ECD278B3C2800E93522 /* PokerPlusState.swift in Sources */,
-				4A5B46F427AE389400DD1CFC /* TabBuilder.swift in Sources */,
+				4A5B46F427AE389400DD1CFC /* TabBarConfig.swift in Sources */,
 				4A69A7A72764BA9F00F41779 /* RelaunchView.swift in Sources */,
 				4A9C11E027645021003ED139 /* IntExtension.swift in Sources */,
 				4A9C125927645033003ED139 /* RepeatWhile.swift in Sources */,
@@ -1243,8 +1234,8 @@
 				4A9C116427644FD8003ED139 /* SpinSlotController.swift in Sources */,
 				4AE3A17127A6404F002EA45C /* PageId.swift in Sources */,
 				4A9F46A727ADABA600FA8B40 /* PokerPlusScore.swift in Sources */,
-				4AE3A18827A65636002EA45C /* BaseModalBuilder.swift in Sources */,
-				4AE3A17327A64233002EA45C /* BaseNaviBuilder.swift in Sources */,
+				4AE3A18827A65636002EA45C /* ModalContent.swift in Sources */,
+				4AE3A17327A64233002EA45C /* PageContent.swift in Sources */,
 				4A9C11AB27644FE0003ED139 /* RoutingState.swift in Sources */,
 				4A9C125027645033003ED139 /* Flip.swift in Sources */,
 				4A9C12D82764503A003ED139 /* Dock.swift in Sources */,
@@ -1277,7 +1268,6 @@
 				4A9C11A827644FE0003ED139 /* EditUserState.swift in Sources */,
 				4A9C12DB2764503A003ED139 /* WheelView.swift in Sources */,
 				4A9F464A27AC048600FA8B40 /* Flavor.swift in Sources */,
-				4A5B46F627AE389600DD1CFC /* ModalBuilder.swift in Sources */,
 				4A9C11A227644FE0003ED139 /* HomeState.swift in Sources */,
 				4A7EA542276455E5008EF53A /* DiceFace.swift in Sources */,
 				4A914EAD278B3B1D00E93522 /* PokerPlusExitRoom.swift in Sources */,
@@ -1313,7 +1303,7 @@
 				4A9C11BD27644FE0003ED139 /* SlotMachineState.swift in Sources */,
 				4A69A7C72766146E00F41779 /* ColorTheme.swift in Sources */,
 				4AE3A16F27A63FD3002EA45C /* NaviState.swift in Sources */,
-				4AE3A18127A65074002EA45C /* HomeTabBuilder.swift in Sources */,
+				4AE3A18127A65074002EA45C /* HomeTabBarConfig.swift in Sources */,
 				4A9C115B27644FD8003ED139 /* ImageProvider.swift in Sources */,
 				4A7EA533276455E5008EF53A /* EditUserMode.swift in Sources */,
 				4A9C12E72764503A003ED139 /* SlotListView.swift in Sources */,
@@ -1340,7 +1330,6 @@
 				4A9C12BD2764503A003ED139 /* EffectView.swift in Sources */,
 				4A69A79227649A1500F41779 /* HomeView.swift in Sources */,
 				4A9C126227645033003ED139 /* LoadingView.swift in Sources */,
-				4AE3A17E27A64E5B002EA45C /* NaviBuilder.swift in Sources */,
 				4A914E95278B39DA00E93522 /* SlotReelAnimation.swift in Sources */,
 				4A9C11E927645021003ED139 /* JSONSerializable.swift in Sources */,
 				4A9F46BC27ADC82900FA8B40 /* NumberId.swift in Sources */,
@@ -1351,7 +1340,6 @@
 				4A9C117027644FD8003ED139 /* EditUserController.swift in Sources */,
 				4A9C11F527645021003ED139 /* DateExtension.swift in Sources */,
 				4A9C116A27644FD8003ED139 /* SplashController.swift in Sources */,
-				4AE3A18C27A666D5002EA45C /* OnboardingNaviBuilder.swift in Sources */,
 				4A9C12F62764503A003ED139 /* MenuListItem.swift in Sources */,
 				4A9C11E627645021003ED139 /* HTTP.swift in Sources */,
 				4A9C12072764502C003ED139 /* CenterClient.swift in Sources */,

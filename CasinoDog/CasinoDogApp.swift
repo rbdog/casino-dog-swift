@@ -18,15 +18,13 @@ func resetApp() {
 @main
 struct CasinoDogApp: App {
     
-    let basePageBuilder = BaseNaviBuilder()
-    let baseModalBuilder = BaseModalBuilder()
     @StateObject var loading: LoadingState = appState.loading
     
     var body: some Scene {
         WindowGroup {
             ZStack {
-                NaviWindow(state: appState.routing.baseNaviState, builder: basePageBuilder)
-                ModalWindow(state: appState.routing.baseModalState, builder: baseModalBuilder)
+                NaviWindow(state: appState.routing.baseNaviState)
+                ModalWindow(state: appState.routing.baseModalState)
                 LoadingView(loading.loadingTasks)
             }
             .background(

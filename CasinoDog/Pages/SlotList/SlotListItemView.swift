@@ -11,7 +11,7 @@ struct SlotListItemView: View {
         GeometryReader { proxy in
             VStack(spacing: 0) {
                 ZStack {
-                    ImageProvider(url: MachineList().machine(id: state.machineID).miniImageUrl).view()
+                    URLImage(url: MachineList().machine(id: state.machineID).miniImageUrl)
                         .frame(width: proxy.size.width * (3.5/10.0))
                         .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                     

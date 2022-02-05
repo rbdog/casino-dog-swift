@@ -35,7 +35,7 @@ final class RoutingState: ObservableObject, JSONSerializable {
     init() {
         self.baseNaviState = NaviState(stack: [.splash])
         self.baseModalState = ModalState(queue: [])
-        self.homeTabState = TabState(list: [.profile, .gameList, .slotList], selectedId: .profile)
+        self.homeTabState = TabState(selectedId: .profile)
         self.onboadingNaviState = NaviState(stack: [.rollDice])
     }
 }

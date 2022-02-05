@@ -49,7 +49,7 @@ struct MatchingView: View {
     
     func item(nickname: String, iconUrl: String) -> some View {
         return HStack {
-            ImageProvider(url: iconUrl).view()
+            URLImage(url: iconUrl)
                 .clipShape(Circle())
                 .frame(width: 50, height: 50)
                 .padding(.leading, 20)

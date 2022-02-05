@@ -5,15 +5,10 @@
 import Foundation
 import SwiftUI
 
-struct BaseNaviBuilder: NaviBuilder {
-   
-    func emptyView() -> AnyView {
-        return AnyView(
-            RelaunchView()
-        )
-    }
+struct PageContent: View {
+    let id: PageId
     
-    func contentView(_ id: PageId) -> some View {
+    var body: some View {
         return Group {
             switch id {
             case .splash:
@@ -21,23 +16,23 @@ struct BaseNaviBuilder: NaviBuilder {
             case .onboarding:
                 OnboardingView()
             case .rollDice:
-                fatalError("無効なページです")
+                RollDiceView()
             case .receiveDrink:
-                fatalError("無効なページです")
+                ReceiveDrinkView()
             case .home:
                 HomeView()
             case .profile:
-                fatalError("無効なページです")
+                ProfileView()
             case .gameList:
-                fatalError("無効なページです")
+                GameListView()
             case .slotList:
-                fatalError("無効なページです")
+                SlotListView()
             case .matching:
                 MatchingView()
             case .pokerPlusPlay:
                 PokerPlusPlayView()
             case .pokerPlusScore:
-                fatalError("無効なページです")
+                ScoreListView()
             case .slot:
                 SlotView()
             case .developerMessage:

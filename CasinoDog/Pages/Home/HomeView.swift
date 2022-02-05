@@ -7,17 +7,16 @@ import SwiftUI
 struct HomeView: View {
 
     @StateObject var homeTab: HomeState = appState.home
-    let builder = HomeTabBuilder()
     
     var body: some View {
         GeometryReader { proxy in
             ZStack {
                 VStack(spacing: 0) {
                     // メインコンテンツ
-                    TabWindow(state: appState.routing.homeTabState, builder: builder)
+                    TabWindow(state: appState.routing.homeTabState)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     // タブバー
-                    HomeTabBar(state: appState.routing.homeTabState, builder: builder)
+                    HomeTabBar(state: appState.routing.homeTabState, config: homeTabBarConfig)
                         .frame(maxWidth: proxy.size.width, maxHeight: proxy.size.height/8)
                 }
                 .edgesIgnoringSafeArea(.bottom)

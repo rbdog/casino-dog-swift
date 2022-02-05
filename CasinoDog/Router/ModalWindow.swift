@@ -4,9 +4,8 @@
 
 import SwiftUI
 
-struct ModalWindow<Builder: ModalBuilder>: View {
+struct ModalWindow: View {
     @StateObject var state: ModalState
-    let builder: Builder
     
     var body: some View {
         if !state.queue.isEmpty {
@@ -21,7 +20,7 @@ struct ModalWindow<Builder: ModalBuilder>: View {
                 //                                    RoutingController().deqModal()
                 //                                }
                 //                            }
-                builder.contentView(state.queue.last!)
+                ModalContent(id: state.queue.last!)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } else {

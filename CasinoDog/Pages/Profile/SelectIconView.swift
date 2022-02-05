@@ -19,7 +19,7 @@ struct SelectIconView: View {
                     Button {
                         EditUserController().onSelectUserIconURL(url: url)
                     } label: {
-                        ImageProvider(url: url).view()
+                        URLImage(url: url)
                             .frame(width: 100, height: 100)
                             .aspectRatio(contentMode: .fit)
                             .clipShape(Circle())

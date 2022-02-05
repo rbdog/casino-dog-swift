@@ -6,34 +6,31 @@ import SwiftUI
 
 struct HomeTabBar: View {
     @StateObject var state: TabState
-    let builder: HomeTabBuilder
+    let config: TabBarConfig
     
     var body: some View {
         GeometryReader { proxy in
             HStack(spacing: 0) {
-                ForEach(state.list, id: \.self) { pageId in
+                ForEach(config.pageList, id: \.self) { pageId in
                     Button {
                         Router().selectHomeTab(pageId: pageId)
                     } label: {
                         VStack {
                             VStack {
-                                builder.tabImage(pageId)
-                                    .resizable()
-                                    .renderingMode(.template)
+                                URLImage(url: config.imageUrls[pageId]!, mode: .template)
                                     .foregroundColor(state.selectedId == pageId ? .plusAutoWhite : .plusAutoBlack)
-                                    .aspectRatio(contentMode: .fit)
-                                Text(builder.tabText(pageId))
+                                Text(config.labelTexts[pageId]!)
                                     .foregroundColor(state.selectedId == pageId ? .plusAutoWhite : .plusAutoBlack)
                             }
                             Spacer()
                         }
-                        .frame(maxWidth: proxy.size.width/CGFloat(state.list.count),
+                        .frame(maxWidth: proxy.size.width/CGFloat(config.pageList.count),
                                maxHeight: .infinity)
                         .padding()
                         .background(
                             (state.selectedId == pageId)
-                            ? builder.tabBackColorOnSelected(pageId)
-                            : builder.tabBackColorOnUnselected(pageId)
+                            ? config.backColorOnSelected
+                            : config.backColorOnUnselected
                         )
                     }
                     .buttonStyle(ScaleButtonStyle())
