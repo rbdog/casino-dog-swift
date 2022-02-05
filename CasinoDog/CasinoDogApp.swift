@@ -25,7 +25,7 @@ struct CasinoDogApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                NaviWindow(state: appState.routing.basePageWindowState, builder: basePageBuilder)
+                NaviWindow(state: appState.routing.baseNaviState, builder: basePageBuilder)
                 ModalWindow(state: appState.routing.baseModalState, builder: baseModalBuilder)
                 LoadingView(loading.loadingTasks)
             }

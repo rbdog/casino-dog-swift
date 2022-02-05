@@ -10,7 +10,7 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
-            NaviWindow(state: appState.routing.onboadingWindowState, builder: builder)
+            NaviWindow(state: appState.routing.onboadingNaviState, builder: builder)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(

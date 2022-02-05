@@ -14,10 +14,10 @@ struct HomeView: View {
             ZStack {
                 VStack(spacing: 0) {
                     // メインコンテンツ
-                    TabWindow(state: appState.routing.homeTabWindowState, builder: builder)
+                    TabWindow(state: appState.routing.homeTabState, builder: builder)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     // タブバー
-                    HomeTabBar(state: appState.routing.homeTabWindowState, builder: builder)
+                    HomeTabBar(state: appState.routing.homeTabState, builder: builder)
                         .frame(maxWidth: proxy.size.width, maxHeight: proxy.size.height/8)
                 }
                 .edgesIgnoringSafeArea(.bottom)
