@@ -109,9 +109,9 @@
 		4A9C113327644ECE003ED139 /* CasinoDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C113227644ECE003ED139 /* CasinoDogUITests.swift */; };
 		4A9C113527644ECE003ED139 /* CasinoDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C113427644ECE003ED139 /* CasinoDogUITestsLaunchTests.swift */; };
 		4A9C114227644EDD003ED139 /* CasinoDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114127644EDD003ED139 /* CasinoDogTests.swift */; };
-		4A9C115B27644FD8003ED139 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* ImageProvider.swift */; };
-		4A9C115C27644FD8003ED139 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* ImageProvider.swift */; };
-		4A9C115D27644FD8003ED139 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* ImageProvider.swift */; };
+		4A9C115B27644FD8003ED139 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* URLImage.swift */; };
+		4A9C115C27644FD8003ED139 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* URLImage.swift */; };
+		4A9C115D27644FD8003ED139 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114B27644FD8003ED139 /* URLImage.swift */; };
 		4A9C115E27644FD8003ED139 /* PokerPlusEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114C27644FD8003ED139 /* PokerPlusEventController.swift */; };
 		4A9C115F27644FD8003ED139 /* PokerPlusEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114C27644FD8003ED139 /* PokerPlusEventController.swift */; };
 		4A9C116027644FD8003ED139 /* PokerPlusEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C114C27644FD8003ED139 /* PokerPlusEventController.swift */; };
@@ -472,7 +472,7 @@
 		4A9C113427644ECE003ED139 /* CasinoDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4A9C113F27644EDD003ED139 /* CasinoDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CasinoDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C114127644EDD003ED139 /* CasinoDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasinoDogTests.swift; sourceTree = "<group>"; };
-		4A9C114B27644FD8003ED139 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		4A9C114B27644FD8003ED139 /* URLImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		4A9C114C27644FD8003ED139 /* PokerPlusEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlusEventController.swift; sourceTree = "<group>"; };
 		4A9C114D27644FD8003ED139 /* OnboadingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboadingController.swift; sourceTree = "<group>"; };
 		4A9C114E27644FD8003ED139 /* SpinSlotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinSlotController.swift; sourceTree = "<group>"; };
@@ -714,7 +714,7 @@
 		4A9C114A27644FD8003ED139 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				4A9C114B27644FD8003ED139 /* ImageProvider.swift */,
+				4A9C114B27644FD8003ED139 /* URLImage.swift */,
 				4A62E44B279BE35C00D826C9 /* PokerPlusMatchingController.swift */,
 				4A9C114C27644FD8003ED139 /* PokerPlusEventController.swift */,
 				4A9C115127644FD8003ED139 /* PockerPlusBetController.swift */,
@@ -1304,7 +1304,7 @@
 				4A69A7C72766146E00F41779 /* ColorTheme.swift in Sources */,
 				4AE3A16F27A63FD3002EA45C /* NaviState.swift in Sources */,
 				4AE3A18127A65074002EA45C /* HomeTabBarConfig.swift in Sources */,
-				4A9C115B27644FD8003ED139 /* ImageProvider.swift in Sources */,
+				4A9C115B27644FD8003ED139 /* URLImage.swift in Sources */,
 				4A7EA533276455E5008EF53A /* EditUserMode.swift in Sources */,
 				4A9C12E72764503A003ED139 /* SlotListView.swift in Sources */,
 				4A914E9F278B3A4300E93522 /* SlotsSpinSlot.swift in Sources */,
@@ -1471,7 +1471,7 @@
 				4A914EA6278B3AE700E93522 /* UsersUpdateUser.swift in Sources */,
 				4A9C12082764502C003ED139 /* CenterClient.swift in Sources */,
 				4A9C11E127645021003ED139 /* IntExtension.swift in Sources */,
-				4A9C115C27644FD8003ED139 /* ImageProvider.swift in Sources */,
+				4A9C115C27644FD8003ED139 /* URLImage.swift in Sources */,
 				4A7EA537276455E5008EF53A /* DrinkId.swift in Sources */,
 				4A9C127227645033003ED139 /* SymbolView.swift in Sources */,
 				4A9C11ED27645021003ED139 /* StringExtension.swift in Sources */,
@@ -1561,7 +1561,7 @@
 				4AE3A17D27A64CB5002EA45C /* BadNetworkModal.swift in Sources */,
 				4A9C130D2764503A003ED139 /* GameListView.swift in Sources */,
 				4A9C11BF27644FE0003ED139 /* SlotMachineState.swift in Sources */,
-				4A9C115D27644FD8003ED139 /* ImageProvider.swift in Sources */,
+				4A9C115D27644FD8003ED139 /* URLImage.swift in Sources */,
 				4A7EA535276455E5008EF53A /* EditUserMode.swift in Sources */,
 				4A9C12E92764503A003ED139 /* SlotListView.swift in Sources */,
 				4A9C117827644FD8003ED139 /* PockerPlusShowdownController.swift in Sources */,
