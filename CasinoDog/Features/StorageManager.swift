@@ -51,9 +51,9 @@ struct StorageManager {
         appState.editUser = EditUserState()
         appState.gameList = GameListState()
         appState.matching = nil
-        appState.pokerPlusSystem = nil
-        appState.pokerPlusPlayUi = nil
-        appState.pokerPlusScoreUi = nil
+        appState.partycakeSystem = nil
+        appState.partycakePlayUi = nil
+        appState.partycakeScoreUi = nil
         appState.slotList = SlotListState()
         appState.slotMachine = nil
     }

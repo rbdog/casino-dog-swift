@@ -36,8 +36,8 @@ struct SymbolCollectionView: View {
                             VStack {
                                 HStack {
                                     Spacer()
-                                    if pockets[index].count >= 2 {
-                                        Text("\(pockets[index].count)")
+                                    if pockets[index].symbol_count >= 2 {
+                                        Text("\(pockets[index].symbol_count)")
                                             .foregroundColor(.black)
                                             .frame(width: 20, height: 20)
                                             .background(Color.white)

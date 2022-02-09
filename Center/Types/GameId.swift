@@ -3,5 +3,5 @@
 //
 
 enum GameId: Int, JSONSerializable {
-    case pokerPlus = 1
+    case partycake = 1
 }

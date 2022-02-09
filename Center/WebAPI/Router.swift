@@ -21,17 +21,17 @@ public class Router {
 
         switch (method, endpoint) {
 
-        case (PokerPlusLoadRoom.httpMethod.rawValue, PokerPlusLoadRoom.urlPath):
-            return PokerPlusLoadRoom.response(to: request)
+        case (PartycakeLoadRoom.httpMethod.rawValue, PartycakeLoadRoom.urlPath):
+            return PartycakeLoadRoom.response(to: request)
 
-        case (PokerPlusEnterRoom.httpMethod.rawValue, PokerPlusEnterRoom.urlPath):
-            return PokerPlusEnterRoom.response(to: request)
+        case (PartycakeEnterRoom.httpMethod.rawValue, PartycakeEnterRoom.urlPath):
+            return PartycakeEnterRoom.response(to: request)
 
-        case (PokerPlusBetAction.httpMethod.rawValue, PokerPlusBetAction.urlPath):
-            return PokerPlusBetAction.response(to: request)
+        case (PartycakeBetAction.httpMethod.rawValue, PartycakeBetAction.urlPath):
+            return PartycakeBetAction.response(to: request)
 
-        case (PokerPlusPutAction.httpMethod.rawValue, PokerPlusPutAction.urlPath):
-            return PokerPlusPutAction.response(to: request)
+        case (PartycakePutAction.httpMethod.rawValue, PartycakePutAction.urlPath):
+            return PartycakePutAction.response(to: request)
 
         case (UsersUpdateUser.httpMethod.rawValue, UsersUpdateUser.urlPath):
             return UsersUpdateUser.response(to: request)
@@ -39,8 +39,8 @@ public class Router {
         case (UsersCreateUser.httpMethod.rawValue, UsersCreateUser.urlPath):
             return UsersCreateUser.response(to: request)
 
-        case (PokerPlusExitRoom.httpMethod.rawValue, PokerPlusExitRoom.urlPath):
-            return PokerPlusExitRoom.response(to: request)
+        case (PartycakeExitRoom.httpMethod.rawValue, PartycakeExitRoom.urlPath):
+            return PartycakeExitRoom.response(to: request)
             
         case (UsersLoadUser.httpMethod.rawValue, UsersLoadUser.urlPath):
             return UsersLoadUser.response(to: request)

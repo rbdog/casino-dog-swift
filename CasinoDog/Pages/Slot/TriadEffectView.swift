@@ -16,7 +16,7 @@ struct TriadEffectView: View {
             Text(triadAnimation.title)
                 .font(.system(size: 20, weight: .regular, design: .default))
                 .foregroundColor(Color.white)
-            URLImage(url: triadAnimation.image_url)
+            UrlImage(url: triadAnimation.image_url)
                 .frame(width: 150, height: 150)
                 .shine(.gold)
             Text(triadAnimation.description)

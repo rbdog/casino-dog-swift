@@ -5,8 +5,8 @@
 import SwiftUI
 
 
-extension CardID {
-    var suit: SuitID {
+extension CardId {
+    var suit: SuitId {
         switch self {
         case .back:
             return .back
@@ -23,7 +23,7 @@ extension CardID {
         }
     }
     
-    var number: NumberID {
+    var number: NumberId {
         switch self {
         case .back:
             return .back
@@ -70,7 +70,7 @@ extension CardID {
     }
 }
 
-extension SuitID {
+extension SuitId {
     var discription: String {
         switch self {
         case .back:
@@ -89,7 +89,7 @@ extension SuitID {
     }
 }
 
-extension NumberID {
+extension NumberId {
     var discription: String {
         switch self {
         case .back:
@@ -126,8 +126,8 @@ extension NumberID {
     }
 }
 
-extension PokerPlusOuterPartID {
-    var suit: SuitID {
+extension PartycakeOuterPieceID {
+    var suit: SuitId {
         switch self {
         case .diamond12:
             return .diamond
@@ -139,7 +139,7 @@ extension PokerPlusOuterPartID {
             return .heart
         }
     }
-    var number: NumberID {
+    var number: NumberId {
         switch self {
         case .diamond12:
             return .num12
@@ -153,8 +153,8 @@ extension PokerPlusOuterPartID {
     }
 }
 
-extension PokerPlusInnerPartID {
-    var suit: SuitID {
+extension PartycakeInnerPieceID {
+    var suit: SuitId {
         switch self {
         case .club:
             return .club
@@ -168,7 +168,7 @@ extension PokerPlusInnerPartID {
     }
 }
 
-extension CardID {
+extension CardId {
     func effectImageName() -> String? {
         switch self.number {
         case .num1:
@@ -330,7 +330,7 @@ extension CardID {
     }
 }
 
-extension PokerPlusOuterPartID {
+extension PartycakeOuterPieceID {
     func flatImageName() -> String {
         switch self {
         case .diamond12:
@@ -345,7 +345,7 @@ extension PokerPlusOuterPartID {
     }
 }
 
-extension PokerPlusInnerPartID {
+extension PartycakeInnerPieceID {
     func flatImageName() -> String {
         switch self {
         case .club:

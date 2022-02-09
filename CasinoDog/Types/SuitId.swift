@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum SuitID: Int, JSONSerializable {
+enum SuitId: Int, JSONSerializable {
     case back = 0
     case spade = 1
     case heart = 2

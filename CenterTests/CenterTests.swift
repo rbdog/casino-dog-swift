@@ -43,7 +43,7 @@ class CenterTests: XCTestCase {
 
     }
 
-    func testWheel() {
+    func testCake() {
 
     }
 

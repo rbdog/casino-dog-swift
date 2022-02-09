@@ -7,9 +7,9 @@ enum ImageName {
         case splash = "splash"
     }
     
-    enum Wheel: String {
-        case inner = "poker-plus-wheel-inner"
-        case outer = "poker-plus-wheel-outer"
+    enum Cake: String {
+        case inner = "partycake-inner"
+        case outer = "partycake-outer"
     }
     
     enum Card: String {
@@ -25,7 +25,7 @@ enum ImageName {
         case club11 = "card-club11"
         case club13 = "card-club13"
         case club12 = "card-club12"
-        case pokerPlusPutBox = "poker-plus-put-box"
+        case partycakePutBox = "partycake-put-box"
         case back = "card-back"
     }
     
@@ -53,9 +53,9 @@ enum ImageName {
     }
     
     enum Effect: String {
-        case jack = "poker-plus-effect-j"
-        case queen = "poker-plus-effect-q"
-        case king = "poker-plus-effect-k"
+        case jack = "partycake-effect-j"
+        case queen = "partycake-effect-q"
+        case king = "partycake-effect-k"
     }
     
     enum Score {
@@ -72,20 +72,20 @@ enum ImageName {
             case heart11 = "card-heart11-flat"
             case diamond11 = "card-diamond11-flat"
             case club11 = "card-club11-flat"
-            case empty = "poker-plus-put-box"
+            case empty = "partycake-put-box"
             case back = "card-back"
         }
         enum Inner: String {
-            case club = "poker-plus-wheel-inner-club-flat"
-            case heart = "poker-plus-wheel-inner-heart-flat"
-            case joker = "poker-plus-wheel-inner-joker-flat"
-            case diamond = "poker-plus-wheel-inner-diamond-flat"
+            case club = "partycake-inner-club-flat"
+            case heart = "partycake-inner-heart-flat"
+            case joker = "partycake-inner-joker-flat"
+            case diamond = "partycake-inner-diamond-flat"
         }
         enum Outer: String {
-            case diamond12 = "poker-plus-wheel-outer-diamond12-flat"
-            case club11 = "poker-plus-wheel-outer-club11-flat"
-            case spade13 = "poker-plus-wheel-outer-spade13-flat"
-            case heart1 = "poker-plus-wheel-outer-heart1-flat"
+            case diamond12 = "partycake-outer-diamond12-flat"
+            case club11 = "partycake-outer-club11-flat"
+            case spade13 = "partycake-outer-spade13-flat"
+            case heart1 = "partycake-outer-heart1-flat"
         }
     }
     
@@ -118,7 +118,7 @@ enum ImageName {
     }
     
     enum Game: String {
-        case pokerPlus = "game-poker-plus"
+        case partycake = "game-partycake"
     }
     
     enum Symbol: String {

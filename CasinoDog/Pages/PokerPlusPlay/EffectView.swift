@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct EffectView: View {
-    @StateObject var playUiState: PokerPlusPlayUiState = appState.pokerPlusPlayUi
+    @StateObject var playUiState: PartycakePlayUiState = appState.partycakePlayUi
     
     var body: some View {
         GeometryReader { proxy in

@@ -29,9 +29,9 @@ struct PageContent: View {
                 SlotListView()
             case .matching:
                 MatchingView()
-            case .pokerPlusPlay:
-                PokerPlusPlayView()
-            case .pokerPlusScore:
+            case .partycakePlay:
+                PartycakePlayView()
+            case .partycakeScore:
                 ScoreListView()
             case .slot:
                 SlotView()

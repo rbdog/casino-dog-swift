@@ -5,8 +5,8 @@
 import SwiftUI
 
 struct Header: View {
-    @StateObject var playUiState: PokerPlusPlayUiState = appState.pokerPlusPlayUi
-    let betController: PokerPlusBetController = PokerPlusBetController()
+    @StateObject var playUiState: PartycakePlayUiState = appState.partycakePlayUi
+    let betController: PartycakeBetController = PartycakeBetController()
     
     var body: some View {
         HStack {

@@ -8,7 +8,7 @@ public let center = CenterServer()
 
 public struct CenterServer {
     public let router = Router()
-    public let pokerPlusServer = PokerPlusServer()
+    public let partycakeServer = PartycakeServer()
     let userServer = UserServer()
     let dbServer = DBServer()
     let slotServer = SlotServer()
@@ -16,21 +16,21 @@ public struct CenterServer {
     public func onFirstLaunch() {
         // DBから先に初期化すること
         dbServer.onFirstLaunch()
-        pokerPlusServer.onFirstLaunch()
+        partycakeServer.onFirstLaunch()
         userServer.onFirstLaunch()
         slotServer.onFirstLaunch()
     }
     
     public func onLaunch() {
         dbServer.onLaunch()
-        pokerPlusServer.onLaunch()
+        partycakeServer.onLaunch()
         userServer.onLaunch()
         slotServer.onLaunch()
     }
     
     public func deleteAll() {
         dbServer.deleteAllDatabase()
-        pokerPlusServer.deleteAllMemory()
+        partycakeServer.deleteAllMemory()
         userServer.deleteAllMemory()
         slotServer.deleteAllMemory()
     }

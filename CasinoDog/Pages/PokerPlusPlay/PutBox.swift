@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct PutBox: View {
-    @StateObject var playUiSide: PokerPlusPlayUiSide
+    @StateObject var playUiSide: PartycakePlayUiSide
     
     func inoutEdge() -> Edge {
         if playUiSide.seat == .s1 || playUiSide.seat == .s2 {
@@ -17,7 +17,7 @@ struct PutBox: View {
     
     var body: some View {
         ZStack {
-            Image(ImageName.Card.pokerPlusPutBox.rawValue)
+            Image(ImageName.Card.partycakePutBox.rawValue)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             if let card = playUiSide.putCard {

@@ -47,11 +47,11 @@ enum UsersCreateUser: HTTPAPI {
     static func initialPockets(drink: DrinkId?) -> [SymbolPocket] {
         // 初回限定で16ポケットプレゼント
         let pocketCount = 16
-        let emptyPocket = SymbolPocket(symbol_id: nil, count: 0)
+        let emptyPocket = SymbolPocket(symbol_id: nil, symbol_count: 0)
         var pockets = [SymbolPocket].init(repeating: emptyPocket, count: pocketCount)
         if let drink = drink {
             // ドリンクを指定された場合は先頭を置き換える
-            pockets[0] = SymbolPocket(symbol_id: drink.symbol.rawValue, count: 1)
+            pockets[0] = SymbolPocket(symbol_id: drink.symbol.rawValue, symbol_count: 1)
         }
         return pockets
     }

@@ -6,9 +6,9 @@ import SwiftUI
 import Center
 
 struct Board: View {
-    @StateObject var playUiState: PokerPlusPlayUiState = appState.pokerPlusPlayUi
+    @StateObject var playUiState: PartycakePlayUiState = appState.partycakePlayUi
     
-    func uiSide(at seat: PokerPlusSeat) -> PokerPlusPlayUiSide {
+    func uiSide(at seat: PartycakeSeat) -> PartycakePlayUiSide {
         let side = playUiState.sides.first(where: {$0.seat == seat})!
         return side
     }
@@ -30,8 +30,8 @@ struct Board: View {
                             .frame(width: proxy.size.width * 0.25)
                     }
 
-                    // Wheel
-                    WheelView()
+                    // Cake
+                    CakeView()
                         .frame(width: proxy.size.width * 0.9, height: proxy.size.width * 0.9)
 
                     HStack {

@@ -5,12 +5,12 @@
 import SwiftUI
 
 struct PlayerView: View {
-    @StateObject var playUiSide: PokerPlusPlayUiSide
+    @StateObject var playUiSide: PartycakePlayUiSide
     
     func borderColor() -> Color {
         // シートは固定なので、初回計算のみ
         let myUserId = appState.account.loginUser.id
-        let mySeat = appState.pokerPlusSystem.players.first(where: {$0.user_id == myUserId})!.seat
+        let mySeat = appState.partycakeSystem.players.first(where: {$0.user_id == myUserId})!.seat
         if playUiSide.seat.rawValue == mySeat {
             return .plusBlue
         } else {
@@ -26,7 +26,7 @@ struct PlayerView: View {
                     .font(.system(size: 16))
                     .foregroundColor(.plusGold)
                 
-                URLImage(url: playUiSide.playerIconUrl)
+                UrlImage(url: playUiSide.playerIconUrl)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(borderColor(), lineWidth: 2))
                     .frame(width: proxy.size.width * 0.9, height: proxy.size.width * 0.9)

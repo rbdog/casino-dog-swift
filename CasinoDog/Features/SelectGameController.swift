@@ -12,8 +12,8 @@ class SelectGameController {
         // TODO: - 選択したゲーム
         // TODO: - RESUME判別対応
         
-        // 今は Poker+ しかないので固定値
-        let eventController = PokerPlusEventController()
+        // 今は Partycake しかないので固定値
+        let eventController = PartycakeEventController()
         eventController.play(secretId: nil)
     }
 }

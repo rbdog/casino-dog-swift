@@ -47,7 +47,7 @@ struct GameListView: View {
                 .frame(height: 70)
                 .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                 
-                Image(ImageName.Game.pokerPlus.rawValue)
+                Image(ImageName.Game.partycake.rawValue)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300, alignment: .center)

@@ -13,7 +13,7 @@ struct MatchingView: View {
                 ClockView()
                     .frame(width: 50, height: 50)
                     .padding(8)
-                Text("Poker+")
+                Text("パーティケーキ")
                     .font(.system(size: 20))
                     .padding(8)
             }
@@ -43,13 +43,13 @@ struct MatchingView: View {
             Color.plusRed.ignoresSafeArea(.all)
         )
         .onAppear {
-            PokerPlusMatchingController().onMatchingViewAppear()
+            PartycakeMatchingController().onMatchingViewAppear()
         }
     }
     
     func item(nickname: String, iconUrl: String) -> some View {
         return HStack {
-            URLImage(url: iconUrl)
+            UrlImage(url: iconUrl)
                 .clipShape(Circle())
                 .frame(width: 50, height: 50)
                 .padding(.leading, 20)

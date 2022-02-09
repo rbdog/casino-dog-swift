@@ -35,14 +35,14 @@ final class AppState {
     // マッチング
     var matching: MatchingState!
     
-    // Poker+
-    var pokerPlusSystem: PokerPlusSystemState!
+    // Partycake
+    var partycakeSystem: PartycakeSystemState!
     
-    var pokerPlusPlayUi: PokerPlusPlayUiState!
+    var partycakePlayUi: PartycakePlayUiState!
     
-    var pokerPlusScoreUi: PokerPlusScoreUiState!
+    var partycakeScoreUi: PartycakeScoreUiState!
     
-    var pokerPlusConnection: PokerPlusConnection!
+    var partycakeConnection: PartycakeConnection!
     
     // スロット一覧
     var slotList: SlotListState
@@ -60,9 +60,9 @@ final class AppState {
         editUser: EditUserState,
         gameList: GameListState,
         matching: MatchingState?,
-        pokerPlusSystem: PokerPlusSystemState?,
-        pokerPlusPlayUi: PokerPlusPlayUiState?,
-        pokerPlusScoreUi: PokerPlusScoreUiState?,
+        partycakeSystem: PartycakeSystemState?,
+        partycakePlayUi: PartycakePlayUiState?,
+        partycakeScoreUi: PartycakeScoreUiState?,
         slotList: SlotListState,
         slotMachine: SlotMachineState?
     ) {
@@ -75,9 +75,9 @@ final class AppState {
         self.editUser = editUser
         self.gameList = gameList
         self.matching = matching
-        self.pokerPlusSystem = pokerPlusSystem
-        self.pokerPlusPlayUi = pokerPlusPlayUi
-        self.pokerPlusScoreUi = pokerPlusScoreUi
+        self.partycakeSystem = partycakeSystem
+        self.partycakePlayUi = partycakePlayUi
+        self.partycakeScoreUi = partycakeScoreUi
         self.slotList = slotList
         self.slotMachine = slotMachine
     }
@@ -92,9 +92,9 @@ final class AppState {
         self.editUser = EditUserState()
         self.gameList = GameListState()
         self.matching = nil
-        self.pokerPlusSystem = nil
-        self.pokerPlusPlayUi = nil
-        self.pokerPlusScoreUi = nil
+        self.partycakeSystem = nil
+        self.partycakePlayUi = nil
+        self.partycakeScoreUi = nil
         self.slotList = SlotListState()
         self.slotMachine = nil
     }

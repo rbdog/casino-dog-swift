@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ScoreListView: View {
-    @StateObject var scoreUiState: PokerPlusScoreUiState = appState.pokerPlusScoreUi
+    @StateObject var scoreUiState: PartycakeScoreUiState = appState.partycakeScoreUi
     
     var body: some View {
         

@@ -5,14 +5,14 @@
 import SwiftUI
 
 struct Dock: View {
-    @StateObject var playUiState: PokerPlusPlayUiState = appState.pokerPlusPlayUi
+    @StateObject var playUiState: PartycakePlayUiState = appState.partycakePlayUi
     
     func actionLabel() -> (String, Color, Bool) {
         if let card = playUiState.dockSelectedCard {
             return (card.discription, .plusBlue, true)
         }
         if let level = playUiState.dockSelectedBetLevel {
-            let canBet = PokerPlusDockController().canBet(level: level)
+            let canBet = PartycakeDockController().canBet(level: level)
             if canBet {
                 let count = level.cardCount()
                 return ("カードを \(count)枚 もらう", .plusBlue, true)
@@ -23,19 +23,19 @@ struct Dock: View {
         return ("未選択", .gray, false)
     }
     
-    func cardItem(card: CardID) -> CardView {
+    func cardItem(card: CardId) -> CardView {
         let imageName = card.imageName()
         return CardView(imageName: imageName, degree: 0)
     }
     
-    func betLevelItem(level: PokerPlusBetLevel) -> CardView {
+    func betLevelItem(level: PartycakeBetLevel) -> CardView {
         let imageName = level.imageName()
         return CardView(imageName: imageName, degree: 0)
     }
     
     func betButton(width: CGFloat, height: CGFloat) -> some View {
         return Button {
-            PokerPlusDockController().onTapBetButton()
+            PartycakeDockController().onTapBetButton()
         } label: {
             Text(actionLabel().0)
                 .font(.system(size: 22))
@@ -48,7 +48,7 @@ struct Dock: View {
     
     func putButton(width: CGFloat, height: CGFloat) -> some View {
         return Button {
-            PokerPlusDockController().onTapPutButton()
+            PartycakeDockController().onTapPutButton()
         } label: {
             Text(actionLabel().0)
                 .font(.system(size: 22))
@@ -66,7 +66,7 @@ struct Dock: View {
                 HStack(spacing: 12) {
                     ForEach(playUiState.dockHandCards.indices, id: \.self) { index in
                         Button {
-                            PokerPlusDockController().onTapCard(card: playUiState.dockHandCards[index])
+                            PartycakeDockController().onTapCard(card: playUiState.dockHandCards[index])
                         } label: {
                             cardItem(card: playUiState.dockHandCards[index])
                                 .blinkEffect(animating: playUiState.dockHandCards[index] == playUiState.dockSelectedCard)
@@ -81,7 +81,7 @@ struct Dock: View {
                     .transition(.scale)
                     ForEach(Array(zip(playUiState.dockBetLevels.indices, playUiState.dockBetLevels)), id: \.1) { index, element in
                         Button {
-                            PokerPlusDockController().onTapBetLevel(level: element)
+                            PartycakeDockController().onTapBetLevel(level: element)
                         } label: {
                             betLevelItem(level: element)
                                 .blinkEffect(animating: element == playUiState.dockSelectedBetLevel)

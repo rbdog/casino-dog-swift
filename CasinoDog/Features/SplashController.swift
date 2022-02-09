@@ -17,8 +17,8 @@ struct SplashController {
         
         Task {
             // Debug Only
-//            center.deleteAll() // Center データ全削除
-//            await StorageManager().deleteAllStorage() // 全ストレージデータ削除
+            //            center.deleteAll() // Center データ全削除
+            //            await StorageManager().deleteAllStorage() // 全ストレージデータ削除
             
             // 起動時の設定を取得できなかった場合はモーダルを表示して終了
             guard let splashConfig = await getSplashConfig() else {
@@ -64,7 +64,7 @@ struct SplashController {
                 // 参加中のときはゲーム画面へ進んで終了
                 let secretId = appState.account.keycard!.secret_id
                 await scaleUpSplashAsync()
-                PokerPlusEventController().play(secretId: secretId)
+                PartycakeEventController().play(secretId: secretId)
                 return
             }
             
@@ -77,12 +77,16 @@ struct SplashController {
     
     // 拡大アニメーション
     func scaleUpSplash(completion: @escaping () -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + Splash.delaySec) {
-            withAnimation(.easeIn(duration: Splash.durationSec)) {
-                appState.splash.width = Splash.endWidth
-                appState.splash.alpha = Splash.endAlpha
+        let delaySec: Double = 1
+        let durationSec: Double = 0.5
+        let endWidth = UIScreen.main.bounds.width * 8
+        let endAlpha: Double = 0
+        DispatchQueue.main.asyncAfter(deadline: .now() + delaySec) {
+            withAnimation(.easeIn(duration: durationSec)) {
+                appState.splash.width = endWidth
+                appState.splash.alpha = endAlpha
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + Splash.durationSec) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + durationSec) {
                 completion()
             }
         }

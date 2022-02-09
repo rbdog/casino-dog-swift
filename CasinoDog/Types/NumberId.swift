@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum NumberID: Int, JSONSerializable {
+enum NumberId: Int, JSONSerializable {
     case back = 0
     case num1 = 1
     case num2 = 2

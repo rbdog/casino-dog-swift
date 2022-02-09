@@ -4,8 +4,8 @@
 
 import SwiftUI
 
-struct PokerPlusPlayView: View {
-    @StateObject var playUiState: PokerPlusPlayUiState = appState.pokerPlusPlayUi
+struct PartycakePlayView: View {
+    @StateObject var playUiState: PartycakePlayUiState = appState.partycakePlayUi
     
     var body: some View {
         ZStack {
@@ -64,7 +64,7 @@ struct PokerPlusPlayView: View {
                         .disabled(playUiState.dockIsLocked)
                 }
             }
-            if appState.pokerPlusScoreUi != nil {
+            if appState.partycakeScoreUi != nil {
                 ScoreListView()
             }
             if playUiState.waitingOthers {

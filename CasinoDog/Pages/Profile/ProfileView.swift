@@ -52,7 +52,7 @@ struct ProfileView: View {
                     Button {
                         EditUserController().onTapUserIcon()
                     } label: {
-                        URLImage(url: loginUser.loginUser.icon_url)
+                        UrlImage(url: loginUser.loginUser.icon_url)
                             .frame(width: 100, height: 100)
                             .aspectRatio(contentMode: .fit)
                             .clipShape(Circle())

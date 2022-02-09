@@ -17,7 +17,7 @@ struct HomeTabBar: View {
                     } label: {
                         VStack {
                             VStack {
-                                URLImage(url: config.imageUrls[pageId]!, mode: .template)
+                                UrlImage(url: config.imageUrls[pageId]!, mode: .template)
                                     .foregroundColor(state.selectedId == pageId ? .plusAutoWhite : .plusAutoBlack)
                                 Text(config.labelTexts[pageId]!)
                                     .foregroundColor(state.selectedId == pageId ? .plusAutoWhite : .plusAutoBlack)
@@ -29,7 +29,7 @@ struct HomeTabBar: View {
                         .padding()
                         .background(
                             (state.selectedId == pageId)
-                            ? config.backColorOnSelected
+                            ? config.backColorOnSelected  
                             : config.backColorOnUnselected
                         )
                     }

@@ -15,8 +15,8 @@ enum PageId: Int, JSONSerializable {
     case gameList = 7
     case slotList = 8
     case matching = 9
-    case pokerPlusPlay = 10
-    case pokerPlusScore = 11
+    case partycakePlay = 10
+    case partycakeScore = 11
     case slot = 12
     case developerMessage = 13
     case license = 14

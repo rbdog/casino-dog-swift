@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct BetBox: View {
-    @StateObject var playUiSide: PokerPlusPlayUiSide
+    @StateObject var playUiSide: PartycakePlayUiSide
     var body: some View {
         GeometryReader { proxy in
             if playUiSide.playerBetLevel != nil {

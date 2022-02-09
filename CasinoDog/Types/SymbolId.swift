@@ -20,7 +20,7 @@ enum SymbolId: Int, JSONSerializable {
     case luckySeven = 11
     
     // Free
-    case freeorange = 12
+    case chip0 = 12
     case chip1 = 13
     case chip2 = 14
     case chip3 = 15
@@ -76,7 +76,7 @@ enum SymbolId: Int, JSONSerializable {
             return .horseshoe
         case .luckySeven:
             return .luckySeven
-        case .freeorange:
+        case .chip0:
             return .freeorange
         case .chip1:
             return .chip1

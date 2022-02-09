@@ -56,39 +56,39 @@ struct MachineList {
             id: .freeL,
             symbols: [
                 .chip2,
-                .freeorange,
+                .chip0,
                 .chip1,
-                .freeorange,
-                .freeorange,
+                .chip0,
+                .chip0,
                 .chip3,
                 .chip10,
-                .freeorange
+                .chip0
             ]
         ),
         Reel(
             id: .freeC,
             symbols: [
-                .freeorange,
+                .chip0,
                 .chip10,
-                .freeorange,
+                .chip0,
                 .chip3,
                 .chip1,
-                .freeorange,
-                .freeorange,
+                .chip0,
+                .chip0,
                 .chip2
             ]
         ),
         Reel(
             id: .freeR,
             symbols: [
-                .freeorange,
+                .chip0,
                 .chip2,
                 .chip10,
-                .freeorange,
+                .chip0,
                 .chip1,
-                .freeorange,
+                .chip0,
                 .chip3,
-                .freeorange
+                .chip0
             ]
         ),
         Reel(

@@ -5,11 +5,11 @@
 import SwiftUI
 
 struct ScoreItem: View {
-    @StateObject var scoreUiItem: PokerPlusScoreUiItem
+    @StateObject var scoreUiItem: PartycakeScoreUiItem
     var body: some View {
         VStack(spacing: 5) {
             HStack {
-                URLImage(url: scoreUiItem.iconUrl)
+                UrlImage(url: scoreUiItem.iconUrl)
                     .clipShape(Circle())
                     .frame(width: 30, height: 30)
                 Text(scoreUiItem.nickname)
@@ -28,7 +28,7 @@ struct ScoreItem: View {
 
                 if scoreUiItem.isMyScore {
                     Button {
-                        PokerPlusShowdownController().onTapScoreOK()
+                        PartycakeShowdownController().onTapScoreOK()
                     } label: {
                         Text("OK")
                             .font(.system(size: 18))
