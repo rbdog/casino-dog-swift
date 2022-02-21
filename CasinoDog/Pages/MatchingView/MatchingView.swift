@@ -13,7 +13,7 @@ struct MatchingView: View {
                 ClockView()
                     .frame(width: 50, height: 50)
                     .padding(8)
-                Text("パーティケーキ")
+                Text("ケーキ・ポーカー")
                     .font(.system(size: 20))
                     .padding(8)
             }

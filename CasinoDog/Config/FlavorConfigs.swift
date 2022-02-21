@@ -15,8 +15,8 @@ func flavorConfig() -> FlavorConfig {
 let flavorConfigs: [FlavorConfig] = [
     FlavorConfig(
         flavor: .develop,
-        splashConfigUrl: "https://rbdog.github.io/casino-dog/static/splash_config.json",
+        splashConfigUrl: "https://rbdog.github.io/casino-dog-swift/static/splash_config.json",
         developerTwitterUrl: "https://twitter.com/rubydog725",
-        termsOfServiceUrl: "https://rbdog.github.io/casino-dog/"
+        termsOfServiceUrl: "https://rbdog.github.io/casino-dog-swift/"
     )
 ]

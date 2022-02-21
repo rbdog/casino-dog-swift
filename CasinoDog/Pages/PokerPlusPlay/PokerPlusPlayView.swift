@@ -23,16 +23,13 @@ struct PartycakePlayView: View {
                                     Spacer()
                                     PlayerView(playUiSide: playUiState.sides.first(where: {$0.seat == .s4})!)
                                         .frame(width: 50, height: proxy.size.height/2 - 40)
-                                    
                                     Spacer()
                                     PlayerView(playUiSide: playUiState.sides.first(where: {$0.seat == .s3})!)
                                         .frame(width: 50, height: proxy.size.height/2 - 40)
-                                    
                                     Spacer()
                                 }
                                 .offset(x: (playUiState.focusTarget == .all) ? 0 : -50, y: 0)
                                 .zIndex(10)
-                                
                             }
                             
                             // Board
@@ -44,11 +41,9 @@ struct PartycakePlayView: View {
                                     Spacer()
                                     PlayerView(playUiSide: playUiState.sides.first(where: {$0.seat == .s1})!)
                                         .frame(width: 50, height: proxy.size.height/2 - 40)
-
                                     Spacer()
                                     PlayerView(playUiSide: playUiState.sides.first(where: {$0.seat == .s2})!)
                                         .frame(width: 50, height: proxy.size.height/2 - 40)
-
                                     Spacer()
                                 }
                                 .offset(x: (playUiState.focusTarget == .all) ? 0 : 50, y: 0)
@@ -85,7 +80,14 @@ struct PartycakePlayView: View {
             }
         }
         .background(
-            RadialGradient(gradient: Gradient(colors: [.init(hex: 0x008800), .black]), center: .center, startRadius: 2, endRadius: UIScreen.main.bounds.height)
+            RadialGradient(
+                gradient: Gradient(
+                    colors: [.init(hex: 0x008800), .black]
+                ),
+                center: .center,
+                startRadius: 2,
+                endRadius: UIScreen.main.bounds.height
+            )
                 .ignoresSafeArea(.all)
         )
     }
