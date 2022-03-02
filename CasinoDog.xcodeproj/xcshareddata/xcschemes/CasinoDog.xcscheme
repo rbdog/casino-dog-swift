@@ -93,6 +93,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "casino-dog-archive"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

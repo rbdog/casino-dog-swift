@@ -26,34 +26,34 @@ struct GameListView: View {
                 Spacer()
                 
                 ScrollView(.horizontal) {
-                
-                VStack {
-
-                ZStack {
-                    Image("ribbon-price")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 60)
-                    HStack {
-                        Image("chip")
+                    
+                    VStack {
+                        
+                        ZStack {
+                            Image("ribbon-price")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 60)
+                            HStack {
+                                Image("chip")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 30)
+                                Text("30")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 30))
+                            }
+                        }
+                        .frame(height: 70)
+                        .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
+                        
+                        Image(ImageName.Game.partycake.rawValue)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 30)
-                        Text("30")
-                            .foregroundColor(.white)
-                            .font(.system(size: 30))
+                            .frame(width: 300, alignment: .center)
+                            .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                     }
-                }
-                .frame(height: 70)
-                .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
-                
-                Image(ImageName.Game.partycake.rawValue)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300, alignment: .center)
-                    .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
-                }
-                .frame(width: UIScreen.main.bounds.width - 40, height: 400)
+                    .frame(width: UIScreen.main.bounds.width - 40, height: 400)
                 }
                 .frame(width: UIScreen.main.bounds.width - 40, height: 400)
                 .background(Color.plusDarkGreen)
@@ -64,22 +64,22 @@ struct GameListView: View {
                 Button {
                     SelectGameController().onTapPlay()
                 }
-                label: {
-                    Text("Play")
-                        .font(.system(size: 26))
-                        .foregroundColor(.white)
-                        .frame(width: 250, height: 50)
-                        .background(Color.plusBlue)
-                        .cornerRadius(10)
-                }
-                .buttonStyle(ScaleButtonStyle())
-                .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
-
+            label: {
+                Text("Play")
+                    .font(.system(size: 26))
+                    .foregroundColor(.white)
+                    .frame(width: 250, height: 50)
+                    .background(Color.plusBlue)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(ScaleButtonStyle())
+            .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
+                
                 Spacer()
             }
             .frame(maxWidth:UIScreen.main.bounds.width)
-
+            
         }
-
+        
     }
 }

@@ -170,7 +170,8 @@ class PartycakeMatcher {
         let playCost = 30
         let payedUsers = users.map { user -> UserRealm in
             if user.chip < playCost {
-                fatalError("参加料が足りません")
+                // TODO: - 参加料が足りないときの処理
+                return user
             }
             let payedUser = UserRealm(
                 id: user.id,
